@@ -1,0 +1,10 @@
+{
+  "HaplotypeCallerGvcf_GATK4.input_bam": "/groups/cgsd/alexandre/gatk-workflows/gatk4-germline-snps-indels/inputs/NA12878.cram",
+  "HaplotypeCallerGvcf_GATK4.input_bam_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-germline-snps-indels/inputs/NA12878.cram.crai",
+
+  "HaplotypeCallerGvcf_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/gatk4-germline-snps-indels/inputs/Homo_sapiens_assembly38.dict",
+  "HaplotypeCallerGvcf_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/gatk4-germline-snps-indels/inputs/Homo_sapiens_assembly38.fasta",
+  "HaplotypeCallerGvcf_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-germline-snps-indels/inputs/Homo_sapiens_assembly38.fasta.fai",
+
+  "HaplotypeCallerGvcf_GATK4.scattered_calling_intervals_list": "/groups/cgsd/alexandre/gatk-workflows/gatk4-germline-snps-indels/inputs/hg38_wgs_scattered_calling_intervals.txt"
+}
