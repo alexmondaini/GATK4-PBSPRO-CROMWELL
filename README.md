@@ -7,7 +7,7 @@ This repo should help colleagues at HKU to run workflows written in [wdl](https:
 
 - [db.conf](/db.conf) is the version of [my.conf](/my.conf) that uses a different database than cromwell's default in memory database. This allows us to use call-caching i.e. detect when a job has been run in the past so that it doesn't have to re-compute results. This is a great way to save time if your pipeline crashes for whatever reason after a couple of hours/days. The successful tasks will be stored in the database so they don't need to be re-computed, you just need to compute again what crashed and everything that should come after the crash.
 
-The other folders are are ready to implement workflows which have been tested in our HPC. You don't need to modify anything there, they are to go !
+The other folders are ready to implement workflows which have been tested in our HPC.
 
 
 Happy coding ! :sunglasses:
