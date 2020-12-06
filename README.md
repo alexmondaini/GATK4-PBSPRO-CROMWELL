@@ -1,5 +1,5 @@
 ## GATK4-PBSPRO-CROMWELL for HKU 
-This repo should help colleagues at HKU to run workflows written in [wdl](https://github.com/openwdl/wdl/blob/main/versions/1.0/SPEC.md) using a workflow management system (Cromwell). 
+This repo should help colleagues at HKU to run workflows written in [wdl](https://github.com/openwdl/wdl/blob/main/versions/1.0/SPEC.md) using a workflow management system ([Cromwell](https://cromwell.readthedocs.io/en/stable/)). 
 
 - [my.conf](/my.conf) is the configuration file of the engine (cromwell). You can run jobs with or without Docker using [my.conf](/my.conf), it is up to you and wether you specifiy you want docker or not in the wdl scripts.
 
