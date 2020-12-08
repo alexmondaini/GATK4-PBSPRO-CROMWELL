@@ -1,13 +1,12 @@
 {
-  "ConvertPairedFastQsToUnmappedBamWf.readgroup_name": "NA12878_A",
-  "ConvertPairedFastQsToUnmappedBamWf.sample_name": "NA12878",
-  "ConvertPairedFastQsToUnmappedBamWf.fastq_1": "/groups/cgsd/alexandre/gatk-workflows/seq-format-conversion/inputs/H06JUADXX130110.1.ATCACGAT.20k_interleaved_reads_1.fastq",
-  "ConvertPairedFastQsToUnmappedBamWf.fastq_2": "/groups/cgsd/alexandre/gatk-workflows/seq-format-conversion/inputs/H06JUADXX130110.1.ATCACGAT.20k_interleaved_reads_2.fastq", 
-  "ConvertPairedFastQsToUnmappedBamWf.library_name": "Solexa-NA12878",
+  "ConvertPairedFastQsToUnmappedBamWf.readgroup_name": "validation_set",
+  "ConvertPairedFastQsToUnmappedBamWf.sample_name": "LeungSY_Targeted_SS-190528-01a",
+  "ConvertPairedFastQsToUnmappedBamWf.fastq_1": "/groups/cgsd/alexandre/gatk-workflows/seq-format-conversion/inputs/paired_fastq/pfg022G_1.fastq.gz",
+  "ConvertPairedFastQsToUnmappedBamWf.fastq_2": "/groups/cgsd/alexandre/gatk-workflows/seq-format-conversion/inputs/paired_fastq/pfg022G_2.fastq.gz", 
+  "ConvertPairedFastQsToUnmappedBamWf.library_name": "Illumina-CPOS",
   "ConvertPairedFastQsToUnmappedBamWf.platform_unit": "H06HDADXX130110.2.ATCACGAT",
-  "ConvertPairedFastQsToUnmappedBamWf.run_date": "2016-09-01T02:00:00+0200",
+  "ConvertPairedFastQsToUnmappedBamWf.run_date": "2019-06-29T02:00:00+0200",
   "ConvertPairedFastQsToUnmappedBamWf.platform_name": "illumina",
-  "ConvertPairedFastQsToUnmappedBamWf.sequencing_center": "BI",
-
+  "ConvertPairedFastQsToUnmappedBamWf.sequencing_center": "CPOS",
   "ConvertPairedFastQsToUnmappedBamWf.make_fofn": true  
 }

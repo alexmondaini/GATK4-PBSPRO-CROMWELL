@@ -1,0 +1,184 @@
+[2020-12-08 10:02:06,30] [info] Running with database db.url = jdbc:hsqldb:mem:1262d3dc-425b-4982-827a-43035a013212;shutdown=false;hsqldb.tx=mvcc
+[2020-12-08 10:02:13,93] [info] Running migration RenameWorkflowOptionsInMetadata with a read batch size of 100000 and a write batch size of 100000
+[2020-12-08 10:02:13,95] [info] [RenameWorkflowOptionsInMetadata] 100%
+[2020-12-08 10:02:14,04] [info] Running with database db.url = jdbc:hsqldb:mem:d08dd060-4c60-4156-a857-8ea9d44e5d55;shutdown=false;hsqldb.tx=mvcc
+[2020-12-08 10:02:14,46] [info] Slf4jLogger started
+[2020-12-08 10:02:14,64] [info] Workflow heartbeat configuration:
+{
+  "cromwellId" : "cromid-8467df7",
+  "heartbeatInterval" : "2 minutes",
+  "ttl" : "10 minutes",
+  "failureShutdownDuration" : "5 minutes",
+  "writeBatchSize" : 10000,
+  "writeThreshold" : 10000
+}
+[2020-12-08 10:02:14,67] [info] Metadata summary refreshing every 1 second.
+[2020-12-08 10:02:14,69] [info] KvWriteActor configured to flush with batch size 200 and process rate 5 seconds.
+[2020-12-08 10:02:14,69] [info] WriteMetadataActor configured to flush with batch size 200 and process rate 5 seconds.
+[2020-12-08 10:02:14,70] [info] CallCacheWriteActor configured to flush with batch size 100 and process rate 3 seconds.
+[2020-12-08 10:02:14,70] [[38;5;220mwarn[0m] 'docker.hash-lookup.gcr-api-queries-per-100-seconds' is being deprecated, use 'docker.hash-lookup.gcr.throttle' instead (see reference.conf)
+[2020-12-08 10:02:15,03] [info] JobExecutionTokenDispenser - Distribution rate: 50 per 1 seconds.
+[2020-12-08 10:02:15,06] [info] SingleWorkflowRunnerActor: Version 53.1
+[2020-12-08 10:02:15,06] [info] SingleWorkflowRunnerActor: Submitting workflow
+[2020-12-08 10:02:15,10] [info] Unspecified type (Unspecified version) workflow a84b28be-ba33-4e93-b64f-989e041a9328 submitted
+[2020-12-08 10:02:15,13] [info] SingleWorkflowRunnerActor: Workflow submitted [38;5;2ma84b28be-ba33-4e93-b64f-989e041a9328[0m
+[2020-12-08 10:02:15,14] [info] 1 new workflows fetched by cromid-8467df7: a84b28be-ba33-4e93-b64f-989e041a9328
+[2020-12-08 10:02:15,14] [info] WorkflowManagerActor Starting workflow [38;5;2ma84b28be-ba33-4e93-b64f-989e041a9328[0m
+[2020-12-08 10:02:15,15] [info] WorkflowManagerActor Successfully started WorkflowActor-a84b28be-ba33-4e93-b64f-989e041a9328
+[2020-12-08 10:02:15,15] [info] Retrieved 1 workflows from the WorkflowStoreActor
+[2020-12-08 10:02:15,17] [info] WorkflowStoreHeartbeatWriteActor configured to flush with batch size 10000 and process rate 2 minutes.
+[2020-12-08 10:02:15,26] [info] MaterializeWorkflowDescriptorActor [[38;5;2ma84b28be[0m]: Parsing workflow as WDL 1.0
+[2020-12-08 10:02:16,33] [info] MaterializeWorkflowDescriptorActor [[38;5;2ma84b28be[0m]: Call-to-Backend assignments: ConvertPairedFastQsToUnmappedBamWf.PairedFastQsToUnmappedBAM -> PBSPRO, ConvertPairedFastQsToUnmappedBamWf.CreateFoFN -> PBSPRO
+[2020-12-08 10:02:18,73] [info] WorkflowExecutionActor-a84b28be-ba33-4e93-b64f-989e041a9328 [[38;5;2ma84b28be[0m]: Starting ConvertPairedFastQsToUnmappedBamWf.PairedFastQsToUnmappedBAM
+[2020-12-08 10:02:19,22] [info] Assigned new job execution tokens to the following groups: a84b28be: 1
+[2020-12-08 10:02:20,04] [info] Not triggering log of token queue status. Effective log interval = None
+[2020-12-08 10:02:22,33] [info] DispatchedConfigAsyncJobExecutionActor [[38;5;2ma84b28be[0mConvertPairedFastQsToUnmappedBamWf.PairedFastQsToUnmappedBAM:NA:1]: [38;5;5m/gatk/gatk --java-options "-Xmx6g" \
+FastqToSam \
+--FASTQ /cromwell-executions/ConvertPairedFastQsToUnmappedBamWf/a84b28be-ba33-4e93-b64f-989e041a9328/call-PairedFastQsToUnmappedBAM/inputs/-250690370/pfg022G_1.fastq.gz \
+--FASTQ2 /cromwell-executions/ConvertPairedFastQsToUnmappedBamWf/a84b28be-ba33-4e93-b64f-989e041a9328/call-PairedFastQsToUnmappedBAM/inputs/-250690370/pfg022G_2.fastq.gz \
+--OUTPUT validation_set.unmapped.bam \
+--READ_GROUP_NAME validation_set \
+--SAMPLE_NAME LeungSY_Targeted_SS-190528-01a \
+--LIBRARY_NAME Illumina-CPOS \
+--PLATFORM_UNIT H06HDADXX130110.2.ATCACGAT \
+--RUN_DATE 2019-06-29T02:00:00+0200 \
+--PLATFORM illumina \
+--SEQUENCING_CENTER CPOS[0m
+[2020-12-08 10:02:22,37] [info] DispatchedConfigAsyncJobExecutionActor [[38;5;2ma84b28be[0mConvertPairedFastQsToUnmappedBamWf.PairedFastQsToUnmappedBAM:NA:1]: executing:        
+module load singularity
+
+# if you prefer to have singularity cache in $HOME, delete the following two lines
+
+mkdir -p /groups/cgsd/$USER/.singularity
+export SINGULARITY_CACHEDIR=/groups/cgsd/$USER/.singularity
+
+# Singularity cachedir check if it exists, if not create one        
+
+if [ -z $SINGULARITY_CACHEDIR ];
+  then CACHE_DIR=$HOME/.singularity/cache
+  else CACHE_DIR=$SINGULARITY_CACHEDIR
+fi
+
+# make sure cache dir exists, so we can create a lock file with flock command
+
+mkdir -p $CACHE_DIR
+LOCK_FILE=$CACHE_DIR/singularity_pull_flock
+
+# Create an exclusive filelock with flock.
+
+flock --exclusive --timeout 900 $LOCK_FILE \
+singularity exec  -C docker://broadinstitute/gatk@sha256:33574f446ac991f77bac125fbf6a2340e6db972a3f334e6c61bff94740165938 \
+echo "successfully pulled broadinstitute/gatk@sha256:33574f446ac991f77bac125fbf6a2340e6db972a3f334e6c61bff94740165938!"
+
+# Submit the script 
+qsub \
+-W block=true \
+-k oed \
+-v SINGULARITY_CACHEDIR \
+-N cromwell_a84b28be_PairedFastQsToUnmappedBAM \
+-l walltime=240:00:00 \
+-q cgsd \
+-l ncpus=4 \
+-l mem=8gb \
+-o /groups/cgsd/alexandre/cromwell-executions/ConvertPairedFastQsToUnmappedBamWf/a84b28be-ba33-4e93-b64f-989e041a9328/call-PairedFastQsToUnmappedBAM/execution/stdout \
+-e /groups/cgsd/alexandre/cromwell-executions/ConvertPairedFastQsToUnmappedBamWf/a84b28be-ba33-4e93-b64f-989e041a9328/call-PairedFastQsToUnmappedBAM/execution/stderr \
+-- /software/singularity/3.6.3/bin/singularity exec -C --bind /groups/cgsd/alexandre/cromwell-executions/ConvertPairedFastQsToUnmappedBamWf/a84b28be-ba33-4e93-b64f-989e041a9328/call-PairedFastQsToUnmappedBAM:/cromwell-executions/ConvertPairedFastQsToUnmappedBamWf/a84b28be-ba33-4e93-b64f-989e041a9328/call-PairedFastQsToUnmappedBAM docker://broadinstitute/gatk@sha256:33574f446ac991f77bac125fbf6a2340e6db972a3f334e6c61bff94740165938 /bin/bash /cromwell-executions/ConvertPairedFastQsToUnmappedBamWf/a84b28be-ba33-4e93-b64f-989e041a9328/call-PairedFastQsToUnmappedBAM/execution/script
+[2020-12-08 10:08:56,27] [info] DispatchedConfigAsyncJobExecutionActor [[38;5;2ma84b28be[0mConvertPairedFastQsToUnmappedBamWf.PairedFastQsToUnmappedBAM:NA:1]: job id: 256
+[2020-12-08 10:08:56,32] [info] DispatchedConfigAsyncJobExecutionActor [[38;5;2ma84b28be[0mConvertPairedFastQsToUnmappedBamWf.PairedFastQsToUnmappedBAM:NA:1]: Cromwell will watch for an rc file but will *not* double-check whether this job is actually alive (unless Cromwell restarts)
+[2020-12-08 10:08:56,32] [info] DispatchedConfigAsyncJobExecutionActor [[38;5;2ma84b28be[0mConvertPairedFastQsToUnmappedBamWf.PairedFastQsToUnmappedBAM:NA:1]: Status change from - to Running
+[2020-12-08 10:08:57,89] [info] DispatchedConfigAsyncJobExecutionActor [[38;5;2ma84b28be[0mConvertPairedFastQsToUnmappedBamWf.PairedFastQsToUnmappedBAM:NA:1]: Status change from Running to Done
+[2020-12-08 10:08:59,60] [info] WorkflowExecutionActor-a84b28be-ba33-4e93-b64f-989e041a9328 [[38;5;2ma84b28be[0m]: Starting ConvertPairedFastQsToUnmappedBamWf.CreateFoFN
+[2020-12-08 10:09:00,08] [info] Assigned new job execution tokens to the following groups: a84b28be: 1
+[2020-12-08 10:09:02,54] [info] DispatchedConfigAsyncJobExecutionActor [[38;5;2ma84b28be[0mConvertPairedFastQsToUnmappedBamWf.CreateFoFN:NA:1]: [38;5;5mecho /groups/cgsd/alexandre/cromwell-executions/ConvertPairedFastQsToUnmappedBamWf/a84b28be-ba33-4e93-b64f-989e041a9328/call-PairedFastQsToUnmappedBAM/execution/validation_set.unmapped.bam > LeungSY_Targeted_SS-190528-01a.ubam.list[0m
+[2020-12-08 10:09:02,55] [info] DispatchedConfigAsyncJobExecutionActor [[38;5;2ma84b28be[0mConvertPairedFastQsToUnmappedBamWf.CreateFoFN:NA:1]: executing:        
+module load singularity
+
+# if you prefer to have singularity cache in $HOME, delete the following two lines
+
+mkdir -p /groups/cgsd/$USER/.singularity
+export SINGULARITY_CACHEDIR=/groups/cgsd/$USER/.singularity
+
+# Singularity cachedir check if it exists, if not create one        
+
+if [ -z $SINGULARITY_CACHEDIR ];
+  then CACHE_DIR=$HOME/.singularity/cache
+  else CACHE_DIR=$SINGULARITY_CACHEDIR
+fi
+
+# make sure cache dir exists, so we can create a lock file with flock command
+
+mkdir -p $CACHE_DIR
+LOCK_FILE=$CACHE_DIR/singularity_pull_flock
+
+# Create an exclusive filelock with flock.
+
+flock --exclusive --timeout 900 $LOCK_FILE \
+singularity exec  -C docker://ubuntu@sha256:1d7b639619bdca2d008eca2d5293e3c43ff84cbee597ff76de3b7a7de3e84956 \
+echo "successfully pulled ubuntu@sha256:1d7b639619bdca2d008eca2d5293e3c43ff84cbee597ff76de3b7a7de3e84956!"
+
+# Submit the script 
+qsub \
+-W block=true \
+-k oed \
+-v SINGULARITY_CACHEDIR \
+-N cromwell_a84b28be_CreateFoFN \
+-l walltime=240:00:00 \
+-q cgsd \
+-l ncpus=4 \
+-l mem=6gb \
+-o /groups/cgsd/alexandre/cromwell-executions/ConvertPairedFastQsToUnmappedBamWf/a84b28be-ba33-4e93-b64f-989e041a9328/call-CreateFoFN/execution/stdout \
+-e /groups/cgsd/alexandre/cromwell-executions/ConvertPairedFastQsToUnmappedBamWf/a84b28be-ba33-4e93-b64f-989e041a9328/call-CreateFoFN/execution/stderr \
+-- /software/singularity/3.6.3/bin/singularity exec -C --bind /groups/cgsd/alexandre/cromwell-executions/ConvertPairedFastQsToUnmappedBamWf/a84b28be-ba33-4e93-b64f-989e041a9328/call-CreateFoFN:/cromwell-executions/ConvertPairedFastQsToUnmappedBamWf/a84b28be-ba33-4e93-b64f-989e041a9328/call-CreateFoFN docker://ubuntu@sha256:1d7b639619bdca2d008eca2d5293e3c43ff84cbee597ff76de3b7a7de3e84956 /bin/bash /cromwell-executions/ConvertPairedFastQsToUnmappedBamWf/a84b28be-ba33-4e93-b64f-989e041a9328/call-CreateFoFN/execution/script
+[2020-12-08 10:09:21,36] [info] DispatchedConfigAsyncJobExecutionActor [[38;5;2ma84b28be[0mConvertPairedFastQsToUnmappedBamWf.CreateFoFN:NA:1]: job id: 256
+[2020-12-08 10:09:21,36] [info] DispatchedConfigAsyncJobExecutionActor [[38;5;2ma84b28be[0mConvertPairedFastQsToUnmappedBamWf.CreateFoFN:NA:1]: Cromwell will watch for an rc file but will *not* double-check whether this job is actually alive (unless Cromwell restarts)
+[2020-12-08 10:09:21,36] [info] DispatchedConfigAsyncJobExecutionActor [[38;5;2ma84b28be[0mConvertPairedFastQsToUnmappedBamWf.CreateFoFN:NA:1]: Status change from - to Running
+[2020-12-08 10:09:22,44] [info] DispatchedConfigAsyncJobExecutionActor [[38;5;2ma84b28be[0mConvertPairedFastQsToUnmappedBamWf.CreateFoFN:NA:1]: Status change from Running to Done
+[2020-12-08 10:09:25,11] [info] WorkflowExecutionActor-a84b28be-ba33-4e93-b64f-989e041a9328 [[38;5;2ma84b28be[0m]: Workflow ConvertPairedFastQsToUnmappedBamWf complete. Final Outputs:
+{
+  "ConvertPairedFastQsToUnmappedBamWf.output_unmapped_bam": "/groups/cgsd/alexandre/cromwell-executions/ConvertPairedFastQsToUnmappedBamWf/a84b28be-ba33-4e93-b64f-989e041a9328/call-PairedFastQsToUnmappedBAM/execution/validation_set.unmapped.bam",
+  "ConvertPairedFastQsToUnmappedBamWf.unmapped_bam_list": "/groups/cgsd/alexandre/cromwell-executions/ConvertPairedFastQsToUnmappedBamWf/a84b28be-ba33-4e93-b64f-989e041a9328/call-CreateFoFN/execution/LeungSY_Targeted_SS-190528-01a.ubam.list"
+}
+[2020-12-08 10:09:25,14] [info] WorkflowManagerActor WorkflowActor-a84b28be-ba33-4e93-b64f-989e041a9328 is in a terminal state: WorkflowSucceededState
+[2020-12-08 10:10:13,34] [info] SingleWorkflowRunnerActor workflow finished with status 'Succeeded'.
+{
+  "outputs": {
+    "ConvertPairedFastQsToUnmappedBamWf.unmapped_bam_list": "/groups/cgsd/alexandre/cromwell-executions/ConvertPairedFastQsToUnmappedBamWf/a84b28be-ba33-4e93-b64f-989e041a9328/call-CreateFoFN/execution/LeungSY_Targeted_SS-190528-01a.ubam.list",
+    "ConvertPairedFastQsToUnmappedBamWf.output_unmapped_bam": "/groups/cgsd/alexandre/cromwell-executions/ConvertPairedFastQsToUnmappedBamWf/a84b28be-ba33-4e93-b64f-989e041a9328/call-PairedFastQsToUnmappedBAM/execution/validation_set.unmapped.bam"
+  },
+  "id": "a84b28be-ba33-4e93-b64f-989e041a9328"
+}
+[2020-12-08 10:10:16,62] [info] Workflow polling stopped
+[2020-12-08 10:10:16,63] [info] Shutting down WorkflowStoreActor - Timeout = 5 seconds
+[2020-12-08 10:10:16,63] [info] Aborting all running workflows.
+[2020-12-08 10:10:16,63] [info] WorkflowStoreActor stopped
+[2020-12-08 10:10:16,64] [info] 0 workflows released by cromid-8467df7
+[2020-12-08 10:10:16,64] [info] Shutting down WorkflowLogCopyRouter - Timeout = 5 seconds
+[2020-12-08 10:10:16,64] [info] Shutting down JobExecutionTokenDispenser - Timeout = 5 seconds
+[2020-12-08 10:10:16,64] [info] JobExecutionTokenDispenser stopped
+[2020-12-08 10:10:16,65] [info] WorkflowLogCopyRouter stopped
+[2020-12-08 10:10:16,65] [info] Shutting down WorkflowManagerActor - Timeout = 3600 seconds
+[2020-12-08 10:10:16,65] [info] WorkflowManagerActor All workflows finished
+[2020-12-08 10:10:16,65] [info] WorkflowManagerActor stopped
+[2020-12-08 10:10:16,86] [info] Connection pools shut down
+[2020-12-08 10:10:16,86] [info] Shutting down CallCacheWriteActor - Timeout = 1800 seconds
+[2020-12-08 10:10:16,86] [info] Shutting down DockerHashActor - Timeout = 1800 seconds
+[2020-12-08 10:10:16,86] [info] Shutting down SubWorkflowStoreActor - Timeout = 1800 seconds
+[2020-12-08 10:10:16,86] [info] Shutting down ServiceRegistryActor - Timeout = 1800 seconds
+[2020-12-08 10:10:16,86] [info] Shutting down JobStoreActor - Timeout = 1800 seconds
+[2020-12-08 10:10:16,86] [info] Shutting down IoProxy - Timeout = 1800 seconds
+[2020-12-08 10:10:16,86] [info] CallCacheWriteActor Shutting down: 0 queued messages to process
+[2020-12-08 10:10:16,86] [info] SubWorkflowStoreActor stopped
+[2020-12-08 10:10:16,86] [info] CallCacheWriteActor stopped
+[2020-12-08 10:10:16,86] [info] KvWriteActor Shutting down: 0 queued messages to process
+[2020-12-08 10:10:16,86] [info] WriteMetadataActor Shutting down: 0 queued messages to process
+[2020-12-08 10:10:16,86] [info] JobStoreActor stopped
+[2020-12-08 10:10:16,86] [info] IoProxy stopped
+[2020-12-08 10:10:16,86] [info] DockerHashActor stopped
+[2020-12-08 10:10:16,86] [info] ServiceRegistryActor stopped
+[2020-12-08 10:10:16,88] [info] Shutting down connection pool: curAllocated=0 idleQueues.size=0 waitQueue.size=0 maxWaitQueueLimit=256 closed=false
+[2020-12-08 10:10:16,89] [info] Shutting down connection pool: curAllocated=0 idleQueues.size=0 waitQueue.size=0 maxWaitQueueLimit=256 closed=false
+[2020-12-08 10:10:16,89] [info] Shutting down connection pool: curAllocated=1 idleQueues.size=1 waitQueue.size=0 maxWaitQueueLimit=256 closed=false
+[2020-12-08 10:10:16,89] [info] Shutting down connection pool: curAllocated=0 idleQueues.size=0 waitQueue.size=0 maxWaitQueueLimit=256 closed=false
+[2020-12-08 10:10:16,89] [info] Database closed
+[2020-12-08 10:10:16,89] [info] Stream materializer shut down
+[2020-12-08 10:10:16,89] [info] WDL HTTP import resolver closed

@@ -21,17 +21,6 @@ version 1.0
 ## Cromwell version support 
 ## - Successfully tested on v47
 ## - Does not work on versions < v23 due to output syntax
-##
-## Runtime parameters are optimized for Broad's Google Cloud Platform implementation. 
-## For program versions, see docker containers. 
-##
-## LICENSING : 
-## This script is released under the WDL source code license (BSD-3) (see LICENSE in 
-## https://github.com/broadinstitute/wdl). Note however that the programs it calls may 
-## be subject to different licenses. Users are responsible for checking that they are
-## authorized to run all programs before running this script. Please see the docker 
-## page at https://hub.docker.com/r/broadinstitute/genomes-in-the-cloud/ for detailed
-## licensing information pertaining to the included programs.
 
 # WORKFLOW DEFINITION
 workflow ConvertPairedFastQsToUnmappedBamWf {
@@ -104,13 +93,12 @@ task PairedFastQsToUnmappedBAM {
     String gatk_path
 
     # Runtime parameters
-    #Int addtional_disk_space_gb = 10
-    Int machine_mem_gb = 7
-    #Int preemptible_attempts = 3
+    Int machine_mem_gb = 8
+    Int n_cores = 4
     String docker
   }
-    Int command_mem_gb = machine_mem_gb - 1
-    #Int disk_space_gb = ceil((size(fastq_1, "GB") + size(fastq_2, "GB")) * 2 ) + addtional_disk_space_gb
+    Int command_mem_gb = machine_mem_gb - 2
+
   command {
     ~{gatk_path} --java-options "-Xmx~{command_mem_gb}g" \
     FastqToSam \
@@ -128,8 +116,7 @@ task PairedFastQsToUnmappedBAM {
   runtime {
     docker: docker
     memory: machine_mem_gb + " GB"
-    #disks: "local-disk " + disk_space_gb + " HDD"
-    #preemptible: preemptible_attempts
+    cpu: n_cores
   }
   output {
     File output_unmapped_bam = "~{readgroup_name}.unmapped.bam"
