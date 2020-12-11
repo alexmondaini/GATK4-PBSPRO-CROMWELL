@@ -1,0 +1,15 @@
+{
+    "ConvertPairedFastQsToUnmappedBamWf.platform_name": "illumina",
+    "ConvertPairedFastQsToUnmappedBamWf.samples": [
+      {"name":"pfg022G","readgroup":"pfg022G","platform_unit":"pfg022G","fastq_1":"/groups/cgsd/alexandre/gatk-workflows/ubam/pfg022G_1.fastq.gz","fastq_2":"/groups/cgsd/alexandre/gatk-workflows/ubam/pfg022G_2.fastq.gz","library":"pfg022G"},
+      {"name":"pfg022T","readgroup":"pfg022T","platform_unit":"pfg022T","fastq_1":"/groups/cgsd/alexandre/gatk-workflows/ubam/pfg022T_1.fastq.gz","fastq_2":"/groups/cgsd/alexandre/gatk-workflows/ubam/pfg022T_2.fastq.gz","library":"pfg022T"},
+      {"name":"pfg068T","readgroup":"pfg068T","platform_unit":"pfg068T","fastq_1":"/groups/cgsd/alexandre/gatk-workflows/ubam/pfg068T_1.fastq.gz","fastq_2":"/groups/cgsd/alexandre/gatk-workflows/ubam/pfg068T_2.fastq.gz","library":"pfg068T"},
+      {"name":"pfg130T","readgroup":"pfg130T","platform_unit":"pfg130T","fastq_1":"/groups/cgsd/alexandre/gatk-workflows/ubam/pfg130T_1.fastq.gz","fastq_2":"/groups/cgsd/alexandre/gatk-workflows/ubam/pfg130T_2.fastq.gz","library":"pfg130T"},
+      {"name":"pfg181G","readgroup":"pfg181G","platform_unit":"pfg181G","fastq_1":"/groups/cgsd/alexandre/gatk-workflows/ubam/pfg181G_1.fastq.gz","fastq_2":"/groups/cgsd/alexandre/gatk-workflows/ubam/pfg181G_2.fastq.gz","library":"pfg181G"},
+      {"name":"pfg181T","readgroup":"pfg181T","platform_unit":"pfg181T","fastq_1":"/groups/cgsd/alexandre/gatk-workflows/ubam/pfg181T_1.fastq.gz","fastq_2":"/groups/cgsd/alexandre/gatk-workflows/ubam/pfg181T_2.fastq.gz","library":"pfg181T"},
+      {"name":"pfg424G","readgroup":"pfg424G","platform_unit":"pfg424G","fastq_1":"/groups/cgsd/alexandre/gatk-workflows/ubam/pfg424G_1.fastq.gz","fastq_2":"/groups/cgsd/alexandre/gatk-workflows/ubam/pfg424G_2.fastq.gz","library":"pfg424G"},
+      {"name":"pfg424T","readgroup":"pfg424T","platform_unit":"pfg424T","fastq_1":"/groups/cgsd/alexandre/gatk-workflows/ubam/pfg424T_1.fastq.gz","fastq_2":"/groups/cgsd/alexandre/gatk-workflows/ubam/pfg424T_2.fastq.gz","library":"pfg424T"}
+    ],
+    "ConvertPairedFastQsToUnmappedBamWf.sequencing_center": "CGS"
+  }
+  

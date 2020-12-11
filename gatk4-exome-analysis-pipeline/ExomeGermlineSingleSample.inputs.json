@@ -1,15 +1,14 @@
 {
   "ExomeGermlineSingleSample.sample_and_unmapped_bams": {
-    "final_gvcf_base_name": "HG00133.GRCh38DH.exome",
+    "final_gvcf_base_name": "pfg022G.GRCh38DH.exome",
     "unmapped_bam_suffix": ".unmapped.bam",
-    "flowcell_unmapped_bams": ["/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/SRR099969.unmapped.bam"],
-    "sample_name": "HG00133",
-    "base_file_name": "HG00133.GRCh38DH.exome"
+    "flowcell_unmapped_bams": ["/groups/cgsd/alexandre/gatk-workflows/ubam/pfg022G.unmapped.bam"],
+    "sample_name": "pfg022G",
+    "base_file_name": "pfg022G.GRCh38DH.exome"
   },
-
   "ExomeGermlineSingleSample.references": {
     "break_bands_at_multiples_of": 1000000,
-    "calling_interval_list": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/exome_calling_regions.v1.interval_list",
+    "calling_interval_list": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Basic_Core_xGen_MSI_TERT_HPV_EBV_hg38_sorted_merge.bed",
     "dbsnp_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
     "dbsnp_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
     "reference_fasta": {
@@ -37,13 +36,11 @@
     "evaluation_interval_list": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/exome_evaluation_regions.v1.interval_list",
     "haplotype_database_file": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.haplotype_database.txt"
   },
-
   "ExomeGermlineSingleSample.scatter_settings": {
     "haplotype_scatter_count": 10,
     "break_bands_at_multiples_of": 0
   },
-
-  "ExomeGermlineSingleSample.target_interval_list": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/exome_calling_regions.v1.interval_list",
-  "ExomeGermlineSingleSample.bait_interval_list": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/exome_calling_regions.v1.interval_list",
+  "ExomeGermlineSingleSample.target_interval_list": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Basic_Core_xGen_MSI_TERT_HPV_EBV_hg38_sorted_merge.bed",
+  "ExomeGermlineSingleSample.bait_interval_list": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Basic_Core_xGen_MSI_TERT_HPV_EBV_hg38_sorted_merge.bed",
   "ExomeGermlineSingleSample.bait_set_name": "whole_exome_illumina_coding_v1"
 }

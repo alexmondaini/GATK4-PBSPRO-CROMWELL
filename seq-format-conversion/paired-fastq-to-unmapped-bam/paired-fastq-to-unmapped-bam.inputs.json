@@ -1,12 +1,16 @@
 {
-  "ConvertPairedFastQsToUnmappedBamWf.readgroup_name": "validation_set",
-  "ConvertPairedFastQsToUnmappedBamWf.sample_name": "LeungSY_Targeted_SS-190528-01a",
-  "ConvertPairedFastQsToUnmappedBamWf.fastq_1": "/groups/cgsd/alexandre/gatk-workflows/seq-format-conversion/inputs/paired_fastq/pfg022G_1.fastq.gz",
-  "ConvertPairedFastQsToUnmappedBamWf.fastq_2": "/groups/cgsd/alexandre/gatk-workflows/seq-format-conversion/inputs/paired_fastq/pfg022G_2.fastq.gz", 
-  "ConvertPairedFastQsToUnmappedBamWf.library_name": "Illumina-CPOS",
-  "ConvertPairedFastQsToUnmappedBamWf.platform_unit": "H06HDADXX130110.2.ATCACGAT",
-  "ConvertPairedFastQsToUnmappedBamWf.run_date": "2019-06-29T02:00:00+0200",
-  "ConvertPairedFastQsToUnmappedBamWf.platform_name": "illumina",
-  "ConvertPairedFastQsToUnmappedBamWf.sequencing_center": "CPOS",
-  "ConvertPairedFastQsToUnmappedBamWf.make_fofn": true  
+  "ConvertPairedFastQsToUnmappedBamWf.make_fofn": "Boolean (optional, default = false)",
+  "ConvertPairedFastQsToUnmappedBamWf.sample_name": "String",
+  "ConvertPairedFastQsToUnmappedBamWf.platform_name": "String",
+  "ConvertPairedFastQsToUnmappedBamWf.gatk_docker": "String (optional, default = \"broadinstitute/gatk:latest\")",
+  "ConvertPairedFastQsToUnmappedBamWf.run_date": "String",
+  "ConvertPairedFastQsToUnmappedBamWf.fastq_2": "String",
+  "ConvertPairedFastQsToUnmappedBamWf.readgroup_name": "String",
+  "ConvertPairedFastQsToUnmappedBamWf.PairedFastQsToUnmappedBAM.machine_mem_gb": "Int (optional, default = 7)",
+  "ConvertPairedFastQsToUnmappedBamWf.platform_unit": "String",
+  "ConvertPairedFastQsToUnmappedBamWf.fastq_1": "String",
+  "ConvertPairedFastQsToUnmappedBamWf.library_name": "String",
+  "ConvertPairedFastQsToUnmappedBamWf.gatk_path": "String (optional, default = \"/gatk/gatk\")",
+  "ConvertPairedFastQsToUnmappedBamWf.sequencing_center": "String"
 }
+
