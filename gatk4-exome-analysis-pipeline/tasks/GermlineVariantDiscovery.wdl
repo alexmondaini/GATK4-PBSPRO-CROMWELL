@@ -44,10 +44,10 @@ task HaplotypeCaller_GATK35_GVCF {
   # Using PrintReads is a temporary solution until we update HaploypeCaller to use GATK4. Once that is done,
   # HaplotypeCaller can stream the required intervals directly from the cloud.
   command {
-    /usr/gitc/gatk4/gatk-launch --javaOptions "-Xmx2g" \
+    /usr/gitc/gatk4/gatk-launch --java-options "-Xmx2g" \
       PrintReads \
       -I ~{input_bam} \
-      --interval_padding 500 \
+      --interval-padding 500 \
       -L ~{interval_list} \
       -O local.sharded.bam \
     && \
@@ -66,7 +66,7 @@ task HaplotypeCaller_GATK35_GVCF {
       --read_filter OverclippedRead
   }
   runtime {
-    docker: "us.gcr.io/broad-gotc-prod/genomes-in-the-cloud:2.4.3-1564508330"
+    docker: "us.gcr.io/broad-gotc-prod/genomes-in-the-cloud:2.4.7-1603303710"
     #preemptible: preemptible_tries
     memory: "10 GB"
     cpu: 1
@@ -92,7 +92,7 @@ task HaplotypeCaller_GATK4_VCF {
     Boolean make_bamout
     #Int preemptible_tries
     Int hc_scatter
-    String gatk_docker = "us.gcr.io/broad-gatk/gatk:4.0.10.1"
+    String gatk_docker = "us.gcr.io/broad-gatk/gatk:4.1.8.0"
   }
 
   String output_suffix = if make_gvcf then ".g.vcf.gz" else ".vcf.gz"
@@ -119,7 +119,6 @@ task HaplotypeCaller_GATK4_VCF {
       -O ~{output_file_name} \
       -contamination ~{default=0 contamination} \
       -G StandardAnnotation -G StandardHCAnnotation ~{true="-G AS_StandardAnnotation" false="" make_gvcf} \
-      -new-qual \
       -GQB 10 -GQB 20 -GQB 30 -GQB 40 -GQB 50 -GQB 60 -GQB 70 -GQB 80 -GQB 90 \
       ~{true="-ERC GVCF" false="" make_gvcf} \
       ~{bamout_arg}
@@ -157,13 +156,13 @@ task MergeVCFs {
   # Using MergeVcfs instead of GatherVcfs so we can create indices
   # See https://github.com/broadinstitute/picard/issues/789 for relevant GatherVcfs ticket
   command {
-    java -Xmx2000m -jar /usr/gitc/picard.jar \
+    java -Xmx2000m -jar /usr/picard/picard.jar \
       MergeVcfs \
       INPUT=~{sep=' INPUT=' input_vcfs} \
       OUTPUT=~{output_vcf_name}
   }
   runtime {
-    docker: "us.gcr.io/broad-gotc-prod/genomes-in-the-cloud:2.4.3-1564508330"
+    docker: "us.gcr.io/broad-gotc-prod/picard-cloud:2.23.8"
     #preemptible: preemptible_tries
     memory: "3 GB"
     #disks: "local-disk ~{disk_size} HDD"
@@ -181,7 +180,7 @@ task HardFilterVcf {
     String vcf_basename
     File interval_list
     #Int preemptible_tries
-    String gatk_docker = "us.gcr.io/broad-gatk/gatk:4.0.10.1"
+    String gatk_docker = "us.gcr.io/broad-gatk/gatk:4.1.8.0"
   }
 
   #Int disk_size = ceil(2 * size(input_vcf, "GiB")) + 20
@@ -220,7 +219,7 @@ task CNNScoreVariants {
     File ref_fasta_index
     File ref_dict
     #Int preemptible_tries
-    String gatk_docker = "us.gcr.io/broad-gatk/gatk:4.1.0.0"
+    String gatk_docker = "us.gcr.io/broad-gatk/gatk:4.1.8.0"
   }
 
   #Int disk_size = ceil(size(bamout, "GiB") + size(ref_fasta, "GiB") + (size(input_vcf, "GiB") * 2))
@@ -276,7 +275,7 @@ task FilterVariantTranches {
     File dbsnp_resource_vcf_index
     String info_key
     #Int preemptible_tries
-    String gatk_docker = "us.gcr.io/broad-gatk/gatk:4.1.0.0"
+    String gatk_docker = "us.gcr.io/broad-gatk/gatk:4.1.8.0"
   }
 
   #Int disk_size = ceil(size(hapmap_resource_vcf, "GiB") +

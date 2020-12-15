@@ -15,10 +15,10 @@ version 1.0
 ## page at https://hub.docker.com/r/broadinstitute/genomes-in-the-cloud/ for detailed
 ## licensing information pertaining to the included programs.
 
-import "../tasks/Alignment.wdl" as Alignment
-import "../tasks/BamProcessing.wdl" as Processing
-import "../tasks/Utilities.wdl" as Utils
-import "../structs/DNASeqStructs.wdl" as Structs
+import "Alignment.wdl" as Alignment
+import "BamProcessing.wdl" as Processing
+import "Utilities.wdl" as Utils
+import "DNASeqStructs.wdl" as Structs
 
 workflow SplitLargeReadGroup {
 
@@ -81,5 +81,8 @@ workflow SplitLargeReadGroup {
   }
   output {
     File aligned_bam = GatherMonolithicBamFile.output_bam
+  }
+    meta {
+    allowNestedInputs: true
   }
 }

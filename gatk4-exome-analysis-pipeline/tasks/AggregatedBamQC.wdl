@@ -15,8 +15,8 @@ version 1.0
 ## page at https://hub.docker.com/r/broadinstitute/genomes-in-the-cloud/ for detailed
 ## licensing information pertaining to the included programs.
 
-import "../tasks/Qc.wdl" as QC
-import "../structs/DNASeqStructs.wdl"
+import "Qc.wdl" as QC
+import "DNASeqStructs.wdl"
 
 # WORKFLOW DEFINITION
 workflow AggregatedBamQC {
@@ -105,5 +105,8 @@ input {
 
     File? fingerprint_summary_metrics = CheckFingerprint.summary_metrics
     File? fingerprint_detail_metrics = CheckFingerprint.detail_metrics
+  }
+    meta {
+    allowNestedInputs: true
   }
 }

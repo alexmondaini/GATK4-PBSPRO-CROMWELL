@@ -1,7 +1,7 @@
 version 1.0
 
-import "../tasks/Utilities.wdl" as Utils
-import "../tasks/Qc.wdl" as QC
+import "Utilities.wdl" as Utils
+import "Qc.wdl" as QC
 
 workflow BamToCram {
 
@@ -62,6 +62,9 @@ workflow BamToCram {
      File output_cram_index = ConvertToCram.output_cram_index
      File output_cram_md5 = ConvertToCram.output_cram_md5
      File validate_cram_file_report = ValidateCram.report
+  }
+    meta {
+    allowNestedInputs: true
   }
 }
 

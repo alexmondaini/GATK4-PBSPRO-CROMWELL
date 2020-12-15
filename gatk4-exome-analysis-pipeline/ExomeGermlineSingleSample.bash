@@ -5,8 +5,10 @@
 #PBS -q cgsd
 #PBS -v USER
 module load java
-java -Dconfig.file=/groups/cgsd/$USER/gatk-workflows/db.conf \
+java -Dconfig.file=/groups/cgsd/$USER/gatk-workflows/my.conf \
 -jar /groups/cgsd/$USER/cromwell-53.1.jar run \
 /groups/cgsd/$USER/gatk-workflows/gatk4-exome-analysis-pipeline/ExomeGermlineSingleSample.wdl \
 --inputs \
-/groups/cgsd/$USER/gatk-workflows/gatk4-exome-analysis-pipeline/ExomeGermlineSingleSample.inputs.json
+/groups/cgsd/$USER/gatk-workflows/gatk4-exome-analysis-pipeline/ExomeGermlineSingleSample.inputs.json \
+--imports \
+/groups/cgsd/$USER/gatk-workflows/gatk4-exome-analysis-pipeline/ExomeGermlineSingleSample_v2.2.0.zip

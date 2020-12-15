@@ -1,10 +1,10 @@
 {
   "ExomeGermlineSingleSample.sample_and_unmapped_bams": {
-    "final_gvcf_base_name": "pfg022G.GRCh38DH.exome",
+    "final_gvcf_base_name": "pfg022G.GRCh38DH.targeted",
     "unmapped_bam_suffix": ".unmapped.bam",
     "flowcell_unmapped_bams": ["/groups/cgsd/alexandre/gatk-workflows/ubam/pfg022G.unmapped.bam"],
     "sample_name": "pfg022G",
-    "base_file_name": "pfg022G.GRCh38DH.exome"
+    "base_file_name": "pfg022G.GRCh38DH.targeted"
   },
   "ExomeGermlineSingleSample.references": {
     "break_bands_at_multiples_of": 1000000,
