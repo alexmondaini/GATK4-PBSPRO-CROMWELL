@@ -25,12 +25,6 @@ workflow ValidateBamsWf {
         gatk_path = gatk_path
     }
   }
-
-  call WriteGreeting {
-    input:
-      ready = ValidateBAM.done
-  }
-
   # Outputs that will be retained when execution is complete
   output {
     Array[File] validation_reports = ValidateBAM.validation_report
@@ -73,21 +67,4 @@ task ValidateBAM {
     File validation_report = "${output_name}"
     Boolean done = true
   }
-}
-
-task WriteGreeting {
-    input {
-      Array[Boolean] ready
-    }
-    command {
-        sleep 40
-        echo "Hello World"
-    }
-    runtime {
-        memory: "3 GB"
-        cpu: 4
-    }
-    output {
-        File output_greeting = stdout()
-    }
 }

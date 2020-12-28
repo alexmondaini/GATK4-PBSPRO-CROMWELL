@@ -1,7 +1,7 @@
 version 1.0
 
-import "Utilities.wdl" as Utils
-import "Qc.wdl" as QC
+import "../tasks/Utilities.wdl" as Utils
+import "../tasks/Qc.wdl" as QC
 
 workflow BamToCram {
 

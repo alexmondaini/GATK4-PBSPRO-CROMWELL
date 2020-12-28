@@ -28,13 +28,13 @@ version 1.0
 ## page at https://hub.docker.com/r/broadinstitute/genomes-in-the-cloud/ for detailed
 ## licensing information pertaining to the included programs.
 
-import "UnmappedBamToAlignedBam.wdl" as ToBam
-import "AggregatedBamQC.wdl" as AggregatedQC
-import "Qc.wdl" as QC
-import "BamProcessing.wdl" as Processing
-import "BamToCram.wdl" as ToCram
-import "VariantCalling.wdl" as ToGvcf
-import "DNASeqStructs.wdl"
+import "./tasks/UnmappedBamToAlignedBam.wdl" as ToBam
+import "./tasks/AggregatedBamQC.wdl" as AggregatedQC
+import "./tasks/Qc.wdl" as QC
+import "./tasks/BamProcessing.wdl" as Processing
+import "./tasks/BamToCram.wdl" as ToCram
+import "./tasks/VariantCalling.wdl" as ToGvcf
+import "./structs/DNASeqStructs.wdl"
 
 # WORKFLOW DEFINITION
 workflow ExomeGermlineSingleSample {

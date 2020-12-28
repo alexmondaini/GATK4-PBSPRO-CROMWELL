@@ -517,7 +517,7 @@ task CollectHsMetrics {
   Int rounded_bam_size = ceil(size(input_bam, "GiB") + 0.5)
   Int rounded_memory_size = ceil((if (rounded_bam_size > 10) then 10 else rounded_bam_size) * memory_multiplier)
   Int memory_size = if rounded_memory_size < 7 then 7 else rounded_memory_size
-  Int java_memory_size = (memory_size - 1) * 1000
+  Int java_memory_size = (memory_size - 2) * 1000
 
   # There are probably more metrics we want to generate with this tool
   command {
