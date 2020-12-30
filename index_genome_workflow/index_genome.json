@@ -1,0 +1,4 @@
+{
+  "IndexGenome.fasta": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/nick_data/index_genome_workflow/inputs/Homo_sapiens_assembly38_chrHPV.fasta",
+  "IndexGenome.index_the_reference": false
+}
