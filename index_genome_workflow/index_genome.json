@@ -1,4 +1,6 @@
 {
-  "IndexGenome.fasta": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/nick_data/index_genome_workflow/inputs/Homo_sapiens_assembly38_chrHPV.fasta",
-  "IndexGenome.index_the_reference": false
+  "IndexGenome.index_the_reference": false,
+  "IndexGenome.fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38_HPV/Homo_sapiens_assembly38_chrHPV.fasta",
+  "IndexGenome.create_interval_list": true,
+  "IndexGenome.bed_file": "/groups/cgsd/alexandre/gatk-workflows/src/bed_files/Basic_Core_xGen_MSI_TERT_HPV_EBV_hg38_sorted_merge.bed"
 }

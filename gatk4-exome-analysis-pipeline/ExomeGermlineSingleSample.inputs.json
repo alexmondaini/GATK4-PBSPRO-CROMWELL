@@ -1,10 +1,10 @@
 {
   "ExomeGermlineSingleSample.sample_and_unmapped_bams": {
-    "flowcell_unmapped_bams": ["/groups/cgsd/alexandre/gatk-workflows/ubam/pfg022G.unmapped.bam"],
+    "flowcell_unmapped_bams": ["/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/ubam/pfg022T.unmapped.bam"],
     "unmapped_bam_suffix": ".unmapped.bam",
-    "sample_name": "pfg022G",
-    "base_file_name": "pfg022G.GRCh38DH.target" ,
-    "final_gvcf_base_name": "pfg022G.GRCh38DH.target"
+    "sample_name": "pfg022T",
+    "base_file_name": "pfg022T.GRCh38DH.target" ,
+    "final_gvcf_base_name": "pfg022T.GRCh38DH.target"
   },
   "ExomeGermlineSingleSample.references": {
     "contamination_sites_ud": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/1000g.phase3.100k.b38.vcf.gz.dat.UD",

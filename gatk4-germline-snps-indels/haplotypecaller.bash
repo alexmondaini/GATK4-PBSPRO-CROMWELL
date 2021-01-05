@@ -5,7 +5,7 @@
 #PBS -q cgsd
 module load java
 java -Dconfig.file=/groups/cgsd/$USER/gatk-workflows/my.conf \
--jar /groups/cgsd/$USER/cromwell-53.1.jar run \
+-jar /groups/cgsd/$USER/cromwell-54.jar run \
 /groups/cgsd/$USER/gatk-workflows/gatk4-germline-snps-indels/haplotypecaller-gvcf-gatk4.wdl \
 --inputs \
 /groups/cgsd/$USER/gatk-workflows/gatk4-germline-snps-indels/haplotypecaller-gvcf-gatk4.hg38.wgs.inputs.json

@@ -1,7 +1,22 @@
-# this workflow wil create a <ref.fasta>.fai
-# Index reference sequence in the FASTA format or extract subsequence from indexed reference sequence.
-# link for tools search http://www.htslib.org/doc/samtools-faidx.html
 version 1.0
+
+# this workflow will create a <ref.fasta>.fai with task CreateFaidx and all the other indices files (fasta.alt,fasta.amb,fasta.ann,fasta.bwt,fasta.pac,fasta.sa) with task IndexBWA,
+# after that it will create a sequence dictionary (.dict) from the fasta file with task CreateSequenceDictionary,
+# and once the dictionary is created it will create an interval_list with dictionary output along with a supplied .bed file.
+
+#Inputs:
+# fasta file is compulsory
+# bed file is optional in case you don't need an interval list
+
+#Outputs:
+# (fasta.alt,fasta.amb,fasta.ann,fasta.bwt,fasta.pac,fasta.sa) and (fasta.fai) from fasta
+# (.dict and .interval_list) from bed
+
+# Tools used:
+# samtools v1.9-4
+# bwa v0.7.17
+# picard v2.23.8
+
 
 workflow IndexGenome {
 
@@ -101,13 +116,13 @@ task BedToIntervalList {
         File dict_file
     }
 
-    String bed_basename = basename(bed_file,'.bed')
+    String output_file = basename(dict_file,'.dict') + ".interval_list"
 
     command {
         java -Xmx4g -jar \
         /usr/picard/picard.jar BedToIntervalList \
         I=~{bed_file} \
-        O=~{bed_basename}.interval_list \
+        O=~{output_file} \
         SD=~{dict_file}
     }
     runtime {
@@ -116,6 +131,6 @@ task BedToIntervalList {
         memory: "4 GB"
     }
     output {
-        File output_interval_list = "~{bed_basename}.interval_list"
+        File output_interval_list = output_file
     }
 }
