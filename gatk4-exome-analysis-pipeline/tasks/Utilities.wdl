@@ -63,7 +63,7 @@ task CreateSequenceGroupingTSV {
   runtime {
     #preemptible: preemptible_tries
     docker: "us.gcr.io/broad-gotc-prod/python:2.7"
-    memory: "8 GB"
+    memory: "4 GB"
   }
   output {
     Array[Array[String]] sequence_grouping = read_tsv("sequence_grouping.txt")

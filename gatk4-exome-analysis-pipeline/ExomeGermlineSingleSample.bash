@@ -1,7 +1,7 @@
 #!/bin/bash
-#PBS -N exomesequencing
+#PBS -N job.targetsequencing
 #PBS -l walltime=240:00:00
-#PBS -l select=1:ncpus=4:mem=20gb
+#PBS -l select=1:ncpus=4:mem=4gb
 #PBS -q cgsd
 #PBS -v USER
 module load java
