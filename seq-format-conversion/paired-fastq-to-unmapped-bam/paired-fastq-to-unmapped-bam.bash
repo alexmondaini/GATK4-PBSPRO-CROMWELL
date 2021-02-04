@@ -7,6 +7,6 @@
 module load java
 java -Dconfig.file=/groups/cgsd/$USER/gatk-workflows/my.conf \
 -jar /groups/cgsd/$USER/cromwell-54.jar run \
-/groups/cgsd/$USER/gatk-workflows/seq-format-conversion/paired-fastq-to-unmapped-bam/example.wdl \
+/groups/cgsd/$USER/gatk-workflows/seq-format-conversion/paired-fastq-to-unmapped-bam/paired-fastq-to-unmapped-bam.wdl \
 --inputs \
-/groups/cgsd/$USER/gatk-workflows/seq-format-conversion/paired-fastq-to-unmapped-bam/example.json
+/groups/cgsd/$USER/gatk-workflows/seq-format-conversion/paired-fastq-to-unmapped-bam/paired-fastq-to-unmapped-bam.inputs.json

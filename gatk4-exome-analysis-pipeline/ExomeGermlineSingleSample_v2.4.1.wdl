@@ -39,7 +39,8 @@ import "./structs/DNASeqStructs.wdl"
 # WORKFLOW DEFINITION
 workflow ExomeGermlineSingleSample {
 
-  String pipeline_version = "2.2.0"
+
+  String pipeline_version = "2.4.1"
 
   input {
     #PapiSettings papi_settings
@@ -52,7 +53,7 @@ workflow ExomeGermlineSingleSample {
 
     File target_interval_list
     File bait_interval_list
-    File bait_set_name
+    String bait_set_name
 
     Boolean provide_bam_output = false
   }
@@ -209,7 +210,7 @@ workflow ExomeGermlineSingleSample {
     File output_vcf = BamToGvcf.output_vcf
     File output_vcf_index = BamToGvcf.output_vcf_index
   }
-    meta {
+  meta {
     allowNestedInputs: true
   }
 }

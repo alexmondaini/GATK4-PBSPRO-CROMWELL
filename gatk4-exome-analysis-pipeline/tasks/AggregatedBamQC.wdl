@@ -106,7 +106,7 @@ input {
     File? fingerprint_summary_metrics = CheckFingerprint.summary_metrics
     File? fingerprint_detail_metrics = CheckFingerprint.detail_metrics
   }
-    meta {
+  meta {
     allowNestedInputs: true
   }
 }

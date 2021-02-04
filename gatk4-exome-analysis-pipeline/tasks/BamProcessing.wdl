@@ -25,11 +25,11 @@ task SortSam {
   }
   # SortSam spills to disk a lot more because we are only store 300000 records in RAM now because its faster for our data so it needs
   # more disk space.  Also it spills to disk in an uncompressed format so we need to account for that with a larger multiplier
-  #Float sort_sam_disk_multiplier = 3.25
-  #Int disk_size = ceil(sort_sam_disk_multiplier * size(input_bam, "GiB")) + 20
+  Float sort_sam_disk_multiplier = 3.25
+  Int disk_size = ceil(sort_sam_disk_multiplier * size(input_bam, "GiB")) + 20
 
   command {
-    java -Dsamjdk.compression_level=~{compression_level} -Xms4000m -Xmx4000m -jar /usr/picard/picard.jar \
+    java -Dsamjdk.compression_level=~{compression_level} -Xmx4000m -jar /usr/picard/picard.jar \
       SortSam \
       INPUT=~{input_bam} \
       OUTPUT=~{output_bam_basename}.bam \
@@ -41,7 +41,7 @@ task SortSam {
   }
   runtime {
     docker: "us.gcr.io/broad-gotc-prod/picard-cloud:2.23.8"
-    #disks: "local-disk " + disk_size + " HDD"
+    disks: "local-disk " + disk_size + " HDD"
     cpu: 1
     memory: "6 GB"
     #preemptible: preemptible_tries
@@ -64,8 +64,8 @@ task SortSamSpark {
   }
   # SortSam spills to disk a lot more because we are only store 300000 records in RAM now because its faster for our data so it needs
   # more disk space.  Also it spills to disk in an uncompressed format so we need to account for that with a larger multiplier
-  #Float sort_sam_disk_multiplier = 3.25
-  #Int disk_size = ceil(sort_sam_disk_multiplier * size(input_bam, "GiB")) + 20
+  Float sort_sam_disk_multiplier = 3.25
+  Int disk_size = ceil(sort_sam_disk_multiplier * size(input_bam, "GiB")) + 20
 
   command {
     set -e
@@ -80,10 +80,10 @@ task SortSamSpark {
   }
   runtime {
     docker: gatk_docker
-    #disks: "local-disk " + disk_size + " HDD"
+    disks: "local-disk " + disk_size + " HDD"
     #bootDiskSizeGb: "15"
-    cpu: "16"
-    memory: "100 GB"
+    cpu: 16
+    memory: "102 GB"
     #preemptible: preemptible_tries
   }
   output {
@@ -106,17 +106,17 @@ task MarkDuplicates {
     # Sometimes we wish to supply "null" in order to turn off optical duplicate detection
     # This can be desirable if you don't mind the estimated library size being wrong and optical duplicate detection is taking >7 days and failing
     String? read_name_regex
-    #Int memory_multiplier = 1
-    #Int additional_disk = 20
+    Int memory_multiplier = 1
+    Int additional_disk = 20
   }
 
   # The merged bam will be smaller than the sum of the parts so we need to account for the unmerged inputs and the merged output.
   # Mark Duplicates takes in as input readgroup bams and outputs a slightly smaller aggregated bam. Giving .25 as wiggleroom
-  #Float md_disk_multiplier = 3
-  #Int disk_size = ceil(md_disk_multiplier * total_input_size) + additional_disk
+  Float md_disk_multiplier = 3
+  Int disk_size = ceil(md_disk_multiplier * total_input_size) + additional_disk
 
-  Int memory_size = 20
-  Int java_memory_size = 16
+  Float memory_size = 7.5 * memory_multiplier
+  Int java_memory_size = (ceil(memory_size) - 2)
 
   # Task is assuming query-sorted input so that the Secondary and Supplementary reads get marked correctly
   # This works because the output of BWA is query-grouped and therefore, so is the output of MergeBamAlignment.
@@ -138,9 +138,8 @@ task MarkDuplicates {
   runtime {
     docker: "us.gcr.io/broad-gotc-prod/picard-cloud:2.23.8"
     #preemptible: preemptible_tries
-    cpu : 6
-    memory: "20 GB"
-    #disks: "local-disk " + disk_size + " HDD"
+    memory: "~{memory_size} GB"
+    disks: "local-disk " + disk_size + " HDD"
   }
   output {
     File output_bam = "~{output_bam_basename}.bam"
@@ -164,8 +163,8 @@ task MarkDuplicatesSpark {
 
   # The merged bam will be smaller than the sum of the parts so we need to account for the unmerged inputs and the merged output.
   # Mark Duplicates takes in as input readgroup bams and outputs a slightly smaller aggregated bam. Giving 2.5 as wiggleroom
-  #Float md_disk_multiplier = 2.5
-  #Int disk_size = ceil(md_disk_multiplier * total_input_size) + 20
+  Float md_disk_multiplier = 2.5
+  Int disk_size = ceil(md_disk_multiplier * total_input_size) + 20
 
   Int memory_size = ceil(16 * memory_multiplier)
   Int java_memory_size = (memory_size - 6)
@@ -193,10 +192,10 @@ task MarkDuplicatesSpark {
 
   runtime {
     docker: "jamesemery/gatknightly:gatkMasterSnapshot44ca2e9e84a"
-    #disks: "/mnt/tmp " + ceil(2.1 * total_input_size) + " LOCAL, local-disk " + disk_size + " HDD"
+    disks: "/mnt/tmp " + ceil(2.1 * total_input_size) + " LOCAL, local-disk " + disk_size + " HDD"
     #bootDiskSizeGb: "50"
     cpu: cpu_size
-    memory: "~{memory_size} GB"
+    memory: "~{memory_size} GiB"
     #preemptible: preemptible_tries
   }
 
@@ -227,7 +226,7 @@ task BaseRecalibrator {
 
   Float ref_size = size(ref_fasta, "GiB") + size(ref_fasta_index, "GiB") + size(ref_dict, "GiB")
   Float dbsnp_size = size(dbsnp_vcf, "GiB")
-  #Int disk_size = ceil((size(input_bam, "GiB") / bqsr_scatter) + ref_size + dbsnp_size) + 20
+  Int disk_size = ceil((size(input_bam, "GiB") / bqsr_scatter) + ref_size + dbsnp_size) + 20
 
   parameter_meta {
     input_bam: {
@@ -252,7 +251,8 @@ task BaseRecalibrator {
     docker: gatk_docker
     #preemptible: preemptible_tries
     memory: "6 GB"
-    #disks: "local-disk " + disk_size + " HDD"
+    #bootDiskSizeGb: 15
+    disks: "local-disk " + disk_size + " HDD"
   }
   output {
     File recalibration_report = "~{recalibration_report_filename}"
@@ -275,15 +275,15 @@ task ApplyBQSR {
     #Int preemptible_tries
     String gatk_docker = "us.gcr.io/broad-gatk/gatk:4.1.8.0"
     Int memory_multiplier = 1
-    #Int additional_disk = 20
+    Int additional_disk = 20
     Boolean bin_base_qualities = true
     Boolean somatic = false
   }
 
   Float ref_size = size(ref_fasta, "GiB") + size(ref_fasta_index, "GiB") + size(ref_dict, "GiB")
-  #Int disk_size = ceil((size(input_bam, "GiB") * 3 / bqsr_scatter) + ref_size) + additional_disk
+  Int disk_size = ceil((size(input_bam, "GiB") * 3 / bqsr_scatter) + ref_size) + additional_disk
 
-  Int memory_size = ceil(4 * memory_multiplier)
+  Int memory_size = ceil(3500 * memory_multiplier)
 
   Boolean bin_somatic_base_qualities = bin_base_qualities && somatic
 
@@ -315,8 +315,9 @@ task ApplyBQSR {
   runtime {
     docker: gatk_docker
     #preemptible: preemptible_tries
-    memory: "~{memory_size} GB"
-    #disks: "local-disk " + disk_size + " HDD"
+    memory: "~{memory_size} MiB"
+    #bootDiskSizeGb: 15
+    disks: "local-disk " + disk_size + " HDD"
   }
   output {
     File recalibrated_bam = "~{output_bam_basename}.bam"
@@ -342,8 +343,9 @@ task GatherBqsrReports {
   runtime {
     docker: gatk_docker
     #preemptible: preemptible_tries
-    memory: "4 GB"
-    #disks: "local-disk 20 HDD"
+    memory: "3500 MiB"
+    #bootDiskSizeGb: 15
+    disks: "local-disk 20 HDD"
   }
   output {
     File output_bqsr_report = "~{output_report_filename}"
@@ -361,7 +363,7 @@ task GatherSortedBamFiles {
   }
 
   # Multiply the input bam size by two to account for the input and output
-  #Int disk_size = ceil(2 * total_input_size) + 20
+  Int disk_size = ceil(2 * total_input_size) + 20
 
   command {
     java -Dsamjdk.compression_level=~{compression_level} -Xmx2000m -jar /usr/picard/picard.jar \
@@ -374,8 +376,8 @@ task GatherSortedBamFiles {
   runtime {
     docker: "us.gcr.io/broad-gotc-prod/picard-cloud:2.23.8"
     #preemptible: preemptible_tries
-    memory: "3 GB"
-    #disks: "local-disk " + disk_size + " HDD"
+    memory: "3 GiB"
+    disks: "local-disk " + disk_size + " HDD"
   }
   output {
     File output_bam = "~{output_bam_basename}.bam"
@@ -409,8 +411,8 @@ task GatherUnsortedBamFiles {
   runtime {
     docker: "us.gcr.io/broad-gotc-prod/picard-cloud:2.23.8"
     #preemptible: preemptible_tries
-    memory: "3 GB"
-    #disks: "local-disk " + disk_size + " HDD"
+    memory: "3 GiB"
+    disks: "local-disk " + disk_size + " HDD"
   }
   output {
     File output_bam = "~{output_bam_basename}.bam"
@@ -458,8 +460,8 @@ task GenerateSubsettedContaminationResources {
   >>>
   runtime {
     #preemptible: preemptible_tries
-    memory: "4 GB"
-    #disks: "local-disk 10 HDD"
+    memory: "4 GiB"
+    disks: "local-disk 10 HDD"
     docker: "us.gcr.io/broad-gotc-prod/bedtools:2.27.1"
   }
   output {
@@ -497,7 +499,7 @@ task CheckContamination {
     Boolean disable_sanity_check = false
   }
 
-  #Int disk_size = ceil(size(input_bam, "GiB") + size(ref_fasta, "GiB")) + 30
+  Int disk_size = ceil(size(input_bam, "GiB") + size(ref_fasta, "GiB")) + 30
 
   command <<<
     set -e
@@ -541,8 +543,8 @@ task CheckContamination {
   >>>
   runtime {
     #preemptible: preemptible_tries
-    memory: "7 GB"
-    #disks: "local-disk " + disk_size + " HDD"
+    memory: "8 GiB"
+    disks: "local-disk " + disk_size + " HDD"
     docker: "us.gcr.io/broad-gotc-prod/verify-bam-id:c1cba76e979904eb69c31520a0d7f5be63c72253-1553018888"
     cpu: 2
   }

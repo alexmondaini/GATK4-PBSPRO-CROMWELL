@@ -113,7 +113,7 @@ workflow UnmappedBamToAlignedBam {
   # Sum the read group bam sizes to approximate the aggregated bam size
   call Utils.SumFloats as SumFloats {
     input:
-      sizes = mapped_bam_size
+      sizes = mapped_bam_size,
       #preemptible_tries = papi_settings.preemptible_tries
   }
 
@@ -273,7 +273,7 @@ workflow UnmappedBamToAlignedBam {
     File output_bam = GatherBamFiles.output_bam
     File output_bam_index = GatherBamFiles.output_bam_index
   }
-    meta {
+  meta {
     allowNestedInputs: true
   }
 }

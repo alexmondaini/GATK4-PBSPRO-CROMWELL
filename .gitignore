@@ -2,3 +2,5 @@
 processing-for-variant-discovery-gatk4/
 toy_workflow/
 src/
+analyzecovariates/
+tmp/

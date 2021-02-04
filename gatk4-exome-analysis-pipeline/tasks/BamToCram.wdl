@@ -63,7 +63,7 @@ workflow BamToCram {
      File output_cram_md5 = ConvertToCram.output_cram_md5
      File validate_cram_file_report = ValidateCram.report
   }
-    meta {
+  meta {
     allowNestedInputs: true
   }
 }

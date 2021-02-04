@@ -53,16 +53,16 @@ workflow VariantCalling {
     if (use_gatk3_haplotype_caller) {
       call Calling.HaplotypeCaller_GATK35_GVCF as HaplotypeCallerGATK3 {
         input:
-        input_bam = input_bam,
-        input_bam_index = input_bam_index,
-        interval_list = scattered_interval_list,
-        gvcf_basename = base_file_name,
-        ref_dict = ref_dict,
-        ref_fasta = ref_fasta,
-        ref_fasta_index = ref_fasta_index,
-        contamination = contamination,
-        #preemptible_tries = agg_preemptible_tries,
-        hc_scatter = hc_divisor
+          input_bam = input_bam,
+          input_bam_index = input_bam_index,
+          interval_list = scattered_interval_list,
+          gvcf_basename = base_file_name,
+          ref_dict = ref_dict,
+          ref_fasta = ref_fasta,
+          ref_fasta_index = ref_fasta_index,
+          contamination = contamination,
+          #preemptible_tries = agg_preemptible_tries,
+          hc_scatter = hc_divisor
       }
     }
 
@@ -156,7 +156,7 @@ workflow VariantCalling {
     File? bamout = MergeBamouts.output_bam
     File? bamout_index = MergeBamouts.output_bam_index
   }
-    meta {
+  meta {
     allowNestedInputs: true
   }
 }
@@ -169,7 +169,7 @@ task MergeBamouts {
     String output_base_name
   }
 
-  #Int disk_size = ceil(size(bams, "GiB") * 2) + 10
+  Int disk_size = ceil(size(bams, "GiB") * 2) + 10
 
   command {
     samtools merge ~{output_base_name}.bam ~{sep=" " bams}
@@ -184,8 +184,8 @@ task MergeBamouts {
 
   runtime {
     docker: "biocontainers/samtools:1.3.1"
-    memory: "4 GB"
-    #disks: "local-disk ~{disk_size} HDD"
+    memory: "4 GiB"
+    disks: "local-disk ~{disk_size} HDD"
     #preemptible: 3
     cpu: 1
   }

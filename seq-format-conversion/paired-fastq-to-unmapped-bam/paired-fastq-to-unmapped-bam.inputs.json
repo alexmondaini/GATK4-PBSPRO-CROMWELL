@@ -1,16 +1,12 @@
 {
-  "ConvertPairedFastQsToUnmappedBamWf.make_fofn": "Boolean (optional, default = false)",
-  "ConvertPairedFastQsToUnmappedBamWf.sample_name": "String",
-  "ConvertPairedFastQsToUnmappedBamWf.platform_name": "String",
-  "ConvertPairedFastQsToUnmappedBamWf.gatk_docker": "String (optional, default = \"broadinstitute/gatk:latest\")",
-  "ConvertPairedFastQsToUnmappedBamWf.run_date": "String",
-  "ConvertPairedFastQsToUnmappedBamWf.fastq_2": "String",
-  "ConvertPairedFastQsToUnmappedBamWf.readgroup_name": "String",
-  "ConvertPairedFastQsToUnmappedBamWf.PairedFastQsToUnmappedBAM.machine_mem_gb": "Int (optional, default = 7)",
-  "ConvertPairedFastQsToUnmappedBamWf.platform_unit": "String",
-  "ConvertPairedFastQsToUnmappedBamWf.fastq_1": "String",
-  "ConvertPairedFastQsToUnmappedBamWf.library_name": "String",
-  "ConvertPairedFastQsToUnmappedBamWf.gatk_path": "String (optional, default = \"/gatk/gatk\")",
-  "ConvertPairedFastQsToUnmappedBamWf.sequencing_center": "String"
+  "ConvertPairedFastQsToUnmappedBamWf.sample_name": "pfg115G",
+  "ConvertPairedFastQsToUnmappedBamWf.platform_name": "illumina",
+  "ConvertPairedFastQsToUnmappedBamWf.run_date": "28-1-2021",
+  "ConvertPairedFastQsToUnmappedBamWf.fastq_2": "/groups/cgsd/javed/validation_set/LeungSY_Targeted_SS-190528-01a/RAW/pfg115G_2.fastq.gz",
+  "ConvertPairedFastQsToUnmappedBamWf.readgroup_name": "pfg115G",
+  "ConvertPairedFastQsToUnmappedBamWf.platform_unit": "pfg115G",
+  "ConvertPairedFastQsToUnmappedBamWf.fastq_1": "/groups/cgsd/javed/validation_set/LeungSY_Targeted_SS-190528-01a/RAW/pfg115G_1.fastq.gz",
+  "ConvertPairedFastQsToUnmappedBamWf.library_name": "pfg115G",
+  "ConvertPairedFastQsToUnmappedBamWf.sequencing_center": "CGS"
 }
 
