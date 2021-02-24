@@ -1,0 +1,7 @@
+{
+  "Create_Pon.bam": "/groups/cgsd/alexandre/gatk-workflows/src/exomesinglesample_out/bam/pfg001G.GRCh38DH.target.bam",
+  "Create_Pon.bam_index": "/groups/cgsd/alexandre/gatk-workflows/src/exomesinglesample_out/bam/pfg001G.GRCh38DH.target.bai",
+  "Create_Pon.reference": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38/Homo_sapiens_assembly38_chrHPV.fasta",
+  "Create_Pon.ref_fai": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38/Homo_sapiens_assembly38_chrHPV.fasta.fai",
+  "Create_Pon.dict_file": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38/Homo_sapiens_assembly38_chrHPV.dict"
+}

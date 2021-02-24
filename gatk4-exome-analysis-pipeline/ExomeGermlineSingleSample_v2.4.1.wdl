@@ -37,7 +37,7 @@ import "./tasks/VariantCalling.wdl" as ToGvcf
 import "./structs/DNASeqStructs.wdl"
 
 # WORKFLOW DEFINITION
-workflow ExomeGermlineSingleSample {
+workflow AMLExomeGermlineSingleSample {
 
 
   String pipeline_version = "2.4.1"

@@ -1,11 +1,11 @@
 #!/bin/bash
 #PBS -N job_parallel_paired-fastq-to-unmapped-bam
 #PBS -l walltime=4:00:00
-#PBS -l select=1:ncpus=2:mem=4gb
+#PBS -l select=1:ncpus=2:mem=6gb
 #PBS -q cgsd
 #PBS -v USER
 module load java
-java -Dconfig.file=/groups/cgsd/$USER/gatk-workflows/my.conf \
+java -Dconfig.file=/groups/cgsd/$USER/gatk-workflows/db.conf -Xmx5g \
 -jar /groups/cgsd/$USER/cromwell-54.jar run \
 /groups/cgsd/alexandre/gatk-workflows/seq-format-conversion/parallel-paired-fastq-ubam/parallel-paired-fastq-ubam.wdl \
 --inputs \

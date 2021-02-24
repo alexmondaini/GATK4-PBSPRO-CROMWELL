@@ -1,6 +1,8 @@
 {
   "IndexGenome.index_the_reference": false,
-  "IndexGenome.fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38_HPV/Homo_sapiens_assembly38_chrHPV.fasta",
+  "IndexGenome.create_fasta_index": false,
   "IndexGenome.create_interval_list": true,
-  "IndexGenome.bed_file": "/groups/cgsd/alexandre/gatk-workflows/src/bed_files/Basic_Core_xGen_MSI_TERT_HPV_EBV_hg38_sorted_merge.bed"
+  "IndexGenome.fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38/non_HPV/Homo_sapiens_assembly38.fasta",
+  "IndexGenome.bed_file": "/groups/cgsd/javed/dummy/Basic_Core_PanCancer/hg38/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.bed",
+  "IndexGenome.probe_file": "/groups/cgsd/javed/dummy/Basic_Core_PanCancer/hg38/Basic_Core_xGenPanCancer_hg38_sorted_merge.bed"
 }

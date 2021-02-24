@@ -1,27 +1,27 @@
 {
     "ExomeGermlineSingleSample.sample_and_unmapped_bams": {
-      "flowcell_unmapped_bams": ["/groups/cgsd/alexandre/gatk-workflows/src/ubam/pfginit.unmapped.bam"],
+      "flowcell_unmapped_bams": ["/groups/cgsd/alexandre/gatk-workflows/src/ubam/pfg164T.unmapped.bam"],
       "unmapped_bam_suffix": ".unmapped.bam",
-      "sample_name": "pfginit",
-      "base_file_name": "pfginit.GRCh38DH.target",
-      "final_gvcf_base_name": "pfginit.GRCh38DH.target"
+      "sample_name": "pfg164T",
+      "base_file_name": "pfg164T.GRCh38DH.target",
+      "final_gvcf_base_name": "pfg164T.GRCh38DH.target"
     },
     "ExomeGermlineSingleSample.references": {
       "contamination_sites_ud": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/1000g.phase3.100k.b38.vcf.gz.dat.UD",
       "contamination_sites_bed": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/1000g.phase3.100k.b38.vcf.gz.dat.bed",
       "contamination_sites_mu": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/1000g.phase3.100k.b38.vcf.gz.dat.mu",
-      "calling_interval_list": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/Basic_Core_xGen_MSI_TERT_HPV_EBV_targets_hg38_sorted_merge.interval_list",
+      "calling_interval_list": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/sy/Basic_Core_xGen_MSI_TERT_HPV_EBV_targets_hg38_sorted_merge.interval_list",
   
       "reference_fasta": {
-        "ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38_HPV/Homo_sapiens_assembly38_chrHPV.fasta",
-        "ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38_HPV/Homo_sapiens_assembly38_chrHPV.fasta.fai",
-        "ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38_HPV/Homo_sapiens_assembly38_chrHPV.dict",
-        "ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38_HPV/Homo_sapiens_assembly38_chrHPV.fasta.alt",
-        "ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38_HPV/Homo_sapiens_assembly38_chrHPV.fasta.ann",
-        "ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38_HPV/Homo_sapiens_assembly38_chrHPV.fasta.sa",
-        "ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38_HPV/Homo_sapiens_assembly38_chrHPV.fasta.amb",
-        "ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38_HPV/Homo_sapiens_assembly38_chrHPV.fasta.bwt",
-        "ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38_HPV/Homo_sapiens_assembly38_chrHPV.fasta.pac"
+        "ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38/Homo_sapiens_assembly38_chrHPV.fasta",
+        "ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38/Homo_sapiens_assembly38_chrHPV.fasta.fai",
+        "ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38/Homo_sapiens_assembly38_chrHPV.dict",
+        "ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38/Homo_sapiens_assembly38_chrHPV.fasta.alt",
+        "ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38/Homo_sapiens_assembly38_chrHPV.fasta.ann",
+        "ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38/Homo_sapiens_assembly38_chrHPV.fasta.sa",
+        "ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38/Homo_sapiens_assembly38_chrHPV.fasta.amb",
+        "ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38/Homo_sapiens_assembly38_chrHPV.fasta.bwt",
+        "ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38/Homo_sapiens_assembly38_chrHPV.fasta.pac"
       },
       "known_indels_sites_vcfs": [
         "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
@@ -40,8 +40,8 @@
       "haplotype_scatter_count": 15,
       "break_bands_at_multiples_of": 0
     },
-    "ExomeGermlineSingleSample.target_interval_list": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/Basic_Core_xGen_MSI_TERT_HPV_EBV_targets_hg38_sorted_merge.interval_list",
-    "ExomeGermlineSingleSample.bait_interval_list": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/Basic_Core_xGen_MSI_TERT_HPV_EBV_hg38_probes.interval_list",
+    "ExomeGermlineSingleSample.target_interval_list": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/sy/Basic_Core_xGen_MSI_TERT_HPV_EBV_targets_hg38_sorted_merge.interval_list",
+    "ExomeGermlineSingleSample.bait_interval_list": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/sy/Basic_Core_xGen_MSI_TERT_HPV_EBV_hg38_probes.interval_list",
     "ExomeGermlineSingleSample.bait_set_name": "target_sequence_illumina",
     
     "ExomeGermlineSingleSample.AggregatedBamQC.CollectReadgroupBamQualityMetrics.collect_gc_bias_metrics": false,

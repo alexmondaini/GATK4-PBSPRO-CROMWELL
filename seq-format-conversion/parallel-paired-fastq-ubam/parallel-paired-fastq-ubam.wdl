@@ -58,10 +58,10 @@ task PairedFastQsToUnmappedBAM {
     String gatk_path
     String docker
   }
-  Int command_mem_gb = machine_mem_gb -2
+  Int command_mem_gb = machine_mem_gb-2
 
   command {
-    ~{gatk_path} --java-options "-Xmx~{command_mem_gb}g" \
+    ~{gatk_path} --java-options "-Xmx~{command_mem_gb}G" \
     FastqToSam \
     --FASTQ  ~{fastq_1} \
     --FASTQ2 ~{fastq_2} \

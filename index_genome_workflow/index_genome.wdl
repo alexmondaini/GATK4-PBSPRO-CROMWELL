@@ -23,13 +23,17 @@ workflow IndexGenome {
     input {
         File fasta
         File? bed_file
+        File? probe_file
+        Boolean create_fasta_index = false
         Boolean index_the_reference = false
         Boolean create_interval_list = false
     }
 
+    if (create_fasta_index) {
     call CreateFaidx {
         input:
         fasta = fasta
+    }
     }
 
     if (index_the_reference) {
@@ -48,6 +52,13 @@ workflow IndexGenome {
         call BedToIntervalList {
             input:
             bed_file = bed_file,
+            dict_file = CreateSequenceDictionary.output_dict
+        }
+    }
+    if (create_interval_list) {
+        call ProbeToIntervalList {
+            input:
+            probe_file = probe_file,
             dict_file = CreateSequenceDictionary.output_dict
         }
     }
@@ -122,6 +133,31 @@ task BedToIntervalList {
         java -Xmx4g -jar \
         /usr/picard/picard.jar BedToIntervalList \
         I=~{bed_file} \
+        O=~{output_file} \
+        SD=~{dict_file}
+    }
+    runtime {
+        docker : "us.gcr.io/broad-gotc-prod/picard-cloud@sha256:bb9207a31bdbdd96e34623ecde44d8a45e11bcbabacb34bbf860aa99d841cfea"
+        cpu: 4
+        memory: "4 GB"
+    }
+    output {
+        File output_interval_list = output_file
+    }
+}
+
+task ProbeToIntervalList {
+    input {
+        File? probe_file
+        File dict_file
+    }
+
+    String output_file = basename(dict_file,'.dict') + ".interval_list"
+
+    command {
+        java -Xmx4g -jar \
+        /usr/picard/picard.jar BedToIntervalList \
+        I=~{probe_file} \
         O=~{output_file} \
         SD=~{dict_file}
     }
