@@ -1,10 +1,10 @@
 {
     "AMLExomeGermlineSingleSample.sample_and_unmapped_bams": {
-      "flowcell_unmapped_bams": ["/groups/cgsd/alexandre/gatk-workflows/src/aml_ubam/313Dx.unmapped.bam"],
+      "flowcell_unmapped_bams": ["/groups/cgsd/alexandre/gatk-workflows/src/aml_ubam/NKL8.unmapped.bam"],
       "unmapped_bam_suffix": ".unmapped.bam",
-      "sample_name": "313Dx",
-      "base_file_name": "313Dx.GRCh38DH.target",
-      "final_gvcf_base_name": "313Dx.GRCh38DH.target"
+      "sample_name": "NKL8",
+      "base_file_name": "NKL8.GRCh38DH.target",
+      "final_gvcf_base_name": "NKL8.GRCh38DH.target"
     },
     "AMLExomeGermlineSingleSample.references": {
       "contamination_sites_ud": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/1000g.phase3.100k.b38.vcf.gz.dat.UD",
@@ -13,15 +13,15 @@
       "calling_interval_list": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
   
       "reference_fasta": {
-        "ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38/Homo_sapiens_assembly38.fasta",
-        "ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38/Homo_sapiens_assembly38.fasta.fai",
-        "ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38/Homo_sapiens_assembly38.dict",
-        "ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38/Homo_sapiens_assembly38.fasta.64.alt",
-        "ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38/Homo_sapiens_assembly38.fasta.64.ann",
-        "ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38/Homo_sapiens_assembly38.fasta.64.sa",
-        "ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38/Homo_sapiens_assembly38.fasta.64.amb",
-        "ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38/Homo_sapiens_assembly38.fasta.64.bwt",
-        "ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38/Homo_sapiens_assembly38.fasta.64.pac"
+        "ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+        "ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+        "ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+        "ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+        "ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+        "ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+        "ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+        "ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+        "ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac"
       },
       "known_indels_sites_vcfs": [
         "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",

@@ -9,4 +9,4 @@ java -Dconfig.file=/groups/cgsd/$USER/gatk-workflows/db.conf \
 -jar /groups/cgsd/$USER/cromwell-54.jar run \
 /groups/cgsd/$USER/gatk-workflows/create_pon/create_pon.wdl \
 --inputs \
-/groups/cgsd/$USER/gatk-workflows/create_pon/create_pon.json
+/groups/cgsd/$USER/gatk-workflows/create_pon/test.json
