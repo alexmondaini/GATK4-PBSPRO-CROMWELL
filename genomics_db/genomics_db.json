@@ -1,0 +1,7 @@
+{
+  "GenomicsDB.reference": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38/Homo_sapiens_assembly38_chrHPV.fasta",
+  "GenomicsDB.ref_fai": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38/Homo_sapiens_assembly38_chrHPV.fasta.fai",
+  "GenomicsDB.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/sy/Basic_Core_xGen_MSI_TERT_HPV_EBV_targets_hg38_sorted_merge.interval_list",
+  "GenomicsDB.cohort": "/groups/cgsd/alexandre/gatk-workflows/src/pon/my_panel_of_normals/cohort.sample_map"
+}
+
