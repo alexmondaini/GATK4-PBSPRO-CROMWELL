@@ -5,6 +5,7 @@ workflow GenomicsDB {
         File reference
         File ref_fai
         File intervals
+        Array[File] intervals_idx
         File cohort
     }
 
@@ -14,6 +15,7 @@ workflow GenomicsDB {
         ref_fai = ref_fai,
         intervals = intervals,
         cohort = cohort,
+        intervals_idx = intervals_idx
     }
 }
 
@@ -22,6 +24,7 @@ task DBImport {
         File reference
         File ref_fai
         File intervals
+        Array[File] intervals_idx
         File cohort
     }
 
@@ -36,7 +39,7 @@ task DBImport {
     >>>
     runtime {
         docker: "broadinstitute/gatk@sha256:f2602e0bbc0117c30d23d8d626eb8d0a21ca672bb71180b5cf25425603a0ae09"
-        cpu: 4
+        cpu: 6
         memory: "20 GB"
     }
     output {
