@@ -3,6 +3,7 @@ version 1.0
 workflow ValidateVariants {
     input {
         File reference
+        File reference_fai
         Array[File] samples
     }
     
@@ -10,7 +11,8 @@ workflow ValidateVariants {
     call Validate {
         input:
         reference = reference,
-        samples = samples
+        sample = sample,
+        reference_fai = reference_fai
     }
     }
 }
@@ -18,7 +20,8 @@ workflow ValidateVariants {
 task Validate {
     input {
         File reference
-        Array[File] samples
+        File reference_fai
+        File sample
     }
     command {
         gatk --java-options "-Xms6G -Xmx6G" ValidateVariants \
