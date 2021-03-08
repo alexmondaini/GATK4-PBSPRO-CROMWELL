@@ -2,6 +2,7 @@
 {
   "ValidateVariants.samples": ["/groups/cgsd/alexandre/cromwell-executions/Create_Pon/c4834d4c-867a-412a-a3d4-7623530d16f4/call-ThePon/shard-71/execution/pfg181G.GRCh38DH.target.vcf.gz"],
   "ValidateVariants.reference": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38/Homo_sapiens_assembly38_chrHPV.fasta",
-  "ValidateVariants.reference_fai": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38/Homo_sapiens_assembly38_chrHPV.fasta.fai"
+  "ValidateVariants.reference_fai": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38/Homo_sapiens_assembly38_chrHPV.fasta.fai",
+  "ValidateVariants.dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38/Homo_sapiens_assembly38_chrHPV.dict"
 }
 

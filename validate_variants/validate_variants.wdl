@@ -4,6 +4,7 @@ workflow ValidateVariants {
     input {
         File reference
         File reference_fai
+        File dict
         Array[File] samples
     }
     
@@ -12,7 +13,8 @@ workflow ValidateVariants {
         input:
         reference = reference,
         sample = sample,
-        reference_fai = reference_fai
+        reference_fai = reference_fai,
+        dict = dict
     }
     }
 }
@@ -21,6 +23,7 @@ task Validate {
     input {
         File reference
         File reference_fai
+        File dict
         File sample
     }
     command {
