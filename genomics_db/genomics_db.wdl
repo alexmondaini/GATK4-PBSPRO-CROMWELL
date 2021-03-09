@@ -5,7 +5,7 @@ workflow GenomicsDB {
         File reference
         File ref_fai
         File intervals
-        Array[File] intervals_idx
+        Array[File] cohort_idx
         File cohort
     }
 
@@ -15,7 +15,7 @@ workflow GenomicsDB {
         ref_fai = ref_fai,
         intervals = intervals,
         cohort = cohort,
-        intervals_idx = intervals_idx
+        cohort_idx = cohort_idx
     }
 }
 
@@ -24,7 +24,7 @@ task DBImport {
         File reference
         File ref_fai
         File intervals
-        Array[File] intervals_idx
+        Array[File] cohort_idx
         File cohort
     }
 
