@@ -6,7 +6,7 @@ workflow GenomicsDB {
         File ref_fai
         File intervals
         Array[File] cohort_idx
-        File cohort
+        Array[File] cohort
     }
 
     call DBImport {
@@ -25,7 +25,7 @@ task DBImport {
         File ref_fai
         File intervals
         Array[File] cohort_idx
-        File cohort
+        Array[File] cohort
     }
 
     command <<<
@@ -35,7 +35,7 @@ task DBImport {
         --genomicsdb-workspace-path genome_db \
         -R ~{reference} \
         -L ~{intervals} \
-        --sample-name-map ~{cohort}
+        -V ~{cohort}
     >>>
     runtime {
         docker: "broadinstitute/gatk@sha256:f2602e0bbc0117c30d23d8d626eb8d0a21ca672bb71180b5cf25425603a0ae09"
