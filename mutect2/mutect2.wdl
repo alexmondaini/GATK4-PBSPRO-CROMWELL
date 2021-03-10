@@ -482,6 +482,7 @@ task SplitIntervals {
         gatk --java-options "-Xmx~{runtime_params.command_mem}m" SplitIntervals \
             -R ~{ref_fasta} \
             ~{"-L " + intervals} \
+            -ip 100 \
             -scatter ~{scatter_count} \
             -O interval-files \
             ~{split_intervals_extra_args}
@@ -592,6 +593,7 @@ task M2 {
             ~{"--germline-resource " + gnomad} \
             ~{"-pon " + pon} \
             ~{"-L " + intervals} \
+            -ip 100 \
             ~{"--alleles " + gga_vcf} \
             -O "~{output_vcf}" \
             ~{true='--bam-output bamout.bam' false='' make_bamout} \
