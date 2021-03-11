@@ -15,7 +15,7 @@
     "Mutect2.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
     
     "Mutect2.tumor_reads": "/groups/cgsd/alexandre/gatk-workflows/src/aml_out/bam/NKAML56.GRCh38DH.target.bam",
-    "Mutect2.tumor_reads_index": "/groups/cgsd/alexandre/gatk-workflows/src/aml_out/bam/NKAML56.GRCh38DH.target.bam_bai",
+    "Mutect2.tumor_reads_index": "/groups/cgsd/alexandre/gatk-workflows/src/aml_out/bam/NKAML56.GRCh38DH.target.bai",
   
     "Mutect2.pon": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/SY_pon.vcf.gz",
     "Mutect2.pon_idx": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/SY_pon.vcf.gz.tbi",
