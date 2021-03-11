@@ -1,10 +1,10 @@
 {
     "AMLExomeGermlineSingleSample.sample_and_unmapped_bams": {
-      "flowcell_unmapped_bams": ["/groups/cgsd/alexandre/gatk-workflows/src/aml_ubam/NKL8.unmapped.bam"],
+      "flowcell_unmapped_bams": ["/groups/cgsd/alexandre/gatk-workflows/src/aml_ubam/NKL42.unmapped.bam"],
       "unmapped_bam_suffix": ".unmapped.bam",
-      "sample_name": "NKL8",
-      "base_file_name": "NKL8.GRCh38DH.target",
-      "final_gvcf_base_name": "NKL8.GRCh38DH.target"
+      "sample_name": "NKL42",
+      "base_file_name": "NKL42.GRCh38DH.target",
+      "final_gvcf_base_name": "NKL42.GRCh38DH.target"
     },
     "AMLExomeGermlineSingleSample.references": {
       "contamination_sites_ud": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/1000g.phase3.100k.b38.vcf.gz.dat.UD",
@@ -37,7 +37,7 @@
       "haplotype_database_file": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.haplotype_database.txt"
     },
     "AMLExomeGermlineSingleSample.scatter_settings": {
-      "haplotype_scatter_count": 10,
+      "haplotype_scatter_count": 30,
       "break_bands_at_multiples_of": 0
     },
     "AMLExomeGermlineSingleSample.target_interval_list": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
