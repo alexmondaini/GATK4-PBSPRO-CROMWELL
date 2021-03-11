@@ -1,10 +1,10 @@
 {
     "AMLExomeGermlineSingleSample.sample_and_unmapped_bams": {
-      "flowcell_unmapped_bams": ["/groups/cgsd/alexandre/gatk-workflows/src/aml_ubam/NKL42.unmapped.bam"],
+      "flowcell_unmapped_bams": ["/groups/cgsd/alexandre/gatk-workflows/src/aml_ubam/NKL45.unmapped.bam"],
       "unmapped_bam_suffix": ".unmapped.bam",
-      "sample_name": "NKL42",
-      "base_file_name": "NKL42.GRCh38DH.target",
-      "final_gvcf_base_name": "NKL42.GRCh38DH.target"
+      "sample_name": "NKL45",
+      "base_file_name": "NKL45.GRCh38DH.target",
+      "final_gvcf_base_name": "NKL45.GRCh38DH.target"
     },
     "AMLExomeGermlineSingleSample.references": {
       "contamination_sites_ud": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/1000g.phase3.100k.b38.vcf.gz.dat.UD",
