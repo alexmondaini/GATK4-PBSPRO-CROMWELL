@@ -1,6 +1,6 @@
 [
-  {"HelloWorld.here": "/groups/cgsd/alexandre/gatk-workflows/hello_world/world.json"},
-  {"HelloWorld.here": "/groups/cgsd/alexandre/gatk-workflows/hello_world/another.json"}
+  {"HelloWorld.here": "/groups/cgsd/alexandre/gatk-workflows/hello_world/world.txt"},
+  {"HelloWorld.here": "/groups/cgsd/alexandre/gatk-workflows/hello_world/another.txt"}
 
 ]
 
