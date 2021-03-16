@@ -37,15 +37,16 @@ task ThePon {
     String strip_bam_extension = basename(bam,".bam")
 
     command {
-        /gatk/gatk Mutect2 \
+        gatk --java-options "-Xmx17G" Mutect2 \
         -R ${reference} \
         -I ${bam} \
+        -max-mnp-distance 0 \
         -O ${strip_bam_extension}.vcf.gz
     }
     runtime {
         docker: "broadinstitute/gatk@sha256:f2602e0bbc0117c30d23d8d626eb8d0a21ca672bb71180b5cf25425603a0ae09"
         cpu: 6
-        memory: "6 GB"
+        memory: "20 GB"
     }
     output {
         File pon_vcf_file = "${strip_bam_extension}.vcf.gz"
