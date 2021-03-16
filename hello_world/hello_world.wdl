@@ -1,17 +1,23 @@
 version 1.0
 
 workflow HelloWorld {
-    call WriteGreeting
+
+    input {
+        File here
+    }
+
+    call WriteGreeting {
+        input:
+        here = here
+    }
 }
 
 task WriteGreeting {
-    command {
-        echo "Hello World"
+    input {
+        File here
     }
-    runtime {
-        docker: "broadinstitute/gatk@sha256:33574f446ac991f77bac125fbf6a2340e6db972a3f334e6c61bff94740165938"
-        memory: "3 GB"
-        cpu: 4
+    command {
+        cat ~{here}
     }
     output {
         File output_greeting = stdout()
