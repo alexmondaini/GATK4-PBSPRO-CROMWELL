@@ -1,6 +1,6 @@
 [
-  {"HelloWorld.here": "/groups/cgsd/alexandre/gatk-workflows/hello_world/world.txt"},
-  {"HelloWorld.here": "/groups/cgsd/alexandre/gatk-workflows/hello_world/another.txt"}
-
+  {"HelloWorld.constant": "/groups/cgsd/alexandre/gatk-workflows/hello_world/const.txt"},
+  {"HelloWorld.change": "/groups/cgsd/alexandre/gatk-workflows/hello_world/input1.txt"},
+  {"HelloWorld.change": "/groups/cgsd/alexandre/gatk-workflows/hello_world/input2.txt"}
 ]
 
