@@ -9,13 +9,12 @@
     "Mutect2.make_bamout": true,
     "Mutect2.funco_data_sources_tar_gz": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/funcotator_dataSources.v1.6.20190124s.tar.gz",
     "Mutect2.funco_transcript_selection_list": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/transcriptList.exact_uniprot_matches.AKT1_CRLF2_FGFR1.txt",
-  
     "Mutect2.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38/Homo_sapiens_assembly38_chrHPV.fasta",
     "Mutect2.ref_fai": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38/Homo_sapiens_assembly38_chrHPV.fasta.fai",
     "Mutect2.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_Homo38/Homo_sapiens_assembly38_chrHPV.dict",
     
-    "Mutect2.tumor_reads": [{"Mutect2.tumor_reads": "/groups/cgsd/alexandre/gatk-workflows/src/sy_out/bam/pfg001G.GRCh38DH.target.bam"},{"Mutect2.tumor_reads": "/groups/cgsd/alexandre/gatk-workflows/src/sy_out/bam/pfg002G.GRCh38DH.target.bam"}],
-    "Mutect2.tumor_reads_index": [{"Mutect2.tumor_reads_index":"/groups/cgsd/alexandre/gatk-workflows/src/sy_out/bam/pfg001G.GRCh38DH.target.bai"},{"Mutect2.tumor_reads_index":"/groups/cgsd/alexandre/gatk-workflows/src/sy_out/bam/pfg002G.GRCh38DH.target.bai"}],
+    "Mutect2.tumor_reads": "/groups/cgsd/alexandre/gatk-workflows/src/sy_out/bam/pfg001G.GRCh38DH.target.bam",
+    "Mutect2.tumor_reads_index": "/groups/cgsd/alexandre/gatk-workflows/src/sy_out/bam/pfg001G.GRCh38DH.target.bai",
   
     "Mutect2.pon": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/1000g_pon.hg38.vcf.gz",
     "Mutect2.pon_idx": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/1000g_pon.hg38.vcf.gz.tbi",
