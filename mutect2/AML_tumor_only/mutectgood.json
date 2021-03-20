@@ -2,175 +2,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
-    "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
-    "Mutect2.filter_funcotations": true,
-    "Mutect2.funco_reference_version": "hg38",
-    "Mutect2.run_funcotator": true,
-    "Mutect2.make_bamout": true,
-    "Mutect2.funco_data_sources_tar_gz": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/funcotator_dataSources.v1.6.20190124s.tar.gz",
-    "Mutect2.funco_transcript_selection_list": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/transcriptList.exact_uniprot_matches.AKT1_CRLF2_FGFR1.txt",
-  
-    "Mutect2.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
-    "Mutect2.ref_fai": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
-    "Mutect2.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
-    
-    "Mutect2.tumor_reads": "/groups/cgsd/alexandre/gatk-workflows/src/aml_out/bam/1122Dx.GRCh38DH.target.bam",
-    "Mutect2.tumor_reads_index": "/groups/cgsd/alexandre/gatk-workflows/src/aml_out/bam/1122Dx.GRCh38DH.target.bai",
-  
-    "Mutect2.pon": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/SY_pon.vcf.gz",
-    "Mutect2.pon_idx": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/SY_pon.vcf.gz.tbi",
-    "Mutect2.gnomad": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/af-only-gnomad.hg38.vcf.gz",
-    "Mutect2.gnomad_idx": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/af-only-gnomad.hg38.vcf.gz.tbi",
-    "Mutect2.variants_for_contamination": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/small_exac_common_3.hg38.vcf.gz",
-    "Mutect2.variants_for_contamination_idx": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/small_exac_common_3.hg38.vcf.gz.tbi",
-    "Mutect2.realignment_index_bundle": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/Homo_sapiens_assembly38.index_bundle"
-  
-},
-{
-    "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
-    "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
-    "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
-    "Mutect2.filter_funcotations": true,
-    "Mutect2.funco_reference_version": "hg38",
-    "Mutect2.run_funcotator": true,
-    "Mutect2.make_bamout": true,
-    "Mutect2.funco_data_sources_tar_gz": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/funcotator_dataSources.v1.6.20190124s.tar.gz",
-    "Mutect2.funco_transcript_selection_list": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/transcriptList.exact_uniprot_matches.AKT1_CRLF2_FGFR1.txt",
-  
-    "Mutect2.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
-    "Mutect2.ref_fai": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
-    "Mutect2.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
-    
-    "Mutect2.tumor_reads": "/groups/cgsd/alexandre/gatk-workflows/src/aml_out/bam/1331Dx.GRCh38DH.target.bam",
-    "Mutect2.tumor_reads_index": "/groups/cgsd/alexandre/gatk-workflows/src/aml_out/bam/1331Dx.GRCh38DH.target.bai",
-  
-    "Mutect2.pon": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/SY_pon.vcf.gz",
-    "Mutect2.pon_idx": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/SY_pon.vcf.gz.tbi",
-    "Mutect2.gnomad": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/af-only-gnomad.hg38.vcf.gz",
-    "Mutect2.gnomad_idx": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/af-only-gnomad.hg38.vcf.gz.tbi",
-    "Mutect2.variants_for_contamination": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/small_exac_common_3.hg38.vcf.gz",
-    "Mutect2.variants_for_contamination_idx": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/small_exac_common_3.hg38.vcf.gz.tbi",
-    "Mutect2.realignment_index_bundle": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/Homo_sapiens_assembly38.index_bundle"
-  
-},
-{
-    "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
-    "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
-    "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
-    "Mutect2.filter_funcotations": true,
-    "Mutect2.funco_reference_version": "hg38",
-    "Mutect2.run_funcotator": true,
-    "Mutect2.make_bamout": true,
-    "Mutect2.funco_data_sources_tar_gz": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/funcotator_dataSources.v1.6.20190124s.tar.gz",
-    "Mutect2.funco_transcript_selection_list": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/transcriptList.exact_uniprot_matches.AKT1_CRLF2_FGFR1.txt",
-  
-    "Mutect2.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
-    "Mutect2.ref_fai": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
-    "Mutect2.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
-    
-    "Mutect2.tumor_reads": "/groups/cgsd/alexandre/gatk-workflows/src/aml_out/bam/1345Dx.GRCh38DH.target.bam",
-    "Mutect2.tumor_reads_index": "/groups/cgsd/alexandre/gatk-workflows/src/aml_out/bam/1345Dx.GRCh38DH.target.bai",
-  
-    "Mutect2.pon": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/SY_pon.vcf.gz",
-    "Mutect2.pon_idx": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/SY_pon.vcf.gz.tbi",
-    "Mutect2.gnomad": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/af-only-gnomad.hg38.vcf.gz",
-    "Mutect2.gnomad_idx": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/af-only-gnomad.hg38.vcf.gz.tbi",
-    "Mutect2.variants_for_contamination": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/small_exac_common_3.hg38.vcf.gz",
-    "Mutect2.variants_for_contamination_idx": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/small_exac_common_3.hg38.vcf.gz.tbi",
-    "Mutect2.realignment_index_bundle": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/Homo_sapiens_assembly38.index_bundle"
-  
-},
-{
-    "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
-    "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
-    "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
-    "Mutect2.filter_funcotations": true,
-    "Mutect2.funco_reference_version": "hg38",
-    "Mutect2.run_funcotator": true,
-    "Mutect2.make_bamout": true,
-    "Mutect2.funco_data_sources_tar_gz": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/funcotator_dataSources.v1.6.20190124s.tar.gz",
-    "Mutect2.funco_transcript_selection_list": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/transcriptList.exact_uniprot_matches.AKT1_CRLF2_FGFR1.txt",
-  
-    "Mutect2.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
-    "Mutect2.ref_fai": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
-    "Mutect2.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
-    
-    "Mutect2.tumor_reads": "/groups/cgsd/alexandre/gatk-workflows/src/aml_out/bam/1346Dx.GRCh38DH.target.bam",
-    "Mutect2.tumor_reads_index": "/groups/cgsd/alexandre/gatk-workflows/src/aml_out/bam/1346Dx.GRCh38DH.target.bai",
-  
-    "Mutect2.pon": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/SY_pon.vcf.gz",
-    "Mutect2.pon_idx": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/SY_pon.vcf.gz.tbi",
-    "Mutect2.gnomad": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/af-only-gnomad.hg38.vcf.gz",
-    "Mutect2.gnomad_idx": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/af-only-gnomad.hg38.vcf.gz.tbi",
-    "Mutect2.variants_for_contamination": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/small_exac_common_3.hg38.vcf.gz",
-    "Mutect2.variants_for_contamination_idx": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/small_exac_common_3.hg38.vcf.gz.tbi",
-    "Mutect2.realignment_index_bundle": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/Homo_sapiens_assembly38.index_bundle"
-  
-},
-{
-    "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
-    "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
-    "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
-    "Mutect2.filter_funcotations": true,
-    "Mutect2.funco_reference_version": "hg38",
-    "Mutect2.run_funcotator": true,
-    "Mutect2.make_bamout": true,
-    "Mutect2.funco_data_sources_tar_gz": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/funcotator_dataSources.v1.6.20190124s.tar.gz",
-    "Mutect2.funco_transcript_selection_list": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/transcriptList.exact_uniprot_matches.AKT1_CRLF2_FGFR1.txt",
-  
-    "Mutect2.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
-    "Mutect2.ref_fai": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
-    "Mutect2.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
-    
-    "Mutect2.tumor_reads": "/groups/cgsd/alexandre/gatk-workflows/src/aml_out/bam/1350Dx.GRCh38DH.target.bam",
-    "Mutect2.tumor_reads_index": "/groups/cgsd/alexandre/gatk-workflows/src/aml_out/bam/1350Dx.GRCh38DH.target.bai",
-  
-    "Mutect2.pon": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/SY_pon.vcf.gz",
-    "Mutect2.pon_idx": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/SY_pon.vcf.gz.tbi",
-    "Mutect2.gnomad": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/af-only-gnomad.hg38.vcf.gz",
-    "Mutect2.gnomad_idx": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/af-only-gnomad.hg38.vcf.gz.tbi",
-    "Mutect2.variants_for_contamination": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/small_exac_common_3.hg38.vcf.gz",
-    "Mutect2.variants_for_contamination_idx": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/small_exac_common_3.hg38.vcf.gz.tbi",
-    "Mutect2.realignment_index_bundle": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/Homo_sapiens_assembly38.index_bundle"
-  
-},
-{
-    "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
-    "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
-    "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
-    "Mutect2.filter_funcotations": true,
-    "Mutect2.funco_reference_version": "hg38",
-    "Mutect2.run_funcotator": true,
-    "Mutect2.make_bamout": true,
-    "Mutect2.funco_data_sources_tar_gz": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/funcotator_dataSources.v1.6.20190124s.tar.gz",
-    "Mutect2.funco_transcript_selection_list": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/transcriptList.exact_uniprot_matches.AKT1_CRLF2_FGFR1.txt",
-  
-    "Mutect2.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
-    "Mutect2.ref_fai": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
-    "Mutect2.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
-    
-    "Mutect2.tumor_reads": "/groups/cgsd/alexandre/gatk-workflows/src/aml_out/bam/1376Dx.GRCh38DH.target.bam",
-    "Mutect2.tumor_reads_index": "/groups/cgsd/alexandre/gatk-workflows/src/aml_out/bam/1376Dx.GRCh38DH.target.bai",
-  
-    "Mutect2.pon": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/SY_pon.vcf.gz",
-    "Mutect2.pon_idx": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/SY_pon.vcf.gz.tbi",
-    "Mutect2.gnomad": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/af-only-gnomad.hg38.vcf.gz",
-    "Mutect2.gnomad_idx": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/af-only-gnomad.hg38.vcf.gz.tbi",
-    "Mutect2.variants_for_contamination": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/small_exac_common_3.hg38.vcf.gz",
-    "Mutect2.variants_for_contamination_idx": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/small_exac_common_3.hg38.vcf.gz.tbi",
-    "Mutect2.realignment_index_bundle": "/groups/cgsd/alexandre/gatk-workflows/mutect2/inputs/Homo_sapiens_assembly38.index_bundle"
-  
-},
-{
-    "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
-    "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -198,7 +30,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -226,7 +58,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -254,7 +86,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -282,7 +114,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -310,7 +142,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -338,7 +170,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -366,7 +198,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -394,7 +226,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -422,7 +254,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -450,7 +282,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -478,7 +310,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -506,7 +338,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -534,7 +366,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -562,7 +394,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -590,7 +422,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -618,7 +450,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -646,7 +478,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -674,7 +506,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -702,7 +534,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -730,7 +562,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -758,7 +590,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -786,7 +618,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -814,7 +646,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -842,7 +674,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -870,7 +702,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -898,7 +730,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -926,7 +758,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -954,7 +786,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -982,7 +814,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -1010,7 +842,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -1038,7 +870,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -1066,7 +898,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -1094,7 +926,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -1122,7 +954,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -1150,7 +982,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -1178,7 +1010,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -1206,7 +1038,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -1234,7 +1066,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -1262,7 +1094,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -1290,7 +1122,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -1318,7 +1150,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -1346,7 +1178,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -1374,7 +1206,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -1402,7 +1234,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -1430,7 +1262,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -1458,7 +1290,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -1486,7 +1318,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -1514,7 +1346,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -1542,7 +1374,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -1570,7 +1402,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -1598,7 +1430,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -1626,7 +1458,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -1654,7 +1486,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -1682,7 +1514,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -1710,7 +1542,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -1738,7 +1570,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -1766,7 +1598,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -1794,7 +1626,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -1822,7 +1654,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -1850,7 +1682,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -1878,7 +1710,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -1906,7 +1738,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -1934,7 +1766,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -1962,7 +1794,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -1990,7 +1822,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -2018,7 +1850,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -2046,7 +1878,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -2074,7 +1906,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -2102,7 +1934,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -2130,7 +1962,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -2158,7 +1990,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -2186,7 +2018,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -2214,7 +2046,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -2242,7 +2074,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -2270,7 +2102,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -2298,7 +2130,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -2326,7 +2158,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -2354,7 +2186,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -2382,7 +2214,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -2410,7 +2242,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -2438,7 +2270,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -2466,7 +2298,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -2494,7 +2326,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -2522,7 +2354,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -2550,7 +2382,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -2578,7 +2410,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -2606,7 +2438,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -2634,7 +2466,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -2662,7 +2494,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -2690,7 +2522,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -2718,7 +2550,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -2746,7 +2578,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -2774,7 +2606,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -2802,7 +2634,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -2830,7 +2662,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -2858,7 +2690,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -2886,7 +2718,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -2914,7 +2746,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -2942,7 +2774,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -2970,7 +2802,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -2998,7 +2830,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -3026,7 +2858,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -3054,7 +2886,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -3082,7 +2914,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -3110,7 +2942,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -3138,7 +2970,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -3166,7 +2998,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -3194,7 +3026,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -3222,7 +3054,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -3250,7 +3082,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -3278,7 +3110,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -3306,7 +3138,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -3334,7 +3166,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -3362,7 +3194,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -3390,7 +3222,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -3418,7 +3250,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -3446,7 +3278,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -3474,7 +3306,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -3502,7 +3334,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -3530,7 +3362,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -3558,7 +3390,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -3586,7 +3418,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -3614,7 +3446,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -3642,7 +3474,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -3670,7 +3502,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -3698,7 +3530,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -3726,7 +3558,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -3754,7 +3586,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -3782,7 +3614,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -3810,7 +3642,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -3838,7 +3670,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -3866,7 +3698,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -3894,7 +3726,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -3922,7 +3754,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -3950,7 +3782,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -3978,7 +3810,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -4006,7 +3838,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -4034,7 +3866,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -4062,7 +3894,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -4090,7 +3922,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -4118,7 +3950,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -4146,7 +3978,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -4174,7 +4006,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -4202,7 +4034,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -4230,7 +4062,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -4258,7 +4090,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -4286,7 +4118,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -4314,7 +4146,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -4342,7 +4174,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -4370,7 +4202,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -4398,7 +4230,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -4426,7 +4258,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -4454,7 +4286,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -4482,7 +4314,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -4510,7 +4342,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -4538,7 +4370,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -4566,7 +4398,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -4594,7 +4426,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -4622,7 +4454,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -4650,7 +4482,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -4678,7 +4510,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -4706,7 +4538,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -4734,7 +4566,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -4762,7 +4594,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -4790,7 +4622,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -4818,7 +4650,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -4846,7 +4678,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -4874,7 +4706,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -4902,7 +4734,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -4930,7 +4762,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -4958,7 +4790,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -4986,7 +4818,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -5014,7 +4846,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -5042,7 +4874,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -5070,7 +4902,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -5098,7 +4930,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -5126,7 +4958,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -5154,7 +4986,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -5182,7 +5014,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -5210,7 +5042,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -5238,7 +5070,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -5266,7 +5098,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -5294,7 +5126,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -5322,7 +5154,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -5350,7 +5182,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -5378,7 +5210,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -5406,7 +5238,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -5434,7 +5266,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -5462,7 +5294,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -5490,7 +5322,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -5518,7 +5350,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -5546,7 +5378,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -5574,7 +5406,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -5602,7 +5434,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -5630,7 +5462,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -5658,7 +5490,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -5686,7 +5518,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -5714,7 +5546,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -5742,7 +5574,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -5770,7 +5602,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -5798,7 +5630,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -5826,7 +5658,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -5854,7 +5686,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -5882,7 +5714,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -5910,7 +5742,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -5938,7 +5770,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -5966,7 +5798,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -5994,7 +5826,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -6022,7 +5854,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -6050,7 +5882,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -6078,7 +5910,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -6106,7 +5938,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -6134,7 +5966,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -6162,7 +5994,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -6190,7 +6022,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -6218,7 +6050,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -6246,7 +6078,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -6274,7 +6106,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -6302,7 +6134,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -6330,7 +6162,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
@@ -6358,7 +6190,7 @@
 {
     "Mutect2.gatk_docker": "broadinstitute/gatk:4.1.4.1",
     "Mutect2.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
-    "Mutect2.scatter_count": 30,
+    "Mutect2.scatter_count": 10,
     "Mutect2.m2_extra_args": "--downsampling-stride 20 --max-reads-per-alignment-start 6 --max-suspicious-reads-per-alignment-start 6",
     "Mutect2.filter_funcotations": true,
     "Mutect2.funco_reference_version": "hg38",
