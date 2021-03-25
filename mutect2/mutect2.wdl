@@ -973,7 +973,7 @@ task FilterAlignmentArtifacts {
     runtime {
         docker: runtime_params.gatk_docker
         #bootDiskSizeGb: runtime_params.boot_disk_size
-        memory: machine_mem + " MB"
+        memory: "8 GB"
         #disks: "local-disk " + runtime_params.disk + " HDD"
         #preemptible: runtime_params.preemptible
         #maxRetries: runtime_params.max_retries
