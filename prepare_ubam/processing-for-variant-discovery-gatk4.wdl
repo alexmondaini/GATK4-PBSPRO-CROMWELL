@@ -461,7 +461,7 @@ task MarkDuplicates {
     Int compression_level
     Int preemptible_tries
     Int disk_size
-    Float mem_size_gb = 7.5
+    Float mem_size_gb = 10
 
     String docker_image
     String gatk_path
@@ -471,7 +471,7 @@ task MarkDuplicates {
  # This works because the output of BWA is query-grouped and therefore, so is the output of MergeBamAlignment.
  # While query-grouped isn't actually query-sorted, it's good enough for MarkDuplicates with ASSUME_SORT_ORDER="queryname"
   command {
-    ~{gatk_path} --java-options "-Dsamjdk.compression_level=~{compression_level} -Xms~{command_mem_gb}G" \
+    ~{gatk_path} --java-options "-Dsamjdk.compression_level=~{compression_level} -Xms4G -Xmx7G" \
       MarkDuplicates \
       --INPUT ~{sep=' --INPUT ' input_bams} \
       --OUTPUT ~{output_bam_basename}.bam \
