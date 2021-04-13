@@ -6,16 +6,14 @@ struct FastqSample {
   String name
   String readgroup
   String library
-  String platform_unit
 }
-
 
 workflow ConvertPairedFastQsToUnmappedBamWf {
   input {
     Array[FastqSample] samples
     String platform_name 
     String sequencing_center 
-    String gatk_docker = "broadinstitute/gatk@sha256:33574f446ac991f77bac125fbf6a2340e6db972a3f334e6c61bff94740165938"
+    String gatk_docker = "broadinstitute/gatk:latest"
     String gatk_path = "/gatk/gatk"
   }
   scatter (sample in samples) {
@@ -27,7 +25,6 @@ workflow ConvertPairedFastQsToUnmappedBamWf {
       fastq_2 = sample.fastq_2,
       readgroup_name = sample.readgroup,
       library_name = sample.library,
-      platform_unit = sample.platform_unit,
       platform_name = platform_name,
       sequencing_center = sequencing_center,
       gatk_path = gatk_path,
@@ -49,7 +46,6 @@ task PairedFastQsToUnmappedBAM {
     File fastq_2
     String readgroup_name
     String library_name
-    String platform_unit
     String platform_name
     String sequencing_center
     # runtime parameters
@@ -69,7 +65,6 @@ task PairedFastQsToUnmappedBAM {
     --READ_GROUP_NAME ~{readgroup_name} \
     --SAMPLE_NAME ~{sample_name} \
     --LIBRARY_NAME ~{library_name} \
-    --PLATFORM_UNIT ~{platform_unit} \
     --PLATFORM ~{platform_name} \
     --SEQUENCING_CENTER ~{sequencing_center}
   }
