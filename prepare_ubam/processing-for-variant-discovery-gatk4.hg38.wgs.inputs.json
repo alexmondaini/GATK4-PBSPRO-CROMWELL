@@ -1,7 +1,7 @@
 {
   "PreProcessingForVariantDiscovery_GATK4.sample_name": "NGS151",
   "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-  "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams_list": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/NGS151.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/NGS151.unmapped.bam",
   "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
   
   "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
