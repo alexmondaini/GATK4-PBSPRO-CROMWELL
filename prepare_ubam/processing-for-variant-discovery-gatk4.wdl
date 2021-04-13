@@ -41,7 +41,7 @@ workflow PreProcessingForVariantDiscovery_GATK4 {
     String sample_name
     String ref_name
 
-    Array[File] flowcell_unmapped_bams
+    File unmapped_bam
     String unmapped_bam_suffix
   
     File ref_fasta
@@ -87,7 +87,6 @@ workflow PreProcessingForVariantDiscovery_GATK4 {
   }
 
   # Align flowcell-level unmapped input bams in parallel
-  scatter (unmapped_bam in flowcell_unmapped_bams) {
 
     # Get the basename, i.e. strip the filepath and the extension
     String bam_basename = basename(unmapped_bam, unmapped_bam_suffix)
@@ -132,7 +131,6 @@ workflow PreProcessingForVariantDiscovery_GATK4 {
         preemptible_tries = preemptible_tries,
         compression_level = compression_level
     }
-  }
 
   # Aggregate aligned+merged flowcell BAM files and mark duplicates
   # We take advantage of the tool's ability to take multiple BAM inputs and write out a single output
@@ -456,7 +454,7 @@ task SortAndFixTags {
 # Mark duplicate reads to avoid counting non-independent observations
 task MarkDuplicates {
   input {
-    Array[File] input_bams
+    File input_bams
     String output_bam_basename
     String metrics_filename
   
