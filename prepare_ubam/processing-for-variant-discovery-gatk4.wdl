@@ -430,7 +430,7 @@ task SortAndFixTags {
       --CREATE_INDEX false \
       --CREATE_MD5_FILE false \
     | \
-    ~{gatk_path} --java-options "-Dsamjdk.compression_level=~{compression_level} -Xms4G -Xmx~{command_mem_gb_fix}G" \
+    ~{gatk_path} --java-options "-Dsamjdk.compression_level=~{compression_level} -Xms~{command_mem_gb_fix}G -Xmx4G" \
       SetNmMdAndUqTags \
       --INPUT /dev/stdin \
       --OUTPUT ~{output_bam_basename}.bam \
