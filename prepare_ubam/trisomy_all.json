@@ -2,7 +2,7 @@
     {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "NGS151",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/NGS151.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/NGS151.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -29,7 +29,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "NGS161",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/NGS161.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/NGS161.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -56,7 +56,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "NGS194",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/NGS194.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/NGS194.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -83,7 +83,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "NGS203",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/NGS203.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/NGS203.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -110,7 +110,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "NGS244",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/NGS244.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/NGS244.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -137,7 +137,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "NGS246",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/NGS246.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/NGS246.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -164,7 +164,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN1028",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1028.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1028.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -191,7 +191,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN1140",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1140.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1140.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -218,7 +218,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN1143",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1143.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1143.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -245,7 +245,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN1225",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1225.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1225.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -272,7 +272,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN1242",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1242.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1242.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -299,7 +299,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN1280",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1280.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1280.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -326,7 +326,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN1354",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1354.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1354.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -353,7 +353,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN1370",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1370.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1370.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -380,7 +380,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN1389",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1389.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1389.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -407,7 +407,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN1423",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1423.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1423.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -434,7 +434,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN1434",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1434.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1434.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -461,7 +461,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN1438",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1438.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1438.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -488,7 +488,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN1439",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1439.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1439.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -515,7 +515,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN1467",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1467.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1467.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -542,7 +542,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN1481",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1481.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1481.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -569,7 +569,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN1482",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1482.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1482.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -596,7 +596,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN1520",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1520.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1520.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -623,7 +623,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN1525",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1525.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1525.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -650,7 +650,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN1526",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1526.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1526.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -677,7 +677,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN1557",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1557.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1557.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -704,7 +704,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN1558",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1558.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1558.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -731,7 +731,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN156",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN156.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN156.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -758,7 +758,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN1571",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1571.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1571.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -785,7 +785,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN1581",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1581.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1581.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -812,7 +812,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN1585",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1585.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1585.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -839,7 +839,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN1593",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1593.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1593.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -866,7 +866,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN164",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN164.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN164.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -893,7 +893,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN1671",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1671.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1671.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -920,7 +920,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN1697",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1697.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1697.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -947,7 +947,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN1737",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1737.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1737.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -974,7 +974,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN1739",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1739.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1739.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -1001,7 +1001,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN1769",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1769.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1769.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -1028,7 +1028,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN188",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN188.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN188.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -1055,7 +1055,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN1969",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1969.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1969.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -1082,7 +1082,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN1978",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1978.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1978.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -1109,7 +1109,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN1992",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1992.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN1992.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -1136,7 +1136,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2140",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2140.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2140.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -1163,7 +1163,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2159",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2159.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2159.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -1190,7 +1190,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2179",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2179.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2179.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -1217,7 +1217,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2184",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2184.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2184.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -1244,7 +1244,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2189",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2189.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2189.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -1271,7 +1271,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2201",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2201.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2201.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -1298,7 +1298,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2250",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2250.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2250.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -1325,7 +1325,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2251",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2251.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2251.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -1352,7 +1352,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2321",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2321.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2321.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -1379,7 +1379,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2337",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2337.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2337.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -1406,7 +1406,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2351",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2351.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2351.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -1433,7 +1433,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2373",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2373.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2373.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -1460,7 +1460,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2374",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2374.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2374.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -1487,7 +1487,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2378",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2378.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2378.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -1514,7 +1514,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2389",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2389.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2389.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -1541,7 +1541,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2400",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2400.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2400.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -1568,7 +1568,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2426",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2426.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2426.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -1595,7 +1595,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2476",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2476.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2476.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -1622,7 +1622,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2517",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2517.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2517.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -1649,7 +1649,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2540",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2540.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2540.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -1676,7 +1676,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2557",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2557.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2557.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -1703,7 +1703,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2576",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2576.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2576.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -1730,7 +1730,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2584",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2584.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2584.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -1757,7 +1757,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2691",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2691.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2691.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -1784,7 +1784,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2703",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2703.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2703.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -1811,7 +1811,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2743",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2743.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2743.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -1838,7 +1838,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2765",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2765.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2765.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -1865,7 +1865,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2767",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2767.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2767.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -1892,7 +1892,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2774",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2774.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2774.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -1919,7 +1919,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2789",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2789.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2789.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -1946,7 +1946,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2800",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2800.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2800.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -1973,7 +1973,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2801",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2801.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2801.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2000,7 +2000,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2803",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2803.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2803.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2027,7 +2027,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2841",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2841.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2841.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2054,7 +2054,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2849",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2849.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2849.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2081,7 +2081,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2850",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2850.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2850.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2108,7 +2108,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2853",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2853.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2853.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2135,7 +2135,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2864",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2864.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2864.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2162,7 +2162,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2870",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2870.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2870.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2189,7 +2189,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2883",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2883.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2883.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2216,7 +2216,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2896",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2896.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2896.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2243,7 +2243,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2928",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2928.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2928.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2270,7 +2270,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2945",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2945.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2945.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2297,7 +2297,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2947",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2947.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2947.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2324,7 +2324,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2977",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2977.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2977.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2351,7 +2351,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2991",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2991.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2991.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2378,7 +2378,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN3006",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN3006.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN3006.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2405,7 +2405,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN3014",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN3014.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN3014.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2432,7 +2432,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN302",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN302.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN302.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2459,7 +2459,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN3039",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN3039.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN3039.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2486,7 +2486,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN3051",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN3051.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN3051.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2513,7 +2513,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN3060",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN3060.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN3060.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2540,7 +2540,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN3086",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN3086.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN3086.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2567,7 +2567,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN3102",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN3102.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN3102.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2594,7 +2594,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN343",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN343.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN343.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2621,7 +2621,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN350",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN350.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN350.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2648,7 +2648,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN38",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN38.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN38.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2675,7 +2675,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN404",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN404.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN404.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2702,7 +2702,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN413",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN413.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN413.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2729,7 +2729,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN462",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN462.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN462.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2756,7 +2756,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN588",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN588.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN588.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2783,7 +2783,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN590",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN590.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN590.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2810,7 +2810,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN592",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN592.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN592.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2837,7 +2837,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN598",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN598.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN598.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2864,7 +2864,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN629",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN629.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN629.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2891,7 +2891,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN64",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN64.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN64.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2918,7 +2918,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN679",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN679.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN679.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2945,7 +2945,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN740",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN740.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN740.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2972,7 +2972,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN758",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN758.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN758.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -2999,7 +2999,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN799",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN799.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN799.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -3026,7 +3026,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN822",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN822.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN822.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -3053,7 +3053,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN836",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN836.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN836.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -3080,7 +3080,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN869",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN869.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN869.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -3107,7 +3107,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN873",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN873.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN873.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -3134,7 +3134,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN908",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN908.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN908.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -3161,7 +3161,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN92",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN92.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN92.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -3188,7 +3188,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN933",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN933.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN933.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
@@ -3215,7 +3215,7 @@
       {
         "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN956",
         "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN956.unmapped.bam",
+        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN956.unmapped.bam",
         "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
         
         "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
