@@ -352,17 +352,17 @@ task MergeBamAlignment {
     Int compression_level
     Int preemptible_tries
     Int disk_size
-    Float mem_size_gb = 4
+    Float mem_size_gb = 6
 
     String docker_image
     String gatk_path
   }
-  Int command_mem_gb = ceil(mem_size_gb) - 1
+  Int command_mem_gb = ceil(mem_size_gb) - 2
 
   command {
     # set the bash variable needed for the command-line
     bash_ref_fasta=~{ref_fasta}
-    ~{gatk_path} --java-options "-Dsamjdk.compression_level=~{compression_level} -Xms~{command_mem_gb}G" \
+    ~{gatk_path} --java-options "-Dsamjdk.compression_level=~{compression_level} -Xms3G -Xmx~{command_mem_gb}G" \
       MergeBamAlignment \
       --VALIDATION_STRINGENCY SILENT \
       --EXPECTED_ORIENTATIONS FR \
@@ -411,18 +411,18 @@ task SortAndFixTags {
     Int compression_level
     Int preemptible_tries
     Int disk_size
-    Float mem_size_gb = 10
+    Float mem_size_gb = 15
 
     String docker_image
     String gatk_path
   }
-    Int command_mem_gb_sort = ceil(mem_size_gb) - 1
-    Int command_mem_gb_fix = ceil((mem_size_gb - 1)/10)
+    Int command_mem_gb_sort = ceil(mem_size_gb) - 3
+    Int command_mem_gb_fix = ceil((mem_size_gb - 3)/10)
 
   command {
     set -o pipefail
 
-    ~{gatk_path} --java-options "-Dsamjdk.compression_level=~{compression_level} -Xms~{command_mem_gb_sort}G" \
+    ~{gatk_path} --java-options "-Dsamjdk.compression_level=~{compression_level} -Xms4G -Xmx~{command_mem_gb_sort}G" \
       SortSam \
       --INPUT ~{input_bam} \
       --OUTPUT /dev/stdout \
@@ -430,7 +430,7 @@ task SortAndFixTags {
       --CREATE_INDEX false \
       --CREATE_MD5_FILE false \
     | \
-    ~{gatk_path} --java-options "-Dsamjdk.compression_level=~{compression_level} -Xms~{command_mem_gb_fix}G" \
+    ~{gatk_path} --java-options "-Dsamjdk.compression_level=~{compression_level} -Xms4G -Xmx~{command_mem_gb_fix}G" \
       SetNmMdAndUqTags \
       --INPUT /dev/stdin \
       --OUTPUT ~{output_bam_basename}.bam \
@@ -570,7 +570,7 @@ task BaseRecalibrator {
   
     Int preemptible_tries
     Int disk_size
-    Float mem_size_gb = 6
+    Float mem_size_gb = 12
 
     String docker_image
     String gatk_path
@@ -578,7 +578,7 @@ task BaseRecalibrator {
   Int command_mem_gb = ceil(mem_size_gb) - 2
 
   command { 
-    ~{gatk_path} --java-options "-Xms~{command_mem_gb}G" \
+    ~{gatk_path} --java-options "-Xms4G -Xmx~{command_mem_gb}G" \
       BaseRecalibrator \
       -R ~{ref_fasta} \
       -I ~{input_bam} \
@@ -608,15 +608,15 @@ task GatherBqsrReports {
 
    Int preemptible_tries
    Int disk_size
-   Float mem_size_gb = 4
+   Float mem_size_gb = 6
 
    String docker_image
    String gatk_path
   }
-  Int command_mem_gb = ceil(mem_size_gb) - 1
+  Int command_mem_gb = ceil(mem_size_gb) - 2
 
   command {
-    ~{gatk_path} --java-options "-Xms~{command_mem_gb}G" \
+    ~{gatk_path} --java-options "-Xms2G -Xmx~{command_mem_gb}G" \
       GatherBQSRReports \
       -I ~{sep=' -I ' input_bqsr_reports} \
       -O ~{output_report_filename}
@@ -646,15 +646,15 @@ task ApplyBQSR {
 
     Int preemptible_tries
     Int disk_size 
-    Float mem_size_gb = 4
+    Float mem_size_gb = 6
 
     String docker_image
     String gatk_path
   }
-  Int command_mem_gb = ceil(mem_size_gb) - 1
+  Int command_mem_gb = ceil(mem_size_gb) - 2
 
   command {  
-    ~{gatk_path} --java-options "-Xms~{command_mem_gb}G" \
+    ~{gatk_path} --java-options "-Xms2G -Xmx~{command_mem_gb}G" \
       ApplyBQSR \
       -R ~{ref_fasta} \
       -I ~{input_bam} \
@@ -686,15 +686,15 @@ task GatherBamFiles {
     Int compression_level
     Int preemptible_tries
     Int disk_size
-    Float mem_size_gb = 3
+    Float mem_size_gb = 6
 
     String docker_image
     String gatk_path
   }
-  Int command_mem_gb = ceil(mem_size_gb) - 1
+  Int command_mem_gb = ceil(mem_size_gb) - 2
 
   command {
-    ~{gatk_path} --java-options "-Dsamjdk.compression_level=~{compression_level} -Xms~{command_mem_gb}G" \
+    ~{gatk_path} --java-options "-Dsamjdk.compression_level=~{compression_level} -Xms2G -Xmx~{command_mem_gb}G" \
       GatherBamFiles \
       --INPUT ~{sep=' --INPUT ' input_bams} \
       --OUTPUT ~{output_bam_basename}.bam \
