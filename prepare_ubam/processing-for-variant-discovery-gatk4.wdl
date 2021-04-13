@@ -77,7 +77,7 @@ workflow PreProcessingForVariantDiscovery_GATK4 {
   }
     String base_file_name = sample_name + "." + ref_name
 
-    Array[File] flowcell_unmapped_bams = read_lines(flowcell_unmapped_bams_list)
+    Array[File] flowcell_unmapped_bams = flowcell_unmapped_bams_list
 
   # Get the version of BWA to include in the PG record in the header of the BAM produced 
   # by MergeBamAlignment. 
