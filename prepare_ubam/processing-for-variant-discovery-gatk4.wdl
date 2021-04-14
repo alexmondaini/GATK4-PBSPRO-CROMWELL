@@ -411,12 +411,12 @@ task SortAndFixTags {
     Int compression_level
     Int preemptible_tries
     Int disk_size
-    Float mem_size_gb = 15
+    Float mem_size_gb = 17
 
     String docker_image
     String gatk_path
   }
-    Int command_mem_gb_sort = ceil(mem_size_gb) - 3
+    Int command_mem_gb_sort = ceil(mem_size_gb) - 7
     Int command_mem_gb_fix = ceil((mem_size_gb - 3)/10)
 
   command {
@@ -430,7 +430,7 @@ task SortAndFixTags {
       --CREATE_INDEX false \
       --CREATE_MD5_FILE false \
     | \
-    ~{gatk_path} --java-options "-Dsamjdk.compression_level=~{compression_level} -Xms~{command_mem_gb_fix}G -Xmx4G" \
+    ~{gatk_path} --java-options "-Dsamjdk.compression_level=~{compression_level} -Xms~{command_mem_gb_fix}G -Xmx3G" \
       SetNmMdAndUqTags \
       --INPUT /dev/stdin \
       --OUTPUT ~{output_bam_basename}.bam \
