@@ -1,137 +1,1379 @@
 [
 {
-        "PreProcessingForVariantDiscovery_GATK4.sample_name": "NGS161",
-        "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/NGS161.unmapped.bam",
-        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
-        
-        "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
-        "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
-        "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
-        "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
-        "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
-        "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
-        "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
-        "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
-        "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
-        
-        "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
-        "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
-        "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
-          "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
-          "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
-        ],
-        "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
-          "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
-          "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
-        ]
-      },
-      {
-        "PreProcessingForVariantDiscovery_GATK4.sample_name": "NGS194",
-        "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/NGS194.unmapped.bam",
-        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
-        
-        "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
-        "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
-        "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
-        "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
-        "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
-        "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
-        "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
-        "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
-        "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
-        
-        "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
-        "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
-        "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
-          "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
-          "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
-        ],
-        "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
-          "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
-          "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
-        ]
-      },
-      {
-        "PreProcessingForVariantDiscovery_GATK4.sample_name": "NGS203",
-        "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/NGS203.unmapped.bam",
-        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
-        
-        "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
-        "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
-        "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
-        "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
-        "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
-        "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
-        "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
-        "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
-        "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
-        
-        "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
-        "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
-        "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
-          "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
-          "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
-        ],
-        "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
-          "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
-          "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
-        ]
-      },
-      {
-        "PreProcessingForVariantDiscovery_GATK4.sample_name": "NGS244",
-        "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/NGS244.unmapped.bam",
-        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
-        
-        "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
-        "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
-        "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
-        "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
-        "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
-        "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
-        "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
-        "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
-        "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
-        
-        "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
-        "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
-        "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
-          "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
-          "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
-        ],
-        "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
-          "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
-          "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
-        ]
-      },
-      {
-        "PreProcessingForVariantDiscovery_GATK4.sample_name": "NGS246",
-        "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/NGS246.unmapped.bam",
-        "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
-        
-        "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
-        "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
-        "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
-        "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
-        "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
-        "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
-        "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
-        "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
-        "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
-        
-        "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
-        "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
-        "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
-          "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
-          "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
-        ],
-        "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
-          "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
-          "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
-        ]
-      }
-    ]
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2767",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2767.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2774",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2774.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2789",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2789.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2800",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2800.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2801",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2801.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2803",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2803.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2841",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2841.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2849",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2849.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2850",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2850.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2853",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2853.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2864",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2864.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2870",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2870.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2883",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2883.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2896",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2896.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2928",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2928.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2945",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2945.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2947",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2947.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2977",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2977.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN2991",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN2991.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN3006",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN3006.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN3014",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN3014.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN302",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN302.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN3039",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN3039.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN3051",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN3051.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN3060",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN3060.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN3086",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN3086.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN3102",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN3102.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN343",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN343.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN350",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN350.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN38",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN38.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN404",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN404.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN413",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN413.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN462",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN462.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN588",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN588.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN590",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN590.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN592",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN592.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN598",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN598.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN629",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN629.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN64",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN64.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN679",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN679.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN740",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN740.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN758",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN758.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN799",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN799.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN822",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN822.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN836",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN836.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN869",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN869.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN873",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN873.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN908",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN908.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN92",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN92.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN933",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN933.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+},
+{
+  "PreProcessingForVariantDiscovery_GATK4.sample_name": "UPN956",
+  "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam": "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_ubam/UPN956.unmapped.bam",
+  "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
+  
+  "PreProcessingForVariantDiscovery_GATK4.ref_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "PreProcessingForVariantDiscovery_GATK4.ref_fasta_index": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "PreProcessingForVariantDiscovery_GATK4.ref_alt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.alt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_sa": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.sa",
+  "PreProcessingForVariantDiscovery_GATK4.ref_amb": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.amb",
+  "PreProcessingForVariantDiscovery_GATK4.ref_bwt": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.bwt",
+  "PreProcessingForVariantDiscovery_GATK4.ref_ann": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.ann",
+  "PreProcessingForVariantDiscovery_GATK4.ref_pac": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.64.pac",
+  
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf",
+  "PreProcessingForVariantDiscovery_GATK4.dbSNP_vcf_index": "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.dbsnp138.vcf.idx",
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_VCFs": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  ],
+  "PreProcessingForVariantDiscovery_GATK4.known_indels_sites_indices": [
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi",
+    "/groups/cgsd/alexandre/gatk-workflows/gatk4-exome-analysis-pipeline/inputs/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi"
+  ]
+}
+]
