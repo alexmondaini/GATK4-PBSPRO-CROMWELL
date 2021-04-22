@@ -76,8 +76,8 @@ task AnnotateIntervals {
       Int? preemptible_attempts
     }
 
-    Int machine_mem_mb = select_first([mem_gb, 2]) * 1000
-    Int command_mem_mb = machine_mem_mb - 500
+    Int machine_mem_mb = select_first([mem_gb, 4]) * 1000
+    Int command_mem_mb = machine_mem_mb - 1000
     
     # Determine output filename
     String base_filename = basename(intervals, ".interval_list")
