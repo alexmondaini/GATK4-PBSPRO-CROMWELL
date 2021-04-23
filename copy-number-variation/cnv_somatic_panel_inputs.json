@@ -14,12 +14,15 @@
   "CNVSomaticPanelWorkflow.padding": "100",
   "CNVSomaticPanelWorkflow.bin_length": "0",
   "CNVSomaticPanelWorkflow.do_explicit_gc_correction": "true",
+  "CNVSomaticPanelWorkflow.mem_gb_for_annotate_intervals": "6",
    
   
   "CNVSomaticPanelWorkflow.segmental_duplication_track_bed": "/groups/cgsd/alexandre/gatk-workflows/copy-number-variation/inputs/segmental_dup.sorted.merged.bed.gz",
   "CNVSomaticPanelWorkflow.segmental_duplication_track_bed_idx": "/groups/cgsd/alexandre/gatk-workflows/copy-number-variation/inputs/segmental_dup.sorted.merged.bed.gz.tbi",
   
   "CNVSomaticPanelWorkflow.mappability_track_bed": "/groups/cgsd/alexandre/gatk-workflows/copy-number-variation/inputs/k36.umap.bed.gz",
-  "CNVSomaticPanelWorkflow.mappability_track_bed_idx": "/groups/cgsd/alexandre/gatk-workflows/copy-number-variation/inputs/k36.umap.bed.gz.tbi"
+  "CNVSomaticPanelWorkflow.mappability_track_bed_idx": "/groups/cgsd/alexandre/gatk-workflows/copy-number-variation/inputs/k36.umap.bed.gz.tbi",
+
+  "CNVSomaticPanelWorkflow.blacklist_intervals": "/groups/cgsd/alexandre/gatk-workflows/copy-number-variation/inputs/CNV_and_centromere_blacklist.hg38liftover.list"
 }
 
