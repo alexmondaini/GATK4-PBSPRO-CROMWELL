@@ -604,7 +604,7 @@ task DenoiseReadCounts {
 
     command <<<
         set -e
-        export GATK_LOCAL_JAR=~{default="/root/gatk.jar" gatk4_jar_override}
+        export GATK_LOCAL_JAR=~{default="/gatk/gatk.jar" gatk4_jar_override}
 
         gatk --java-options "-Xmx~{command_mem_mb}m" DenoiseReadCounts \
             --input ~{read_counts} \
@@ -680,7 +680,7 @@ task ModelSegments {
 
     command <<<
         set -e
-        export GATK_LOCAL_JAR=~{default="/root/gatk.jar" gatk4_jar_override}
+        export GATK_LOCAL_JAR=~{default="/gatk/gatk.jar" gatk4_jar_override}
 
         gatk --java-options "-Xmx~{command_mem_mb}m" ModelSegments \
             --denoised-copy-ratios ~{denoised_copy_ratios} \
@@ -761,7 +761,7 @@ task CallCopyRatioSegments {
 
     command <<<
         set -e
-        export GATK_LOCAL_JAR=~{default="/root/gatk.jar" gatk4_jar_override}
+        export GATK_LOCAL_JAR=~{default="/gatk/gatk.jar" gatk4_jar_override}
 
         gatk --java-options "-Xmx~{command_mem_mb}m" CallCopyRatioSegments \
             --input ~{copy_ratio_segments} \
@@ -815,7 +815,7 @@ task PlotDenoisedCopyRatios {
 
     command <<<
         set -e
-        export GATK_LOCAL_JAR=~{default="/root/gatk.jar" gatk4_jar_override}
+        export GATK_LOCAL_JAR=~{default="/gatk/gatk.jar" gatk4_jar_override}
 
         gatk --java-options "-Xmx~{command_mem_mb}m" PlotDenoisedCopyRatios \
             --standardized-copy-ratios ~{standardized_copy_ratios} \
@@ -880,7 +880,7 @@ task PlotModeledSegments {
 
     command <<<
         set -e
-        export GATK_LOCAL_JAR=~{default="/root/gatk.jar" gatk4_jar_override}
+        export GATK_LOCAL_JAR=~{default="/gatk/gatk.jar" gatk4_jar_override}
 
         gatk --java-options "-Xmx~{command_mem_mb}m" PlotModeledSegments \
             --denoised-copy-ratios ~{denoised_copy_ratios} \
