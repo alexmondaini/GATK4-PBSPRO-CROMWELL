@@ -1,0 +1,17 @@
+{ 
+  "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
+  "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
+  "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
+  
+  "CNVSomaticPairWorkflow.tumor_bam_idx": "BAI",
+  "CNVSomaticPairWorkflow.tumor_bam": "BAM",
+  
+  "CNVSomaticPairWorkflow.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
+  "CNVSomaticPairWorkflow.ref_fasta_fai": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
+  "CNVSomaticPairWorkflow.ref_fasta_dict": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.dict",
+  
+  "CNVSomaticPairWorkflow.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
+  "CNVSomaticPairWorkflow.read_count_pon": "/groups/cgsd/alexandre/cromwell-executions/CNVSomaticPanelWorkflow/sy_read_counts/call-CreateReadCountPanelOfNormals/execution/CNV_SY_Pon.pon.hdf5",
+  
+  "CNVSomaticPairWorkflow.blacklist_intervals": "/groups/cgsd/alexandre/gatk-workflows/copy-number-variation/inputs/CNV_and_centromere_blacklist.hg38liftover.list",
+} 
