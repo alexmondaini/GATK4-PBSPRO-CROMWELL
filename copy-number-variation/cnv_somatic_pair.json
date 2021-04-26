@@ -12,7 +12,7 @@
   
   "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
   "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
-  "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
+  "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/sy/Basic_Core_xGen_MSI_TERT_HPV_EBV_targets_hg38_sorted_merge.interval_list",
   
   "CNVSomaticPairWorkflow.tumor_bam_idx": "BAI",
   "CNVSomaticPairWorkflow.tumor_bam": "BAM",
