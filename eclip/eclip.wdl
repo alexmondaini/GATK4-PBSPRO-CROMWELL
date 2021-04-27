@@ -36,7 +36,6 @@ task CutAdapt {
     -G ATCACG \
     -o ~{left_fasta} \
     -p ~{right_fasta} \
-    --info-file ~{info_file} \
     ~{fastq_r1} \
     ~{fastq_r2}
     >>>
