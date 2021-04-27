@@ -25,7 +25,6 @@ task CutAdapt {
     
     String left_fasta = basename(fastq_r1,'.gz')
     String right_fasta = basename(fastq_r2,'.gz')
-    String info_file = "info_file.tsv"
 
     command <<<
     source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
@@ -50,6 +49,7 @@ task CutAdapt {
     output {
         File read_left_r1 = "${left_fasta}"
         File read_right_2 = "${right_fasta}"
+        File report = stdout()
     }
 
 }
