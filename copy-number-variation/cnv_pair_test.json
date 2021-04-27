@@ -10,6 +10,7 @@
   "CNVSomaticPairWorkflow.intervals": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
   
   "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/gatk-workflows/src/interval_list/aml/Basic_Core_xGenPanCancer_targets_hg38_sorted_merge.interval_list",
+  "CNVSomaticPairWorkflow.read_count_pon": "/groups/cgsd/alexandre/cromwell-executions/CNVSomaticPanelWorkflow/ec0d5c51-0b8c-460b-8027-9acb6160890c/call-CreateReadCountPanelOfNormals/execution/AML_Anskar_Pon.pon.hdf5",
   
   "CNVSomaticPairWorkflow.blacklist_intervals": "/groups/cgsd/alexandre/gatk-workflows/copy-number-variation/inputs/CNV_and_centromere_blacklist.hg38liftover.list"
 }
