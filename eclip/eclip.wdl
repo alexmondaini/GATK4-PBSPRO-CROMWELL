@@ -3,12 +3,16 @@ version 1.0
 workflow Eclip {
     
     input {
-        Pair[File,File]  fastqs
+        Array[Pair[File,File]]  fastqs
     }
+    
+    scatter (fast_pair in fastqs) {
+    
     call CutAdapt {
         input:
-        fastq_r1 = fastqs.left,
-        fastq_r2 = fastqs.right
+        fastq_r1 = fast_pair.left,
+        fastq_r2 = fast_pair.right
+    }
     }
 }
 
@@ -19,8 +23,8 @@ task CutAdapt {
         File fastq_r2
     }
     
-    String left_fasta = basename(fastq_r1)
-    String right_fasta = basename(fastq_r2)
+    String left_fasta = basename(fastq_r1,'.gz')
+    String right_fasta = basename(fastq_r2,'.gz')
 
     command <<<
     source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
@@ -35,6 +39,11 @@ task CutAdapt {
     ~{fastq_r1} \
     ~{fastq_r2}
     >>>
+
+    runtime {
+        cpu: 3
+        memory: "6 GB"
+    }
 
     output {
         File read_left_r1 = "${left_fasta}"
