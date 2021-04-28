@@ -608,7 +608,7 @@ task DenoiseReadCounts {
 
         gatk --java-options "-Xmx~{command_mem_mb}m" DenoiseReadCounts \
             --input ~{read_counts} \
-            ~{default=''  "--count-panel-of-normals" + read_count_pon} \
+            ~{default=''  "--count-panel-of-normals " + read_count_pon} \
             ~{"--number-of-eigensamples " + number_of_eigensamples} \
             --standardized-copy-ratios ~{entity_id}.standardizedCR.tsv \
             --denoised-copy-ratios ~{entity_id}.denoisedCR.tsv
