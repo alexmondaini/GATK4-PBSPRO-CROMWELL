@@ -23,6 +23,6 @@
   "CNVSomaticPanelWorkflow.mappability_track_bed": "/groups/cgsd/alexandre/gatk-workflows/copy-number-variation/inputs/k36.umap.bed.gz",
   "CNVSomaticPanelWorkflow.mappability_track_bed_idx": "/groups/cgsd/alexandre/gatk-workflows/copy-number-variation/inputs/k36.umap.bed.gz.tbi",
 
-  "CNVSomaticPanelWorkflow.blacklist_intervals": "/groups/cgsd/alexandre/gatk-workflows/copy-number-variation/inputs/CNV_and_centromere_blacklist.hg38liftover.list"
+  "CNVSomaticPanelWorkflow.blacklist_intervals": "/groups/cgsd/alexandre/gatk-workflows/copy-number-variation/inputs/aml_to_exclude.list"
 }
 
