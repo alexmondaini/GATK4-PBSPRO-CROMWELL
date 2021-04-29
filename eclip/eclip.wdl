@@ -7,7 +7,6 @@ workflow Eclip {
     }
     
     scatter (fast_pair in fastqs) {
-    
     call CutAdapt {
         input:
         fastq_r1 = fast_pair.left,
@@ -46,9 +45,40 @@ task CutAdapt {
     }
 
     output {
-        File read_left_r1 = "${left_fasta}"
-        File read_right_2 = "${right_fasta}"
-        File report = stdout()
+        Array[Pair[File,File]] output_fq = glob("*fq")
     }
 
 }
+
+#task CutAdapt_round2 {
+#    input {
+#        File left_r1
+#        File right_r2
+#    }
+#    String round2_left_r1 = 'round2' + left_r1
+#    String round2_right_r2 = 'round2' + right_r2
+#
+#    command <<<
+#    source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
+#    conda activate stepbystep
+#    cutadapt --match-read-wildcards --times 1 -e 0.1 -O 1 --quality-cutoff 6,6 -m 18 \
+#    -a ATCACG \
+#    -g ATCACG \
+#    -A ATCACG \
+#    -G ATCACG \
+#    -o ~{round2_left_r1} \
+#    -p ~{round2_right_r2} \
+#    ~{left_r1} \
+#    ~{right_r2}
+#    >>>
+#
+#    runtime {
+#        cpu: 3
+#        memory: "6 GB"
+#    }
+#
+#    output {
+#        File round2_r1 = "${round2_left_r1}"
+#        File round2_r2 = "${round2_right_r2}"
+#    }
+#}
