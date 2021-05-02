@@ -5,8 +5,6 @@ struct FastaSamples {
     String barcode
 }
 
-
-
 workflow Eclip {
     
     input {
