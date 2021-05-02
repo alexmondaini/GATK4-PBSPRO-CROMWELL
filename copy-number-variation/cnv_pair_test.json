@@ -1,8 +1,8 @@
 { 
   "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
   
-  "CNVSomaticPairWorkflow.tumor_bam_idx": "/groups/cgsd/alexandre/gatk-workflows/src/aml_out/bam/1122Dx.GRCh38DH.target.bai",
-  "CNVSomaticPairWorkflow.tumor_bam": "/groups/cgsd/alexandre/gatk-workflows/src/aml_out/bam/1122Dx.GRCh38DH.target.bam",
+  "CNVSomaticPairWorkflow.tumor_bam": "/groups/cgsd/alexandre/gatk-workflows/src/aml_out/bam/2017Dx.GRCh38DH.target.bam",
+  "CNVSomaticPairWorkflow.tumor_bam_idx": "/groups/cgsd/alexandre/gatk-workflows/src/aml_out/bam/2017Dx.GRCh38DH.target.bai",
   
   "CNVSomaticPairWorkflow.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
   "CNVSomaticPairWorkflow.ref_fasta_fai": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",

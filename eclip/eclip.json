@@ -1,7 +1,6 @@
 {
-  "Eclip.fastqs": [
-  {"left":"/groups/cgsd/javed/Akshay/fastq/01_raw_reads/10249_sample1_r1.fq.gz","right":"/groups/cgsd/javed/Akshay/fastq/01_raw_reads/10249_sample1_r2.fq.gz","barcode":"ATCACG"},
-  {"left":"/groups/cgsd/javed/Akshay/fastq/01_raw_reads/10249_sample2_r1.fq.gz","right":"/groups/cgsd/javed/Akshay/fastq/01_raw_reads/10249_sample2_r2.fq.gz","barcode":"CGATGT"}
+  "Eclip.samples": [
+  {"pair":{"left":"/groups/cgsd/javed/Akshay/fastq/01_raw_reads/10249_sample1_r1.fq.gz","right":"/groups/cgsd/javed/Akshay/fastq/01_raw_reads/10249_sample1_r2.fq.gz"},"barcode":"ATCACG"}
 ]
 }
 
