@@ -20,6 +20,12 @@ workflow SamtoolsMerge {
             bai_rep_2 = sample.bai_rep_2
         }
     }
+    scatter (merged_bam in Merge.result) {
+        call Index {
+            input:
+            merged_bam = merged_bam
+        }
+    }
 }
 
 task Merge {
@@ -41,5 +47,27 @@ task Merge {
     }
     output {
         File result = "${merged_bam}"
+    }
+}
+
+task Index {
+    input {
+        File merged_bam
+    }
+    
+    String merged_bai = basename(merged_bam,".bam") + '.bai'
+    
+    command <<<
+    source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
+    conda activate stepbystep
+    ln ~{merged_bam}
+    samtools index ~{merged_bam} > ~{merged_bai}
+    >>>
+    runtime {
+        cpu: 3
+        memory: "8 GB"
+    }
+    output {
+        File result_bai = "${merged_bai}"
     }
 }
