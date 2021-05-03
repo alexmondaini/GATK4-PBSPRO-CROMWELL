@@ -12,10 +12,10 @@ workflow Eclip {
             bam = bam
         }
     }
-    call Merge {
-        input:
-        pairs = bam.result
-    }
+    #call Merge {
+    #    input:
+    #    pairs = bam.result
+    #}
 }
 
 task Index {
