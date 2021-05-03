@@ -31,6 +31,10 @@ workflow SamtoolsMerge {
             final_bam = Index.result_bam,
             final_bai = Index.result_bai
         }
+        call Clipper {
+            input:
+            call_peak_bam = View.final_bam
+        } 
     }
 }
 
@@ -66,6 +70,7 @@ task Index {
     command <<<
     source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
     conda activate stepbystep
+    ln ~{merged_bam}
     samtools index ~{merged_bam} > ~{merged_bai}
     >>>
     runtime {
@@ -96,4 +101,20 @@ task View {
     output {
         File ready_bam = "${ready_to_peak_call}"
     }
+}
+
+task Clipper {
+    input {
+        File call_peak_bam
+    }
+    String bed_peak_intervals = basename(call_peak_bam,'bam') + '.bed'
+    command <<<
+    clipper -h
+    >>>
+    runtime {
+        cpu: 4
+        memory: "6 GB"
+        docker: "brianyee/clipper@sha256:094ede2a0ee7a6f2c2e07f436a8b63486dc4a072dbccad136b7a450363ab1876"
+    }
+
 }
