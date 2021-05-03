@@ -33,7 +33,7 @@ workflow SamtoolsMerge {
         }
         call Clipper {
             input:
-            call_peak_bam = View.final_bam
+            call_peak_bam = View.ready_bam
         } 
     }
 }
@@ -109,7 +109,11 @@ task Clipper {
     }
     String bed_peak_intervals = basename(call_peak_bam,'bam') + '.bed'
     command <<<
-    clipper -h
+    clipper \
+    --species hg19 \
+    --bam ~{call_peak_bam} \
+    --save-pickle \
+    --outfile ~{bed_peak_intervals}
     >>>
     runtime {
         cpu: 4
