@@ -109,6 +109,8 @@ task Clipper {
     }
     String bed_peak_intervals = basename(call_peak_bam,'bam') + '.bed'
     command <<<
+    module load singularity
+    singularity exec /groups/cgsd/alexandre/eclip/workflow/brianyee_clipper:5d865bb.sif \
     clipper \
     --species hg19 \
     --bam ~{call_peak_bam} \
@@ -118,7 +120,6 @@ task Clipper {
     runtime {
         cpu: 4
         memory: "6 GB"
-        docker: "brianyee/clipper@sha256:094ede2a0ee7a6f2c2e07f436a8b63486dc4a072dbccad136b7a450363ab1876"
     }
 
 }
