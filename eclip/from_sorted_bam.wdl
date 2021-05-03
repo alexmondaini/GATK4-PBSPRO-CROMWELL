@@ -51,7 +51,7 @@ task Merge {
     source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
     conda activate stepbystep
     samtools merge ~{pairs.left} ~{pairs.right}
-    <<<
+    >>>
 
     runtime {
         cpu: 3
