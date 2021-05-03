@@ -108,15 +108,18 @@ task Clipper {
         File call_peak_bam
     }
     String bed_peak_intervals = basename(call_peak_bam,'bam') + '.bed'
+    
     command <<<
     module load singularity
-    singularity exec /groups/cgsd/alexandre/eclip/workflow/brianyee_clipper:5d865bb.sif \
+    singularity exec --bind /groups/cgsd/alexandre/cromwell-executions/SamtoolsMerge/ \
+    /groups/cgsd/alexandre/eclip/workflow/brianyee_clipper:5d865bb.sif \
     clipper \
     --species hg19 \
     --bam ~{call_peak_bam} \
     --save-pickle \
     --outfile ~{bed_peak_intervals}
     >>>
+    
     runtime {
         cpu: 4
         memory: "6 GB"
