@@ -21,9 +21,15 @@ workflow SamtoolsMerge {
         }
     }
     scatter (merged_bam in Merge.result) {
+
         call Index {
             input:
             merged_bam = merged_bam
+        }
+        call View {
+            input:
+            final_bam = Index.result_bam,
+            final_bai = Index.result_bai
         }
     }
 }
@@ -60,7 +66,6 @@ task Index {
     command <<<
     source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
     conda activate stepbystep
-    ln ~{merged_bam}
     samtools index ~{merged_bam} > ~{merged_bai}
     >>>
     runtime {
@@ -69,5 +74,26 @@ task Index {
     }
     output {
         File result_bai = "${merged_bai}"
+        File result_bam = "${merged_bam}"
+    }
+}
+
+task View {
+    input {
+        File final_bam
+        File final_bai
+    }
+    String ready_to_peak_call = basename(final_bam,'.bam') + '_ready.bam'
+    command <<<
+    source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
+    conda activate stepbystep
+    samtools view -f 128 -b -o ~{ready_to_peak_call} ~{final_bam}
+    >>>
+    runtime {
+        cpu: 3
+        memory: "8 GB"
+    }
+    output {
+        File ready_bam = "${ready_to_peak_call}"
     }
 }
