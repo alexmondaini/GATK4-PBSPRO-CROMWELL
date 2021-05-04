@@ -3,7 +3,7 @@
   
     "CNVSomaticPanelWorkflow.normal_bams": ["/groups/cgsd/alexandre/gatk-workflows/src/trisomy_out/bam/NGS151.hg38.bam", "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_out/bam/NGS161.hg38.bam", "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_out/bam/NGS194.hg38.bam", "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_out/bam/NGS203.hg38.bam", "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_out/bam/NGS244.hg38.bam", "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_out/bam/NGS246.hg38.bam"],
     "CNVSomaticPanelWorkflow.normal_bais": ["/groups/cgsd/alexandre/gatk-workflows/src/trisomy_out/bam/NGS151.hg38.bai", "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_out/bam/NGS161.hg38.bai", "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_out/bam/NGS194.hg38.bai", "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_out/bam/NGS203.hg38.bai", "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_out/bam/NGS244.hg38.bai", "/groups/cgsd/alexandre/gatk-workflows/src/trisomy_out/bam/NGS246.hg38.bai"],
-    "CNVSomaticPanelWorkflow.pon_entity_id": "AML_CN_PON",
+    "CNVSomaticPanelWorkflow.pon_entity_id": "AML_TRISOMY_PON",
     
     "CNVSomaticPanelWorkflow.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
     "CNVSomaticPanelWorkflow.ref_fasta_fai": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
