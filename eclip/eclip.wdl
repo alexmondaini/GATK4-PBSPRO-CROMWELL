@@ -21,13 +21,13 @@ workflow Eclip {
     }
     call FasQC_round1 {
         input:
-        fastqc_r1 = CutAdapt.round1_left_r1,
-        fastqc_r2 = CutAdapt.round1_right_r2
+        fastqc_r1 = CutAdapt.result_cutadapt.left,
+        fastqc_r2 = CutAdapt.result_cutadapt.right
     }
     call CutAdapt_round2 {
         input:
-        round1_left_r1 = CutAdapt.round1_left_r1,
-        round1_right_r2 = CutAdapt.round1_right_r2,
+        round1_left_r1 = CutAdapt.result_cutadapt.left,
+        round1_right_r2 = CutAdapt.result_cutadapt.right,
         barcode = sample.barcode
     }
     call FasQC_round2 {
@@ -74,8 +74,7 @@ task CutAdapt {
     }
 
     output {
-        File round1_left_r1 = "${left_r1}"
-        File round1_right_r2 = "${right_r2}"
+        Pair[File,File] result_cutadapt = glob('*fq')
     }
 
 }
@@ -104,8 +103,8 @@ task CutAdapt_round2 {
         String barcode
     }
 
-    String round2_left_r1 = 'round2' + round1_left_r1
-    String round2_right_r2 = 'round2' + round1_right_r2
+    String round2_left_r1 = basename(round1_left_r1,'fq') + 'round2.fq'
+    String round2_right_r2 = basename(round1_right_r2,'fq') + 'round2.fq'
 
     command <<<
     source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
