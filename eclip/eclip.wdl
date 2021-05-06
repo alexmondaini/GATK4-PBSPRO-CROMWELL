@@ -168,7 +168,6 @@ task FastQ_sort {
         memory: "5 GB"
     }
     output {
-        File result_sorted_r1 = "${sorted_r1}"
-        File result_sorted_r2 = "${sorted_r2}"
+        Pair[File,File] result_sorted = glob('*fq')
      }
 }
