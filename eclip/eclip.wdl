@@ -21,24 +21,24 @@ workflow Eclip {
     }
     call FasQC_round1 {
         input:
-        fastqc_r1 = CutAdapt.result_cutadapt.left,
-        fastqc_r2 = CutAdapt.result_cutadapt.right
+        fastqc_r1 = CutAdapt.result_round1_cutadapt_left,
+        fastqc_r2 = CutAdapt.result_round1_cutadapt_right
     }
     call CutAdapt_round2 {
         input:
-        round1_left_r1 = CutAdapt.result_cutadapt.left,
-        round1_right_r2 = CutAdapt.result_cutadapt.right,
+        round1_left_r1 = CutAdapt.result_round1_cutadapt_left,
+        round1_right_r2 = CutAdapt.result_round1_cutadapt_right,
         barcode = sample.barcode
     }
     call FasQC_round2 {
         input:
-        fastqc_round2_r1 = CutAdapt_round2.result_round2.left,
-        fastqc_round2_r2 = CutAdapt_round2.result_round2.right
+        fastqc_round2_r1 = CutAdapt_round2.result_round2_cutadapt_left,
+        fastqc_round2_r2 = CutAdapt_round2.result_round2_cutadapt_right
     }
     call FastQ_sort {
         input:
-        fastq_sort_r1 = CutAdapt_round2.result_round2.left,
-        fastq_sort_r2 = CutAdapt_round2.result_round2.right
+        fastq_sort_r1 = CutAdapt_round2.result_round2_cutadapt_left,
+        fastq_sort_r2 = CutAdapt_round2.result_round2_cutadapt_right
     }
     }
 }
@@ -74,7 +74,8 @@ task CutAdapt {
     }
 
     output {
-        Pair[File,File] result_cutadapt = glob('*fq')
+        File result_round1_cutadapt_left = "${left_r1}"
+        File result_round1_cutadapt_right = "${right_r2}"
     }
 
 }
@@ -126,7 +127,8 @@ task CutAdapt_round2 {
     }
 
     output {
-        Pair[File,File] result_round2 = glob('*fq') 
+        File result_round2_cutadapt_left = "${round2_left_r1}" 
+        File result_round2_cutadapt_right = "${round2_right_r2}"
     }
 }
 
@@ -168,6 +170,7 @@ task FastQ_sort {
         memory: "5 GB"
     }
     output {
-        Pair[File,File] result_sorted = glob('*fq')
+        File result_fastq_sort_left = "${sorted_r1}"
+        File result_fastq_sort_right = "${sorted_r2}"
      }
 }
