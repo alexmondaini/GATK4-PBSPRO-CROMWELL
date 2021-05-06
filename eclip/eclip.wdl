@@ -1,8 +1,7 @@
 version 1.0
 
 struct FastaSamples {
-    File fastq_r1
-    File fastq_r2
+    Pair[File,File] fastqs
     String barcode
 }
 
@@ -15,8 +14,8 @@ workflow Eclip {
     scatter (sample in samples) {
     call CutAdapt {
         input:
-        fastq_r1 = sample.fastq_r1,
-        fastq_r2 = sample.fastq_r2,
+        fastq_r1 = sample.fastqs.left,
+        fastq_r2 = sample.fastqs.right,
         barcode = sample.barcode
     }
     call FasQC_round1 {
