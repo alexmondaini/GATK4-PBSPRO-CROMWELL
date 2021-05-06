@@ -32,13 +32,13 @@ workflow Eclip {
     }
     call FasQC_round2 {
         input:
-        fastq_round2_r1 = CutAdapt_round2.round2_left_r1,
-        fastq_round2_r2 = CutAdapt_round2.round2_right_r2
+        fastqc_round2_r1 = CutAdapt_round2.result_round2.left,
+        fastqc_round2_r2 = CutAdapt_round2.result_round2.right
     }
     call FastQ_sort {
         input:
-        fastq_sort_r1 = CutAdapt_round2.round2_left_r1,
-        fastq_sort_r2 = CutAdapt_round2.round2_right_r2
+        fastq_sort_r1 = CutAdapt_round2.result_round2.left,
+        fastq_sort_r2 = CutAdapt_round2.result_round2.right
     }
     }
 }
@@ -126,21 +126,20 @@ task CutAdapt_round2 {
     }
 
     output {
-        File round2_left_r1 = "${round2_left_r1}"
-        File round2_right_r2 = "${round2_right_r2}"
+        Pair[File,File] result_round2 = glob('*fq') 
     }
 }
 
 task FasQC_round2 {
     input {
-        File fastq_round2_r1
-        File fastq_round2_r2
+        File fastqc_round2_r1
+        File fastqc_round2_r2
     }
     command <<<
     source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
     conda activate stepbystep
-    fastqc -t 2 --extract -k 7 ~{fastq_round2_r1} -o .
-    fastqc -t 2 --extract -k 7 ~{fastq_round2_r2} -o .
+    fastqc -t 2 --extract -k 7 ~{fastqc_round2_r1} -o .
+    fastqc -t 2 --extract -k 7 ~{fastqc_round2_r2} -o .
     >>>
     
     runtime {
