@@ -4,6 +4,7 @@ struct FastaSamples {
     File fastq_r1
     File fastq_r2
     String barcode
+    
 }
 
 workflow Eclip {
