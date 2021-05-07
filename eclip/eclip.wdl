@@ -19,7 +19,7 @@ workflow Eclip {
         fastq_r2 = sample.fastq_r2,
         barcode = sample.barcode
     }
-    call FasQC_round1 {
+    call FastQC_round1 {
         input:
         fastqc_r1 = CutAdapt.result_round1_cutadapt_left,
         fastqc_r2 = CutAdapt.result_round1_cutadapt_right
@@ -30,7 +30,7 @@ workflow Eclip {
         round1_right_r2 = CutAdapt.result_round1_cutadapt_right,
         barcode = sample.barcode
     }
-    call FasQC_round2 {
+    call FastQC_round2 {
         input:
         fastqc_round2_r1 = CutAdapt_round2.result_round2_cutadapt_left,
         fastqc_round2_r2 = CutAdapt_round2.result_round2_cutadapt_right
@@ -39,6 +39,11 @@ workflow Eclip {
         input:
         fastq_sort_r1 = CutAdapt_round2.result_round2_cutadapt_left,
         fastq_sort_r2 = CutAdapt_round2.result_round2_cutadapt_right
+    }
+    call STAR_rmRep {
+        input:
+        fastq_starrep_r1 = FastQ_sort.result_fastq_sort_left,
+        fastq_starrep_r2 = FastQ_sort.result_fastq_sort_right
     }
     }
 }
@@ -80,7 +85,7 @@ task CutAdapt {
 
 }
 
-task FasQC_round1 {
+task FastQC_round1 {
     input {
         File fastqc_r1
         File fastqc_r2
@@ -132,7 +137,7 @@ task CutAdapt_round2 {
     }
 }
 
-task FasQC_round2 {
+task FastQC_round2 {
     input {
         File fastqc_round2_r1
         File fastqc_round2_r2
@@ -173,4 +178,47 @@ task FastQ_sort {
         File result_fastq_sort_left = "${sorted_r1}"
         File result_fastq_sort_right = "${sorted_r2}"
      }
+}
+
+task STAR_rmRep {
+    input {
+        File fastq_starrep_r1
+        File fastq_starrep_r2
+    }
+
+    String prefix = basename(fastq_starrep_r1,'_r1.fq') + "_STAR"
+
+    command <<<
+    mkdir RepElements
+    source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
+    conda activate stepbystep
+    STAR \
+    --runMode alignReads \
+    --runThreadN 8 \
+    --genomeDir RepElements \
+    --genomeLoad NoSharedMemory \
+    --alignEndsType EndToEnd \
+    --outSAMunmapped Within \
+    --outFilterMultimapNmax 30 \
+    --outFilterMultimapScoreRange 1 \
+    --outFileNamePrefix ~{prefix} \
+    --outSAMtype BAM Unsorted \
+    --outFilterType BySJout \
+    --outBAMcompression 10 \
+    --outReadsUnmapped Fastx \
+    --outFilterScoreMin 10 \
+    --outSAMattrRGline ID:foo \
+    --outSAMattributes All \
+    --outSAMmode Full \
+    --outStd Log \
+    --readFilesIn ~{fastq_starrep_r1} ~{fastq_starrep_r2}
+    >>>
+    runtime {
+        cpu: 6
+        memory: "16 GB"
+    }
+    output {
+        File result_bam = glob('RepElements/*bam')
+        Array[File] result_fq = glob('RepElements/*bam')
+    }
 }
