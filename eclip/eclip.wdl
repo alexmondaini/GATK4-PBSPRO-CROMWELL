@@ -11,6 +11,8 @@ workflow Eclip {
     
     input {
         Array[FastaSamples] samples
+        File zipped_star_files
+        File zipped_star_files_to_hg19
     }
     
     scatter (sample in samples) {
@@ -44,7 +46,27 @@ workflow Eclip {
     call STAR_rmRep {
         input:
         fastq_starrep_r1 = FastQ_sort.result_fastq_sort_left,
-        fastq_starrep_r2 = FastQ_sort.result_fastq_sort_right
+        fastq_starrep_r2 = FastQ_sort.result_fastq_sort_right,
+        zipped_star_files = zipped_star_files
+    }
+    call FastQ_sort_STAR_unmapped {
+        input:
+        unmapped_to_sort_r1 = STAR_rmRep.result_star_fq_r1,
+        unmapped_to_sort_r2 = STAR_rmRep.result_star_fq_r2
+    }
+    call STAR_genome_map {
+        input:
+        sorted_star_fq_r1 = FastQ_sort_STAR_unmapped.result_fastq_sort_after_rmRep_r1,
+        sorted_star_fq_r2 = FastQ_sort_STAR_unmapped.result_fastq_sort_after_rmRep_r2,
+        zipped_star_files_to_hg19 = zipped_star_files_to_hg19
+    }
+    call SortbyName {
+        input:
+        sort_star_bam = STAR_genome_map.result_star_hg19_bam
+    }
+    call Index {
+        input:
+        index_after_sort = SortbyName.result_natural_sort
     }
     }
 }
@@ -181,16 +203,19 @@ task FastQ_sort {
      }
 }
 
+
 task STAR_rmRep {
     input {
+        File zipped_star_files
         File fastq_starrep_r1
         File fastq_starrep_r2
     }
 
-    String prefix = basename(fastq_starrep_r1,'_r1.fq') + "_STAR"
+    String prefix = sub(basename(fastq_starrep_r1,'.fq'),'_r1','') + "_STAR"
 
     command <<<
     mkdir RepElements
+    tar -xzf ~{zipped_star_files} -C RepElements
     source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
     conda activate stepbystep
     STAR \
@@ -215,11 +240,125 @@ task STAR_rmRep {
     --readFilesIn ~{fastq_starrep_r1} ~{fastq_starrep_r2}
     >>>
     runtime {
-        cpu: 6
-        memory: "16 GB"
+        cpu: 4
+        memory: "20 GB"
     }
     output {
-        File result_bam = glob('RepElements/*bam')
-        Array[File] result_fq = glob('RepElements/*bam')
+        File result_star_fq_r1 = "${prefix}Unmapped.out.mate1"
+        File result_star_fq_r2 = "${prefix}Unmapped.out.mate2"
+        File result_star_bam = "${prefix}Aligned.out.bam"
     }
+}
+
+task FastQ_sort_STAR_unmapped {
+    input {
+        File unmapped_to_sort_r1
+        File unmapped_to_sort_r2
+    }
+    String sorted_r1 = basename(unmapped_to_sort_r1,'Unmapped.out.mate1') + '_sorted.fq'
+    String sorted_r2 = basename(unmapped_to_sort_r2,'Unmapped.out.mate2') + '_sorted.fq' 
+
+    command <<<
+    source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
+    conda activate stepbystep
+    fastq-sort --id ~{unmapped_to_sort_r1} > ~{sorted_r1}
+    fastq-sort --id ~{unmapped_to_sort_r2} > ~{sorted_r2}
+    >>>
+    runtime {
+        cpu: 3
+        memory: "5 GB"
+    }
+    output {
+        File result_fastq_sort_after_rmRep_r1 = "${sorted_r1}"
+        File result_fastq_sort_after_rmRep_r2 = "${sorted_r2}"
+     }
+}
+
+task STAR_genome_map {
+    input {
+        File sorted_star_fq_r1
+        File sorted_star_fq_r2
+        File zipped_star_files_to_hg19
+    }
+    String prefix = sub(basename(sorted_star_fq_r1,'.fq'),'_sorted','') + '_STAR_hg19_'
+
+    command <<<
+    mkdir HG_19_DIR
+    tar -xzf ~{zipped_star_files_to_hg19} -C HG_19_DIR
+    source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
+    conda activate stepbystep
+    STAR \
+    --runMode alignReads \
+    --runThreadN 8 \
+    --genomeDir  HG_19_DIR \
+    --genomeLoad NoSharedMemory \
+    --readFilesIn ~{sorted_star_fq_r1} ~{sorted_star_fq_r2} \
+    --outSAMunmapped Within \
+    --outFilterMultimapNmax 1 \
+    --outFilterMultimapScoreRange 1 \
+    --outFileNamePrefix ~{prefix} \
+    --outSAMattributes All \
+    --outSAMtype BAM Unsorted \
+    --outFilterType BySJout \
+    --outReadsUnmapped Fastx \
+    --outFilterScoreMin 10 \
+    --outSAMattrRGline ID:foo \
+    --outStd Log \
+    --alignEndsType EndToEnd \
+    --outBAMcompression 10 \
+    --outSAMmode Full
+    >>>
+    runtime {
+        cpu: 4
+        memory: "30 GB"
+    }
+    output {
+        File result_star_hg19_fq_r1 = "${prefix}Unmapped.out.mate1"
+        File result_star_hg19_fq_r2 = "${prefix}Unmapped.out.mate2"
+        File result_star_hg19_bam = "${prefix}Aligned.out.bam"
+    }
+}
+
+task SortbyName {
+    input {
+        File sort_star_bam
+    }
+    String sort_star_bam_from_hg19 = sub(basename(sort_star_bam),'Aligned.out','Aligned.sorted_by_name.out')
+    String natural_sort = sub(basename(sort_star_bam_from_hg19),'Aligned.sorted_by_name.out','natural_sort')
+
+    command <<<
+    source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
+    conda activate stepbystep
+    samtools sort -n o ~{sort_star_bam_from_hg19} ~{sort_star_bam}
+    samtools sort -o ~{natural_sort} ~{sort_star_bam_from_hg19}
+    >>>
+    runtime {
+        cpu: 2
+        memory: "5 GB"
+    }
+    output {
+        File result_natural_sort = "${natural_sort}"
+    }
+ }
+
+ task Index {
+     input {
+        File index_after_sort 
+     }
+     String bam_index = basename(index_after_sort,'.bam') + '.bai'
+
+     command <<<
+     ln ~{index_after_sort}
+     source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
+     conda activate stepbystep
+     samtools index ~{index_after_sort} > ~{bam_index}
+     >>>
+     runtime {
+         cpu: 3
+         memory: "6 GB"
+     }
+     output {
+         File result_bai = "${bam_index}"
+         File result_bam = "${index_after_sort}"
+     }
 }
