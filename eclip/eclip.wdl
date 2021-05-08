@@ -284,7 +284,7 @@ task STAR_genome_map {
         File sorted_star_fq_r2
         File zipped_star_files_to_hg19
     }
-    String prefix = basename(sorted_star_fq_r1,'.fq') + '_hg19_'
+    String prefix = basename(sorted_star_fq_r1,'.fq') + 'hg19_'
 
     command <<<
     mkdir HG_19_DIR
@@ -332,7 +332,7 @@ task SortbyName {
     command <<<
     source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
     conda activate stepbystep
-    samtools sort -n o ~{sort_star_bam_from_hg19} ~{sort_star_bam}
+    samtools sort -n -o ~{sort_star_bam_from_hg19} ~{sort_star_bam}
     >>>
     runtime {
         cpu: 2
