@@ -1,14 +1,6 @@
 {
   "Test.fastq_starrep_r2": "/groups/cgsd/javed/Akshay/fastq/01_raw_reads/10249_sample1_r2.fq.gz",
   "Test.fastq_starrep_r1": "/groups/cgsd/javed/Akshay/fastq/01_raw_reads/10249_sample1_r1.fq.gz",
-  "Test.sa_index": "/groups/cgsd/alexandre/eclip/workflow/RepElements/SAindex",
-  "Test.chr_name": "/groups/cgsd/alexandre/eclip/workflow/RepElements/chrName.txt",
-  "Test.sa": "/groups/cgsd/alexandre/eclip/workflow/RepElements/SA",
-  "Test.genome_parameters": "/groups/cgsd/alexandre/eclip/workflow/RepElements/genomeParameters.txt",
-  "Test.smallrep_fasta": "/groups/cgsd/alexandre/eclip/workflow/RepElements/smallrepelem.fa",
-  "Test.genome": "/groups/cgsd/alexandre/eclip/workflow/RepElements/Genome",
-  "Test.chr_len": "/groups/cgsd/alexandre/eclip/workflow/RepElements/chrLength.txt",
-  "Test.chr_name_len": "/groups/cgsd/alexandre/eclip/workflow/RepElements/chrNameLength.txt",
-  "Test.chr_start": "/groups/cgsd/alexandre/eclip/workflow/RepElements/chrStart.txt"
+  "Test.zipped_star_files": "/groups/cgsd/alexandre/eclip/workflow/RepElements/all_files_tarred.tar.gz"
 }
 

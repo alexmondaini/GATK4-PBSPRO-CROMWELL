@@ -2,29 +2,13 @@ version 1.0
 
 workflow Test {
     input {
-        File chr_len
-        File chr_name_len
-        File chr_name
-        File chr_start
-        File genome
-        File genome_parameters
-        File sa
-        File sa_index
-        File smallrep_fasta
+        File zipped_star_files
         File fastq_starrep_r1
         File fastq_starrep_r2
     }
     call Star {
         input:
-        chr_len = chr_len,
-        chr_name_len = chr_name_len,
-        chr_name = chr_name,
-        chr_start = chr_start,
-        genome = genome,
-        genome_parameters = genome_parameters,
-        sa = sa,
-        sa_index = sa_index,
-        smallrep_fasta = smallrep_fasta,
+        zipped_star_files = zipped_star_files,
         fastq_starrep_r1 = fastq_starrep_r1,
         fastq_starrep_r2 =fastq_starrep_r2
         }
@@ -32,23 +16,16 @@ workflow Test {
 
 task Star {
     input {
-        File chr_len
-        File chr_name_len
-        File chr_name
-        File chr_start
-        File genome
-        File genome_parameters
-        File sa
-        File sa_index
-        File smallrep_fasta
+        File zipped_star_files
         File fastq_starrep_r1
         File fastq_starrep_r2
     }
 
-    String prefix = basename(fastq_starrep_r1,'_r1.fq') + "_STAR"
+    String prefix = sub(basename(fastq_starrep_r1,'.fq.gz'),'_r1','') + "_STAR"
 
     command <<<
     mkdir RepElements
+    tar -xzf ~{zipped_star_files} -C RepElements
     source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
     conda activate stepbystep
     STAR \
@@ -77,7 +54,8 @@ task Star {
         memory: "2 GB"
     }
     output {
-        File result_fq = glob('*fq')
-        File result_bam = glob('*.bam')
+        File result_fq_r1 = "${prefix}Unmapped.out.mate1"
+        File result_fq_r2 = "${prefix}Unmapped.out.mate2"
+        File result_bam = "${prefix}Aligned.out.bam"
     }
 }
