@@ -46,6 +46,7 @@ task Star {
     --outSAMattrRGline ID:foo \
     --outSAMattributes All \
     --outSAMmode Full \
+    --readFilesCommand zcat \
     --outStd Log \
     --readFilesIn ~{fastq_starrep_r1} ~{fastq_starrep_r2}
     >>>
