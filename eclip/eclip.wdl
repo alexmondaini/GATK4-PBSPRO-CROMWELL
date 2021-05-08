@@ -64,9 +64,13 @@ workflow Eclip {
         input:
         sort_star_bam = STAR_genome_map.result_star_hg19_bam
     }
+    call Sort_Normal {
+        input:
+        naming_sort = SortbyName.result_name_sort
+    }
     call Index {
         input:
-        index_after_sort = SortbyName.result_natural_sort
+        index_after_sort = Sort_Normal.result_naming_sort
     }
     }
 }
@@ -184,8 +188,8 @@ task FastQ_sort {
         File fastq_sort_r1
         File fastq_sort_r2
     }
-    String sorted_r1 = basename(fastq_sort_r1,'.fq') + 'sorted.fq'
-    String sorted_r2 = basename(fastq_sort_r2,'.fq') + 'sorted.fq' 
+    String sorted_r1 = basename(fastq_sort_r1,'.fq') + '.sorted.fq'
+    String sorted_r2 = basename(fastq_sort_r2,'.fq') + '.sorted.fq' 
 
     command <<<
     source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
@@ -211,7 +215,7 @@ task STAR_rmRep {
         File fastq_starrep_r2
     }
 
-    String prefix = sub(basename(fastq_starrep_r1,'.fq'),'_r1','') + "_STAR"
+    String prefix = sub(basename(fastq_starrep_r1,'.fq'),'_r1','') + "_STAR_"
 
     command <<<
     mkdir RepElements
@@ -255,8 +259,8 @@ task FastQ_sort_STAR_unmapped {
         File unmapped_to_sort_r1
         File unmapped_to_sort_r2
     }
-    String sorted_r1 = basename(unmapped_to_sort_r1,'Unmapped.out.mate1') + '_sorted.fq'
-    String sorted_r2 = basename(unmapped_to_sort_r2,'Unmapped.out.mate2') + '_sorted.fq' 
+    String sorted_r1 = basename(unmapped_to_sort_r1,'Unmapped.out.mate1') + '.fq'
+    String sorted_r2 = basename(unmapped_to_sort_r2,'Unmapped.out.mate2') + '.fq' 
 
     command <<<
     source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
@@ -280,7 +284,7 @@ task STAR_genome_map {
         File sorted_star_fq_r2
         File zipped_star_files_to_hg19
     }
-    String prefix = sub(basename(sorted_star_fq_r1,'.fq'),'_sorted','') + '_STAR_hg19_'
+    String prefix = basename(sorted_star_fq_r1,'.fq') + '_hg19_'
 
     command <<<
     mkdir HG_19_DIR
@@ -323,25 +327,42 @@ task SortbyName {
     input {
         File sort_star_bam
     }
-    String sort_star_bam_from_hg19 = sub(basename(sort_star_bam),'Aligned.out','Aligned.sorted_by_name.out')
-    String natural_sort = sub(basename(sort_star_bam_from_hg19),'Aligned.sorted_by_name.out','natural_sort')
+    String sort_star_bam_from_hg19 = sub(basename(sort_star_bam),'Aligned.out','')
 
     command <<<
     source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
     conda activate stepbystep
     samtools sort -n o ~{sort_star_bam_from_hg19} ~{sort_star_bam}
-    samtools sort -o ~{natural_sort} ~{sort_star_bam_from_hg19}
     >>>
     runtime {
         cpu: 2
         memory: "5 GB"
     }
     output {
-        File result_natural_sort = "${natural_sort}"
+        File result_name_sort = "${sort_star_bam_from_hg19}"
     }
  }
 
- task Index {
+task Sort_Normal {
+    input {
+        File naming_sort
+    }
+    String output_naming_sort = basename(naming_sort) + '_normal_sort_after_name_sort'
+    command <<<
+    source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
+    conda activate stepbystep
+    samtools sort -o ~{output_naming_sort} ~{naming_sort}
+    >>>
+    runtime {
+        cpu: 2
+        memory: "5 GB"
+    }
+    output {
+        File result_naming_sort = "${output_naming_sort}"
+    }
+}
+
+task Index {
      input {
         File index_after_sort 
      }
