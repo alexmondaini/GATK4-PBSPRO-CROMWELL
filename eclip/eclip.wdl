@@ -366,18 +366,19 @@ task Index {
      input {
         File index_after_sort 
      }
+     String result_bai_index = basename(index_after_sort)
      command <<<
      ln ~{index_after_sort}
      source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
      conda activate stepbystep
-     samtools index ~{index_after_sort}
+     samtools index ~{index_after_sort} > ~{result_bai_index}
      >>>
      runtime {
          cpu: 3
          memory: "6 GB"
      }
      output {
-         File result_bai = stdout()
+         File result_bai = "${result_bai_index}"
          File result_bam = "${index_after_sort}"
      }
 }
