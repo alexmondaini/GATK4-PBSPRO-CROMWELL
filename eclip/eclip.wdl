@@ -60,17 +60,13 @@ workflow Eclip {
         sorted_star_fq_r2 = FastQ_sort_STAR_unmapped.result_fastq_sort_after_rmRep_r2,
         zipped_star_files_to_hg19 = zipped_star_files_to_hg19
     }
-    call SortbyName {
+    call Sort_Bam {
         input:
         sort_star_bam = STAR_genome_map.result_star_hg19_bam
     }
-    call Sort_Normal {
-        input:
-        naming_sort = SortbyName.result_name_sort
-    }
     call Index {
         input:
-        index_after_sort = Sort_Normal.result_naming_sort
+        index_after_sort = Sort_Bam.result_name_sort
     }
     }
 }
@@ -323,7 +319,7 @@ task STAR_genome_map {
     }
 }
 
-task SortbyName {
+task Sort_Bam {
     input {
         File sort_star_bam
     }
@@ -342,25 +338,6 @@ task SortbyName {
         File result_name_sort = "${sort_star_bam_from_hg19}"
     }
  }
-
-task Sort_Normal {
-    input {
-        File naming_sort
-    }
-    String output_naming_sort = basename(naming_sort)
-    command <<<
-    source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
-    conda activate stepbystep
-    samtools sort -o ~{output_naming_sort} ~{naming_sort}
-    >>>
-    runtime {
-        cpu: 2
-        memory: "5 GB"
-    }
-    output {
-        File result_naming_sort = "${output_naming_sort}"
-    }
-}
 
 task Index {
      input {
