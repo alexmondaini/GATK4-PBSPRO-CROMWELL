@@ -325,7 +325,6 @@ task Sort_Bam {
     input {
         File sort_star_bam
     }
-
     command <<<
     source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
     conda activate stepbystep
@@ -344,12 +343,11 @@ task Index {
      input {
         File index_after_sort 
      }
-     String result_bai_index = basename(index_after_sort)
      command <<<
      ln ~{index_after_sort}
      source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
      conda activate stepbystep
-     samtools index ~{index_after_sort} 
+     samtools index ~{index_after_sort}
      >>>
      runtime {
          cpu: 3
