@@ -325,17 +325,19 @@ task Sort_Bam {
     input {
         File sort_star_bam
     }
+    String sort_star_bam_from_hg19 = sub(basename(sort_star_bam),'Aligned.out','')
+
     command <<<
     source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
     conda activate stepbystep
-    samtools sort ~{sort_star_bam}
+    samtools sort ~{sort_star_bam} > "~{sort_star_bam_from_hg19}"
     >>>
     runtime {
         cpu: 3
         memory: "7 GB"
     }
     output {
-        File result_name_sort = stdout()
+        File result_name_sort = "${sort_star_bam_from_hg19}"
     }
  }
 
@@ -343,18 +345,19 @@ task Index {
      input {
         File index_after_sort 
      }
+     String result_bai_index = basename(index_after_sort)
      command <<<
      ln ~{index_after_sort}
      source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
      conda activate stepbystep
-     samtools index ~{index_after_sort}
+     samtools index ~{index_after_sort} > "~{result_bai_index}"
      >>>
      runtime {
          cpu: 3
          memory: "6 GB"
      }
      output {
-         File result_bai = stdout()
+         File result_bai = "${result_bai_index}"
          File result_bam = "${index_after_sort}"
      }
 }
