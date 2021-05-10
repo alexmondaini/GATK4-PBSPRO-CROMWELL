@@ -327,10 +327,11 @@ task Sort_Bam {
     input {
         File sort_star_bam
     }
-    String sort_star_bam_from_hg19 = basename(sort_star_bam,'.bam') + 'sorted_again.bam'
+    String sort_star_bam_from_hg19 = basename(sort_star_bam,'.bam') + '_sorted_again.bam'
 
     command <<<
     mkdir tmp
+    ln ~{sort_star_bam}
     source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
     conda activate stepbystep
     samtools sort -o ~{sort_star_bam_from_hg19} -T tmp ~{sort_star_bam} 
