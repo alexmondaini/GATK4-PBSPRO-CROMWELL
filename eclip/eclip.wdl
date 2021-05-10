@@ -60,9 +60,11 @@ workflow Eclip {
         sorted_star_fq_r2 = FastQ_sort_STAR_unmapped.result_fastq_sort_after_rmRep_r2,
         zipped_star_files_to_hg19 = zipped_star_files_to_hg19
     }
-    call Sort_Bam {
+    }
+    scatter (bam in STAR_genome_map.result_star_hg19_bam) {
+        call Sort_Bam {
         input:
-        sort_star_bam = STAR_genome_map.result_star_hg19_bam
+        sort_star_bam = bam
     }
     call Index {
         input:

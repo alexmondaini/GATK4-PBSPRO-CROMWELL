@@ -1,105 +1,20 @@
 version 1.0
 
-struct ToMerge {
-    File bam_rep_1
-    File bai_rep_1
-    File bam_rep_2
-    File bai_rep_2
-}
-
-workflow SamtoolsMerge {
+workflow Call_Peaks {
     input {
-        Array[ToMerge] samples
+        Array[File] samples
+        File chr_size
     }
     scatter (sample in samples) {
-        call Merge {
-            input:
-            bam_rep_1 = sample.bam_rep_1,
-            bai_rep_1 = sample.bai_rep_1,
-            bam_rep_2 = sample.bam_rep_2,
-            bai_rep_2 = sample.bai_rep_2
-        }
-    }
-    scatter (merged_bam in Merge.result) {
-
-        call Index {
-            input:
-            merged_bam = merged_bam
-        }
-        call View {
-            input:
-            final_bam = Index.result_bam,
-            final_bai = Index.result_bai
-        }
         call Clipper {
             input:
-            call_peak_bam = View.ready_bam
-        } 
-    }
-}
-
-task Merge {
-    input {
-        File bam_rep_1
-        File bai_rep_1
-        File bam_rep_2
-        File bai_rep_2
-    }
-    String merged_bam = basename(bam_rep_1,'Aligned.sortedByCoord.out.bam') + "_" + basename(bam_rep_2,'Aligned.sortedByCoord.out.bam') + ".bam"
-    command <<<
-    source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
-    conda activate stepbystep
-    samtools merge ~{merged_bam} ~{bam_rep_1} ~{bam_rep_2}
-    >>>
-    runtime {
-        cpu: 4
-        memory: "15 GB"
-    }
-    output {
-        File result = "${merged_bam}"
-    }
-}
-
-task Index {
-    input {
-        File merged_bam
-    }
-    
-    String merged_bai = basename(merged_bam,".bam") + '.bai'
-    
-    command <<<
-    source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
-    conda activate stepbystep
-    ln ~{merged_bam}
-    samtools index ~{merged_bam} > ~{merged_bai}
-    >>>
-    runtime {
-        cpu: 3
-        memory: "8 GB"
-    }
-    output {
-        File result_bai = "${merged_bai}"
-        File result_bam = "${merged_bam}"
-    }
-}
-
-task View {
-    input {
-        File final_bam
-        File final_bai
-    }
-    String ready_to_peak_call = basename(final_bam,'.bam') + '_ready.bam'
-    command <<<
-    source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
-    conda activate stepbystep
-    samtools view -f 128 -b -o ~{ready_to_peak_call} ~{final_bam}
-    >>>
-    runtime {
-        cpu: 3
-        memory: "8 GB"
-    }
-    output {
-        File ready_bam = "${ready_to_peak_call}"
+            call_peak_bam = sample
+        }
+        call Wigs {
+            input:
+            bam = sample,
+            chr_size = chr_size
+        }
     }
 }
 
@@ -122,4 +37,34 @@ task Clipper {
         docker: "brianyee/clipper@sha256:094ede2a0ee7a6f2c2e07f436a8b63486dc4a072dbccad136b7a450363ab1876"
     }
 
+}
+
+task Wigs {
+    input {
+        File bam
+        File chr_size
+        String? direction
+    }
+    String bw_pos = basename(bam,'.bam') + '_norm_pos.bw'
+    String bw_neg = basename(bam,'.bam') + '_norm_neg.bw'
+
+    command <<<
+    makebigwigfiles \
+    --bw_pos  ~{bw_pos} \
+    --bw_neg ~{bw_neg}  \
+    --bam  ~{bam} \
+    --genome ~{chr_size} \
+    --direction ~{default="r" direction}
+    >>>
+
+    runtime {
+        cpu: 4
+        memory: "30 GB"
+        docker: "brianyee/makebigwigfiles@sha256:8d67afc36e388aa12f1b6d2bed8ea3b6ddaa9ec4296a93d5fa9f31a5b1ff16d4"
+    }
+
+    output {
+        File result_bw_pos = "${bw_pos}"
+        File result_bw_neg = "${bw_neg}"
+    }
 }
