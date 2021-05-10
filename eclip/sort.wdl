@@ -21,7 +21,7 @@ task Sort_Bam {
     command <<<
     source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
     conda activate stepbystep
-    samtools sort ~{sort_star_bam} > "~{sort_star_bam_from_hg19}"
+    samtools sort ~{sort_star_bam} > ~{sort_star_bam_from_hg19}
     >>>
     runtime {
         cpu: 3

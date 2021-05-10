@@ -66,9 +66,11 @@ workflow Eclip {
         input:
         sort_star_bam = bam
     }
+    }
+    scatter (sorted in Sort_Bam.result_name_sort){
     call Index {
         input:
-        index_after_sort = Sort_Bam.result_name_sort
+        index_after_sort = sorted
     }
     }
 }
@@ -330,7 +332,7 @@ task Sort_Bam {
     command <<<
     source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
     conda activate stepbystep
-    samtools sort ~{sort_star_bam} > "~{sort_star_bam_from_hg19}"
+    samtools sort ~{sort_star_bam} > ~{sort_star_bam_from_hg19}
     >>>
     runtime {
         cpu: 3
@@ -350,7 +352,7 @@ task Index {
      ln ~{index_after_sort}
      source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
      conda activate stepbystep
-     samtools index ~{index_after_sort} > "~{result_bai_index}"
+     samtools index ~{index_after_sort} > ~{result_bai_index}
      >>>
      runtime {
          cpu: 3
