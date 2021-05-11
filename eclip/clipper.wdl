@@ -15,11 +15,6 @@ workflow Call_Peaks {
             result_bam = output_name + '.bam',
             result_view = output_name + '_final.bam'
         }
-        #call Index {
-        #    input:
-        #    index_after_sort = Sort_Bam.result_name_sort,
-        #    result_bai_index = output_name + '.bai'
-        #}
         call Clipper {
             input:
             call_peak_bam = Sort_and_Index_Bam.result_sorted_indexed_bam,
@@ -61,28 +56,6 @@ task Sort_and_Index_Bam {
     }
 }
 
-#task Index {
-#     input {
-#        File index_after_sort
-#        String result_bai_index
-#     }
-#
-#     command <<<
-#     set -e
-#     ln ~{index_after_sort} ~{basename(index_after_sort)}
-#     source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
-#     conda activate stepbystep
-#     samtools index ~{basename(index_after_sort)}
-#     >>>
-#     runtime {
-#         cpu: 3
-#         memory: "6 GB"
-#     }
-#     output {
-#         File result_bam = "~{index_after_sort}"
-#         File result_bai = result_bai_index
-#     }
-#}
 
 task Clipper {
     input {
@@ -99,8 +72,8 @@ task Clipper {
     >>>
     
     runtime {
-        cpu: 8
-        memory: "50 GB"
+        cpu: 20
+        memory: "30 GB"
         docker: "brianyee/clipper@sha256:094ede2a0ee7a6f2c2e07f436a8b63486dc4a072dbccad136b7a450363ab1876"
     }
 
@@ -126,7 +99,7 @@ task Wigs {
     >>>
 
     runtime {
-        cpu: 4
+        cpu: 20
         memory: "30 GB"
         docker: "brianyee/makebigwigfiles@sha256:8d67afc36e388aa12f1b6d2bed8ea3b6ddaa9ec4296a93d5fa9f31a5b1ff16d4"
     }
