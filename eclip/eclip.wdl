@@ -61,18 +61,6 @@ workflow Eclip {
         zipped_star_files_to_hg19 = zipped_star_files_to_hg19
     }
     }
-    scatter (bam in STAR_genome_map.result_star_hg19_bam) {
-        call Sort_Bam {
-        input:
-        sort_star_bam = bam
-    }
-    }
-    scatter (sorted in Sort_Bam.result_name_sort){
-    call Index {
-        input:
-        index_after_sort = sorted
-    }
-    }
 }
 
 task CutAdapt {
@@ -321,47 +309,4 @@ task STAR_genome_map {
         File result_star_hg19_fq_r2 = "${prefix}Unmapped.out.mate2"
         File result_star_hg19_bam = "${prefix}Aligned.out.bam"
     }
-}
-
-task Sort_Bam {
-    input {
-        File sort_star_bam
-    }
-    String sort_star_bam_from_hg19 = basename(sort_star_bam,'.bam') + '_sorted_again.bam'
-
-    command <<<
-    mkdir tmp
-    ln ~{sort_star_bam}
-    source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
-    conda activate stepbystep
-    samtools sort -o ~{sort_star_bam_from_hg19} -T tmp ~{sort_star_bam} 
-    >>>
-    runtime {
-        cpu: 3
-        memory: "7 GB"
-    }
-    output {
-        File result_name_sort = "${sort_star_bam_from_hg19}"
-    }
- }
-
-task Index {
-     input {
-        File index_after_sort 
-     }
-     String result_bai_index = basename(index_after_sort)
-     command <<<
-     ln ~{index_after_sort}
-     source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
-     conda activate stepbystep
-     samtools index ~{index_after_sort} > ~{result_bai_index}
-     >>>
-     runtime {
-         cpu: 3
-         memory: "6 GB"
-     }
-     output {
-         File result_bai = "${result_bai_index}"
-         File result_bam = "${index_after_sort}"
-     }
 }
