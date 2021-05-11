@@ -38,7 +38,7 @@ task Sort_Bam {
     command <<<
     source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
     conda activate stepbystep
-    samtools sort -o ~{sort_star_bam} > 'sample.bam'
+    samtools sort ~{sort_star_bam} > 'sample.bam'
     >>>
 
     runtime {
