@@ -6,9 +6,13 @@ workflow Call_Peaks {
         File chr_size
     }
     scatter (sample in samples) {
+        
+        String output_name = basename(sample,'.sorted_STAR_hg19Aligned.out.bam')
+
         call Sort_Bam {
             input:
-            sort_star_bam = sample
+            sort_star_bam = sample,
+            sorted_bam_file = output_name + '.bam'
         }
         call Index {
             input:
@@ -31,14 +35,13 @@ workflow Call_Peaks {
 task Sort_Bam {
     input {
         File sort_star_bam
+        String sorted_bam_file
     }
-    
-    String sort_star_bam_from_hg19 = basename(sort_star_bam,'.bam') + '_sorted_again.bam'
 
     command <<<
     source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
     conda activate stepbystep
-    samtools sort ~{sort_star_bam} > 'sample.bam'
+    samtools sort ~{sort_star_bam} > ~{sorted_bam_file}
     >>>
 
     runtime {
@@ -46,7 +49,7 @@ task Sort_Bam {
         memory: "7 GB"
     }
     output {
-        File result_name_sort = stdout()
+        File result_name_sort = "~{sorted_bam_file}"
     }
  }
 
