@@ -61,17 +61,17 @@ task Index {
      }
 
      command <<<
-     ln ~{index_after_sort}
+     set -e
      source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
      conda activate stepbystep
-     samtools index ~{index_after_sort} > ~{result_bai_index}
+     samtools sort ~{index_after_sort}
+     samtools index ~{index_after_sort}
      >>>
      runtime {
          cpu: 3
          memory: "6 GB"
      }
      output {
-         File result_bai = "${result_bai_index}"
          File result_bam = "${index_after_sort}"
      }
 }
