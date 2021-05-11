@@ -12,7 +12,8 @@ workflow Call_Peaks {
         call Sort_and_Index_Bam {
             input:
             sort_star_bam = sample,
-            result_bam = output_name + '.bam'
+            result_bam = output_name + '.bam',
+            result_view = output_name + '_final.bam'
         }
         #call Index {
         #    input:
@@ -37,6 +38,7 @@ task Sort_and_Index_Bam {
     input {
         File sort_star_bam
         String result_bam
+        String result_view
     }
 
     command <<<
@@ -44,8 +46,9 @@ task Sort_and_Index_Bam {
     ln ~{sort_star_bam} ~{basename(sort_star_bam)}
     source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
     conda activate stepbystep
-    samtools sort -n -o ~{result_bam} ~{basename(sort_star_bam)} 
-    samtools index ~{result_bam}
+    samtools sort -o ~{result_bam} ~{basename(sort_star_bam)} 
+    samtools view -f 64 -b -o ~{result_view} ~{result_bam}
+    samtools index ~{result_view}
     >>>
 
     runtime {
@@ -53,8 +56,8 @@ task Sort_and_Index_Bam {
         memory: "7 GB"
     }
     output {
-        File result_sorted_indexed_bam = result_bam
-        File result_sorted_indexed_bai = "~{result_bam}.bai"
+        File result_sorted_indexed_bam = result_view
+        File result_sorted_indexed_bai = "~{result_view}.bai"
     }
 }
 
