@@ -7,16 +7,16 @@ workflow Call_Peaks {
     }
     scatter (sample in samples) {
         
-        String output_name = basename(sample,'.sorted_STAR_hg19Aligned.out.bam')
+        String output_name = basename(sample,'.sorted_STAR_hg19Aligned.out')
 
-        #call Sort_Bam {
-        #    input:
-        #    sort_star_bam = sample,
-        #    sorted_bam_file = output_name + '.bam'
-        #}
+        call Sort_Bam {
+            input:
+            sort_star_bam = sample,
+            result_sorted_bam = output_name
+        }
         call Index {
             input:
-            index_after_sort = sample,
+            index_after_sort = Sort_Bam.result_name_sort,
             result_bai_index = output_name + '.bai'
         }
         call Clipper {
@@ -33,26 +33,28 @@ workflow Call_Peaks {
     }
 }
 
-#task Sort_Bam {
-#    input {
-#        File sort_star_bam
-#        String sorted_bam_file
-#    }
-#
-#    command <<<
-#    source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
-#    conda activate stepbystep
-#    samtools sort ~{sort_star_bam} > ~{sorted_bam_file}
-#    >>>
-#
-#    runtime {
-#        cpu: 3
-#        memory: "7 GB"
-#    }
-#    output {
-#        File result_name_sort = ~{sorted_bam_file}
-#    }
-#}
+task Sort_Bam {
+    input {
+        File sort_star_bam
+        String result_sorted_bam
+    }
+
+    command <<<
+    set -e
+    ln ~{sort_star_bam} ~{basename(sort_star_bam)}
+    source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
+    conda activate stepbystep
+    samtools sort -o ~{result_sorted_bam} ~{basename(sort_star_bam)} 
+    >>>
+
+    runtime {
+        cpu: 3
+        memory: "7 GB"
+    }
+    output {
+        File result_name_sort = result_sorted_bam
+    }
+}
 
 task Index {
      input {
@@ -62,17 +64,18 @@ task Index {
 
      command <<<
      set -e
+     ln ~{index_after_sort} ~{basename(index_after_sort)}
      source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
      conda activate stepbystep
-     samtools sort ~{index_after_sort}
-     samtools index ~{index_after_sort}
+     samtools index ~{basename(index_after_sort)}
      >>>
      runtime {
          cpu: 3
          memory: "6 GB"
      }
      output {
-         File result_bam = "${index_after_sort}"
+         File result_bam = "~{index_after_sort}"
+         File result_bai = result_bai_index
      }
 }
 
