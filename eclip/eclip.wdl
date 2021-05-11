@@ -247,8 +247,8 @@ task FastQ_sort_STAR_unmapped {
         File unmapped_to_sort_r1
         File unmapped_to_sort_r2
     }
-    String sorted_r1 = basename(unmapped_to_sort_r1,'Unmapped.out.mate1') + '.fq'
-    String sorted_r2 = basename(unmapped_to_sort_r2,'Unmapped.out.mate2') + '.fq' 
+    String sorted_r1 = basename(unmapped_to_sort_r1,'Unmapped.out.mate1') + 'r1_.fq'
+    String sorted_r2 = basename(unmapped_to_sort_r2,'Unmapped.out.mate2') + 'r2_.fq' 
 
     command <<<
     source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
