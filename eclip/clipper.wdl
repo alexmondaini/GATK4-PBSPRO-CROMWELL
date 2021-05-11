@@ -38,14 +38,14 @@ task Sort_Bam {
     mkdir tmp
     source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
     conda activate stepbystep
-    samtools sort -o ~{sort_star_bam_from_hg19} -T tmp ~{sort_star_bam} 
+    samtools sort -o ~{sort_star_bam} > 'sample.bam'
     >>>
     runtime {
         cpu: 3
         memory: "7 GB"
     }
     output {
-        File result_name_sort = "${sort_star_bam_from_hg19}"
+        File result_name_sort = stdout()
     }
  }
 
