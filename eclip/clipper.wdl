@@ -42,8 +42,8 @@ task Sort_and_Index_Bam {
     source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
     conda activate stepbystep
     samtools sort -o ~{result_bam} ~{basename(sort_star_bam)} 
-    samtools view -f 64 -b -o ~{result_view} ~{result_bam}
-    samtools index ~{result_view}
+    samtools index ~{result_bam}
+    samtools view -f 64 -b ~{result_bam}
     >>>
 
     runtime {
@@ -51,8 +51,8 @@ task Sort_and_Index_Bam {
         memory: "7 GB"
     }
     output {
-        File result_sorted_indexed_bam = result_view
-        File result_sorted_indexed_bai = "~{result_view}.bai"
+        File result_sorted_indexed_bam = result_bam
+        File result_sorted_indexed_bai = "~{result_bam}.bai"
     }
 }
 
