@@ -9,14 +9,15 @@ workflow Call_Peaks {
         
         String output_name = basename(sample,'.sorted_STAR_hg19Aligned.out.bam')
 
-        call Sort_Bam {
-            input:
-            sort_star_bam = sample,
-            sorted_bam_file = output_name + '.bam'
-        }
+        #call Sort_Bam {
+        #    input:
+        #    sort_star_bam = sample,
+        #    sorted_bam_file = output_name + '.bam'
+        #}
         call Index {
             input:
-            index_after_sort = Sort_Bam.result_name_sort
+            index_after_sort = sample,
+            result_bai_index = output_name + '.bai'
         }
         call Clipper {
             input:
@@ -32,32 +33,33 @@ workflow Call_Peaks {
     }
 }
 
-task Sort_Bam {
-    input {
-        File sort_star_bam
-        String sorted_bam_file
-    }
-
-    command <<<
-    source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
-    conda activate stepbystep
-    samtools sort ~{sort_star_bam} > ~{sorted_bam_file}
-    >>>
-
-    runtime {
-        cpu: 3
-        memory: "7 GB"
-    }
-    output {
-        File result_name_sort = "~{sorted_bam_file}"
-    }
- }
+#task Sort_Bam {
+#    input {
+#        File sort_star_bam
+#        String sorted_bam_file
+#    }
+#
+#    command <<<
+#    source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
+#    conda activate stepbystep
+#    samtools sort ~{sort_star_bam} > ~{sorted_bam_file}
+#    >>>
+#
+#    runtime {
+#        cpu: 3
+#        memory: "7 GB"
+#    }
+#    output {
+#        File result_name_sort = ~{sorted_bam_file}
+#    }
+#}
 
 task Index {
      input {
-        File index_after_sort 
+        File index_after_sort
+        String result_bai_index
      }
-     String result_bai_index = basename(index_after_sort)
+
      command <<<
      ln ~{index_after_sort}
      source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
