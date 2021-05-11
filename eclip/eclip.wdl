@@ -272,7 +272,7 @@ task STAR_genome_map {
         File sorted_star_fq_r2
         File zipped_star_files_to_hg19
     }
-    String prefix = basename(sorted_star_fq_r1,'.fq') + 'hg19'
+    String prefix = basename(sorted_star_fq_r1,'r1_.fq') + 'hg19'
 
     command <<<
     mkdir HG_19_DIR
