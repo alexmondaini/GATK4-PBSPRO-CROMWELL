@@ -1,7 +1,7 @@
 {
     "Call_Peaks.chr_size": "/groups/cgsd/alexandre/eclip/workflow/chrom.sizes",
     "Call_Peaks.samples": [
-      "/groups/cgsd/alexandre/cromwell-executions/Eclip/3c0a8b6f-95b2-429a-9cd6-40609898013b/call-STAR_rmRep/shard-0/execution/10249_sample1.round2.sorted_STAR_Aligned.out.bam"
+      "/groups/cgsd/alexandre/cromwell-executions/Eclip/3c0a8b6f-95b2-429a-9cd6-40609898013b/call-STAR_genome_map/shard-0/execution/10249_sample1.round2.sorted_STAR_hg19Aligned.out.bam"
     ]
   }
   
