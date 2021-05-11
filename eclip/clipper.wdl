@@ -6,21 +6,74 @@ workflow Call_Peaks {
         File chr_size
     }
     scatter (sample in samples) {
+        call Sort_Bam {
+            input:
+            sort_star_bam = sample
+        }
+        call Index {
+            input:
+            index_after_sort = Sort_Bam.result_name_sort
+        }
         call Clipper {
             input:
-            call_peak_bam = sample
+            call_peak_bam = Index.result_bam,
+            call_peak_bai = Index.result_bai
         }
         call Wigs {
             input:
-            bam = sample,
+            wigs_bam = Index.result_bam,
+            wigs_bai = Index.result_bai,
             chr_size = chr_size
         }
     }
 }
 
+task Sort_Bam {
+    input {
+        File sort_star_bam
+    }
+    String sort_star_bam_from_hg19 = basename(sort_star_bam,'.bam') + '_sorted_again.bam'
+
+    command <<<
+    mkdir tmp
+    source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
+    conda activate stepbystep
+    samtools sort -o ~{sort_star_bam_from_hg19} -T tmp ~{sort_star_bam} 
+    >>>
+    runtime {
+        cpu: 3
+        memory: "7 GB"
+    }
+    output {
+        File result_name_sort = "${sort_star_bam_from_hg19}"
+    }
+ }
+
+task Index {
+     input {
+        File index_after_sort 
+     }
+     String result_bai_index = basename(index_after_sort)
+     command <<<
+     ln ~{index_after_sort}
+     source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
+     conda activate stepbystep
+     samtools index ~{index_after_sort} > ~{result_bai_index}
+     >>>
+     runtime {
+         cpu: 3
+         memory: "6 GB"
+     }
+     output {
+         File result_bai = "${result_bai_index}"
+         File result_bam = "${index_after_sort}"
+     }
+}
+
 task Clipper {
     input {
         File call_peak_bam
+        File call_peak_bai
     }
     String bed_peak_intervals = basename(call_peak_bam,'.bam') + '.bed'
     
@@ -41,18 +94,19 @@ task Clipper {
 
 task Wigs {
     input {
-        File bam
+        File wigs_bam
+        File wigs_bai
         File chr_size
         String? direction
     }
-    String bw_pos = basename(bam,'.bam') + '_norm_pos.bw'
-    String bw_neg = basename(bam,'.bam') + '_norm_neg.bw'
+    String bw_pos = basename(wigs_bam,'.bam') + '_norm_pos.bw'
+    String bw_neg = basename(wigs_bam,'.bam') + '_norm_neg.bw'
 
     command <<<
     makebigwigfiles \
     --bw_pos  ~{bw_pos} \
     --bw_neg ~{bw_neg}  \
-    --bam  ~{bam} \
+    --bam  ~{wigs_bam} \
     --genome ~{chr_size} \
     --direction ~{default="r" direction}
     >>>
