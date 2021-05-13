@@ -43,7 +43,7 @@ task Sort_and_Index_Bam {
     conda activate stepbystep
     samtools sort -o ~{result_bam} ~{basename(sort_star_bam)} 
     samtools index ~{result_bam}
-    #samtools view -f 64 -b ~{result_bam}
+    samtools view -f 64 -b ~{result_bam}
     >>>
 
     runtime {
