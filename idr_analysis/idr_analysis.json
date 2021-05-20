@@ -1,0 +1,5 @@
+{
+  "IDR.ep_293T_siNeg": ["/groups/cgsd/alexandre/cromwell-executions/Call_Peaks/both_reads/call-Clipper/shard-0/execution/10249_sample1.round2.bed","/groups/cgsd/alexandre/cromwell-executions/Call_Peaks/both_reads/call-Clipper/shard-1/execution/10249_sample2.round2.bed"],
+  "IDR.ep_293T_siFus": ["/groups/cgsd/alexandre/cromwell-executions/Call_Peaks/both_reads/call-Clipper/shard-2/execution/10249_sample3.round2.bed","/groups/cgsd/alexandre/cromwell-executions/Call_Peaks/both_reads/call-Clipper/shard-3/execution/10249_sample4.round2.bed"]
+}
+
