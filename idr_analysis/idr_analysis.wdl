@@ -21,14 +21,14 @@ task Idr_Analysis {
         File sample_left
         File sample_right
     }
-    String out_file = basename(sample_left,'.round2') + '_vs_' + basename(sample_right,'.round2')
+    String out_file = basename(sample_left,'.round2.bed') + '_vs_' + basename(sample_right,'.round2.bed')
     
     command <<<
     source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
     conda activate idr
     idr --samples ~{sample_left} ~{sample_right} \
     --input-file-type bed \
-    --rank p.value \
+    --rank 5 \
     --output-file ~{out_file} \
     --output-file-type bed \
     --verbose
