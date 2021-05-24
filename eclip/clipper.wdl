@@ -51,8 +51,8 @@ task Sort_and_Index_Bam {
         memory: "7 GB"
     }
     output {
-        File result_sorted_indexed_bam = result_bam
-        File result_sorted_indexed_bai = "~{result_bam}.bai"
+        File result_sorted_indexed_bam = result_view
+        File result_sorted_indexed_bai = "~{result_view}.bai"
     }
 }
 
