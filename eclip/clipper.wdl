@@ -32,7 +32,7 @@ workflow Call_Peaks {
 task Sort_and_Index_Bam {
     input {
         File sort_star_bam
-        String result_bam
+        String result_sort
         String result_view
     }
 
