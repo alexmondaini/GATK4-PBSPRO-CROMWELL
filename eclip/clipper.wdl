@@ -12,8 +12,8 @@ workflow Call_Peaks {
         call Sort_and_Index_Bam {
             input:
             sort_star_bam = sample,
-            result_bam = output_name + '.bam',
-            result_view = output_name + '_final.bam'
+            result_sort = output_name + '_sort.bam',
+            result_view = output_name + '.bam'
         }
         call Clipper {
             input:
@@ -41,9 +41,9 @@ task Sort_and_Index_Bam {
     ln ~{sort_star_bam} ~{basename(sort_star_bam)}
     source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
     conda activate stepbystep
-    samtools sort -o ~{result_bam} ~{basename(sort_star_bam)} 
-    samtools index ~{result_bam}
-    samtools view -f 64 -b ~{result_bam}
+    samtools sort -o ~{result_sort} ~{basename(sort_star_bam)} 
+    samtools view -f 64 -b -o ~{result_view} ~{result_sort}
+    samtools index ~{result_view}
     >>>
 
     runtime {
