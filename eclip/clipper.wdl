@@ -7,7 +7,7 @@ workflow Call_Peaks {
     }
     scatter (sample in samples) {
         
-        String output_name = basename(sample,'.sorted_STAR_hg19Aligned.out.bam')
+        String output_name = basename(sample,'.round2.sorted_STAR_hg19Aligned.out.bam')
 
         call Sort_and_Index_Bam {
             input:
