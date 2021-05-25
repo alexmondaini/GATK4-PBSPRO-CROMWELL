@@ -42,7 +42,7 @@ task Sort_and_Index_Bam {
     source /groups/cgsd/alexandre/miniconda3/etc/profile.d/conda.sh 
     conda activate stepbystep
     samtools sort -o ~{result_sort} ~{basename(sort_star_bam)} 
-    samtools view -f 128 -b -o ~{result_view} ~{result_sort}
+    samtools view -f 64 -b -o ~{result_view} ~{result_sort}
     samtools index ~{result_view}
     >>>
 
