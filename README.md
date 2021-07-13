@@ -11,3 +11,7 @@ The other folders are ready to implement workflows which have been tested in our
 
 
 Happy coding ! :sunglasses:
+
+------------
+
+Notes on requested pipelines [copy-number-variation](/copy-number-variation) and [mutect2](/mutect2). 
