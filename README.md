@@ -14,4 +14,16 @@ Happy coding ! :sunglasses:
 
 ------------
 
-Notes on requested pipelines [copy-number-variation](/copy-number-variation) and [mutect2](/mutect2). 
+### Notes on requested pipelines [copy-number-variation](/copy-number-variation) and [mutect2](/mutect2). 
+
+- It's important to highlight here that there is a great way to generate inputs for both pipelines. Since the pipelines themselves are constructed in a way to provide the maximum flexibility among the desired inputs (arguments) a pipeline has, every given pipeline takes a respective `json` file as input.
+- [WOMtool](https://cromwell.readthedocs.io/en/stable/WOMtool/) is an excellent jar file application that parses a wdl file and provides a template with all the desired inputs in `json` format.
+- You can download the `WOMtool` jar file from this [link](https://github.com/broadinstitute/cromwell/releases/tag/59) 
+- Once download we can generate input templates for the `mutect2.wdl` pipeline in the following way: `java -jar womtool-59.jar inputs mutect2.wdl` , this will output to `stdout` a template with inputs a user can fill in values. To get `json` file we can try this: `java -jar womtool-59.jar inputs mutect2.wdl > mutect2.json`
+- This is an [example](/mutect2/tmp.json) of how a template input looks like.
+
+------
+
+### Running workflows in high-throughput.
+
+Once you get the grasp on how pipelines are run in the Broad Institute, we can start executing them in a high-throughput manner.
