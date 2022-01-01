@@ -6,3 +6,4 @@ genomics_db/genome_db/
 genomics_db/tmp_dir/
 genomics_db/SY_pon.vcf.gz
 genomics_db/pon_tmp_dir/
+.vscode
