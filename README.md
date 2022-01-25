@@ -1,4 +1,4 @@
-## GATK4-PBSPRO-CROMWELL for HKU 
+## GATK4-PBSPRO-CROMWELL for Hong Kong University
 This repo should help colleagues at HKU to run workflows written in [wdl](https://github.com/openwdl/wdl/blob/main/versions/1.0/SPEC.md) using a workflow management system ([Cromwell](https://cromwell.readthedocs.io/en/stable/)). 
 
 - [test.conf](/test.conf) is a configuration file that helps us to familiarize with cromwell's default environment variables and how the engine works in the background. Use [test.conf](/test.conf) along with the [hello_world](/hello_world) directory, this is a great first step into learning wdl+cromwell.
