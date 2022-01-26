@@ -1,0 +1,6 @@
+{
+    "IndexGenome.index_the_reference": false,
+    "IndexGenome.create_fasta_index": true,
+    "IndexGenome.create_interval_list": false,
+    "IndexGenome.fasta": "/groups/cgsd/alexandre/gatk-workflows/gatk4-rnaseq-germline-snps-indels/src/hg19.fa"
+  }
