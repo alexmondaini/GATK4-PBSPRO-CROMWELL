@@ -162,7 +162,7 @@ task bedToCallingIntervals {
 
     String docker
     String gatk_path
-    
+
     command <<<
 
         set -e
