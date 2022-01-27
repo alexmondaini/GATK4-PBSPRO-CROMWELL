@@ -1,7 +1,7 @@
 workflow RNAseq {
     # Bams from STAR
 	File inputBam
-	String sampleName = basename(inputBam,".round2.sorted_STAR_hg19Aligned.out.bam")
+	String sampleName = basename(inputBam,".bam")
 
     # References
 	File refFasta
@@ -198,14 +198,14 @@ task MarkDuplicates {
     String docker
  
  	command <<<
- 	    ${gatk_path} \
- 	        MarkDuplicates \
- 	        --INPUT ${input_bam} \
- 	        --OUTPUT ${base_name}.bam  \
- 	        --CREATE_INDEX true \
- 	        --VALIDATION_STRINGENCY SILENT \
- 	        --METRICS_FILE ${base_name}.metrics
- 	>>>
+     ${gatk_path} --java-options "-Xmx20g" \
+     MarkDuplicates \
+     --INPUT ${input_bam} \
+     --OUTPUT ${base_name}.bam  \
+     --CREATE_INDEX true \
+     --VALIDATION_STRINGENCY SILENT \
+     --METRICS_FILE ${base_name}.metrics
+     >>>
 
  	output {
  		File output_bam = "${base_name}.bam"
@@ -215,38 +215,38 @@ task MarkDuplicates {
 
 	runtime {
 		docker: docker
-		memory: "4 GB"
+		memory: "24 GB"
 	}
 }
 
 task SplitNCigarReads {
-  File input_bam
-  File input_bam_index
-  String base_name
+    File input_bam
+    File input_bam_index
+    String base_name
 
-  File ref_fasta
-  File ref_fasta_index
-  File ref_dict
+    File ref_fasta
+    File ref_fasta_index
+    File ref_dict
 
-  String gatk_path
-  String docker
+    String gatk_path
+    String docker
 
     command <<<
-        ${gatk_path} \
-                SplitNCigarReads \
-                -R ${ref_fasta} \
-                -I ${input_bam} \
-                -O ${base_name}.bam 
+    ${gatk_path} --java-options "-Xmx4g" \
+    SplitNCigarReads \
+    -R ${ref_fasta} \
+    -I ${input_bam} \
+    -O ${base_name}.bam 
     >>>
 
-        output {
-                File output_bam = "${base_name}.bam"
-                File output_bam_index = "${base_name}.bai"
-        }
+    output {
+        File output_bam = "${base_name}.bam"
+        File output_bam_index = "${base_name}.bai"
+    }
 
     runtime {
         docker: docker
-        memory: "4 GB"
+        memory: "5 GB"
     }
 }
 
@@ -268,16 +268,16 @@ task BaseRecalibrator {
     String docker
 
     command <<<
-        ${gatk_path} --java-options "-XX:GCTimeLimit=50 -XX:GCHeapFreeLimit=10 -XX:+PrintFlagsFinal \
-            -XX:+PrintGCTimeStamps -XX:+PrintGCDateStamps -XX:+PrintGCDetails \
-            -Xloggc:gc_log.log -Xms4000m" \
-            BaseRecalibrator \
-            -R ${ref_fasta} \
-            -I ${input_bam} \
-            --use-original-qualities \
-            -O ${recal_output_file} \
-            -known-sites ${dbSNP_vcf} \
-            -known-sites ${sep=" --known-sites " known_indels_sites_VCFs}
+    ${gatk_path} --java-options "-XX:GCTimeLimit=50 -XX:GCHeapFreeLimit=10 -XX:+PrintFlagsFinal \
+    -XX:+PrintGCTimeStamps -XX:+PrintGCDateStamps -XX:+PrintGCDetails \
+    -Xloggc:gc_log.log -Xms3g -Xms4g" \
+    BaseRecalibrator \
+    -R ${ref_fasta} \
+    -I ${input_bam} \
+    --use-original-qualities \
+    -O ${recal_output_file} \
+    -known-sites ${dbSNP_vcf} \
+    -known-sites ${sep=" --known-sites " known_indels_sites_VCFs}
     >>>
 
     output {
@@ -304,17 +304,17 @@ task ApplyBQSR {
     String docker
 
     command <<<
-        ${gatk_path} \
-            --java-options "-XX:+PrintFlagsFinal -XX:+PrintGCTimeStamps -XX:+PrintGCDateStamps \
-            -XX:+PrintGCDetails -Xloggc:gc_log.log \
-            -XX:GCTimeLimit=50 -XX:GCHeapFreeLimit=10 -Xms3000m" \
-            ApplyBQSR \
-            --add-output-sam-program-record \
-            -R ${ref_fasta} \
-            -I ${input_bam} \
-            --use-original-qualities \
-            -O ${base_name}.bam \
-            --bqsr-recal-file ${recalibration_report}
+    ${gatk_path} \
+    --java-options "-XX:+PrintFlagsFinal -XX:+PrintGCTimeStamps -XX:+PrintGCDateStamps \
+    -XX:+PrintGCDetails -Xloggc:gc_log.log \
+    -XX:GCTimeLimit=50 -XX:GCHeapFreeLimit=10 -Xms3g -Xmx4g" \
+    ApplyBQSR \
+    --add-output-sam-program-record \
+    -R ${ref_fasta} \
+    -I ${input_bam} \
+    --use-original-qualities \
+    -O ${base_name}.bam \
+    --bqsr-recal-file ${recalibration_report}
     >>>
 
     output {
@@ -323,7 +323,7 @@ task ApplyBQSR {
     }
 
     runtime {
-        memory: "3500 MB"
+        memory: "5 GB"
         docker: docker
     }
 }
@@ -337,7 +337,7 @@ task ScatterIntervalList {
     command <<<
         set -e
         mkdir out
-        ${gatk_path} --java-options "-Xms1g" \
+        ${gatk_path} --java-options "-Xmx1g" \
             IntervalListTools \
             --SCATTER_COUNT ${scatter_count} \
             --SUBDIVISION_MODE BALANCING_WITHOUT_INTERVAL_SUBDIVISION_WITH_OVERFLOW \
@@ -394,7 +394,7 @@ task HaplotypeCaller {
 	Int? stand_call_conf
 
 	command <<<
-		${gatk_path} --java-options "-Xms6000m -XX:GCTimeLimit=50 -XX:GCHeapFreeLimit=10" \
+		${gatk_path} --java-options "-Xms5g -Xmx6g -XX:GCTimeLimit=50 -XX:GCHeapFreeLimit=10" \
 		HaplotypeCaller \
 		-R ${ref_fasta} \
 		-I ${input_bam} \
@@ -428,7 +428,7 @@ task MergeVCFs {
     # Using MergeVcfs instead of GatherVcfs so we can create indices
     # See https://github.com/broadinstitute/picard/issues/789 for relevant GatherVcfs ticket
     command <<<
-        ${gatk_path} --java-options "-Xms2000m"  \
+        ${gatk_path} --java-options "-Xms2g -Xmx2g"  \
             MergeVcfs \
             --INPUT ${sep=' --INPUT ' input_vcfs} \
             --OUTPUT ${output_vcf_name}
@@ -458,17 +458,17 @@ task VariantFiltration {
 	String docker
 
 	command <<<
-		 ${gatk_path} \
-		    VariantFiltration \
-			--R ${ref_fasta} \
-			--V ${input_vcf} \
-			--window 35 \
-			--cluster 3 \
-			--filter-name "FS" \
-			--filter "FS > 30.0" \
-			--filter-name "QD" \
-			--filter "QD < 2.0" \
-			-O ${base_name}
+    ${gatk_path} --java-options "-Xmx4g" \
+    VariantFiltration \
+    --R ${ref_fasta} \
+    --V ${input_vcf} \
+    --window 35 \
+    --cluster 3 \
+    --filter-name "FS" \
+    --filter "FS > 30.0" \
+    --filter-name "QD" \
+    --filter "QD < 2.0" \
+    -O ${base_name}
 	>>>
 
 	output {
@@ -478,6 +478,6 @@ task VariantFiltration {
 
 	runtime {
 		docker: docker
-		memory: "3 GB"
+		memory: "6 GB"
 	}
 }

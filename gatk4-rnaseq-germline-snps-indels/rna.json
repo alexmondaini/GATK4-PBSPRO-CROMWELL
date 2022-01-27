@@ -1,10 +1,10 @@
 {
-  "RNAseq.inputBam": "/groups/cgsd/alexandre/cromwell-executions/Eclip/68317c70-df8e-4de9-a931-650981d2e68c/call-STAR_genome_map/shard-0/execution/10249_sample1.round2.sorted_STAR_hg19Aligned.out.bam",
+  "RNAseq.inputBam": "/groups/cgsd/alexandre/cromwell-executions/Eclip/68317c70-df8e-4de9-a931-650981d2e68c/call-STAR_genome_map/shard-0/execution/10249_sample1.bam",
   "RNAseq.fusgenes": "/groups/cgsd/alexandre/eclip_bed/files/fus.input.gene.counts.txt",
 
-  "RNAseq.refFasta": "/groups/cgsd/alexandre/gatk-workflows/gatk4-rnaseq-germline-snps-indels/src/hg19.fa",
-  "RNAseq.refFastaIndex": "/groups/cgsd/alexandre/gatk-workflows/gatk4-rnaseq-germline-snps-indels/src/hg19.fa.fai",
-  "RNAseq.refDict": "/groups/cgsd/alexandre/gatk-workflows/gatk4-rnaseq-germline-snps-indels/inputs/hg19.dict",
+  "RNAseq.refFasta": "/groups/cgsd/alexandre/gatk-workflows/gatk4-rnaseq-germline-snps-indels/inputs/Homo_sapiens_assembly19_1000genomes_decoy.fasta",
+  "RNAseq.refFastaIndex": "/groups/cgsd/alexandre/gatk-workflows/gatk4-rnaseq-germline-snps-indels/inputs/Homo_sapiens_assembly19_1000genomes_decoy.fasta.fai",
+  "RNAseq.refDict": "/groups/cgsd/alexandre/gatk-workflows/gatk4-rnaseq-germline-snps-indels/inputs/Homo_sapiens_assembly19_1000genomes_decoy.dict",
   
   "RNAseq.dbSnpVcf": "/groups/cgsd/alexandre/gatk-workflows/gatk4-rnaseq-germline-snps-indels/inputs/Homo_sapiens_assembly19_1000genomes_decoy.dbsnp138.vcf",
   "RNAseq.dbSnpVcfIndex": "/groups/cgsd/alexandre/gatk-workflows/gatk4-rnaseq-germline-snps-indels/inputs/Homo_sapiens_assembly19_1000genomes_decoy.dbsnp138.vcf.idx",
