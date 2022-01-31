@@ -33,6 +33,10 @@ task Sort {
     samtools sort ${bam} \
     -o ${output_bam}
     }
+    runtime {
+        cpu: 8
+        memory: "16 GB"
+    }
 
     output {
         File out = "${output_bam}"
@@ -46,14 +50,17 @@ task AddReadGroup {
     String output_bam = basename(bam,"_sorted.bam") + ".bam"
 
     command <<<
-    modue load java
+    module load java
     module load Picard
     java -jar /software/Picard/2.25.2/picard.jar AddOrReplaceReadGroups \
     -I=${bam} \
     -O=${output_bam} \
     RGPL=ILLUMINA
     >>>
-
+    runtime {
+        cpu: 8
+        memory: "16 GB"
+    }
     output {
         File out = "${output_bam}"
     }
