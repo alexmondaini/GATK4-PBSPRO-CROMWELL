@@ -12,7 +12,7 @@ workflow PrepareBam {
         }
     }
 
-    scatter (bam in Sort.out) {
+    scatter (bam in sorted_bams) {
         call AddReadGroup {
             input:
             bam = bam
@@ -20,7 +20,6 @@ workflow PrepareBam {
     }
     output {
     Array[File] sorted_bams = Sort.out
-    Array[File] final_bams_with_read_group = AddReadGroup.out
     }
 }
 
