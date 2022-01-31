@@ -18,8 +18,10 @@ workflow PrepareBam {
             bam = bam
         }
     }
+    output {
     Array[File] sorted_bams = Sort.out
     Array[File] final_bams_with_read_group = AddReadGroup.out
+    }
 }
 
 task Sort {
