@@ -12,7 +12,7 @@ workflow PrepareBam {
         }
     }
 
-    scatter (bam in sorted_bams) {
+    scatter (bam in Sort.out) {
         call AddReadGroup {
             input:
             bam = bam
