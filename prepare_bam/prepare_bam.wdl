@@ -26,7 +26,7 @@ task Sort {
     input {
         File bam
     }
-    String output_bam = basename(bam,'.sorted_STAR_hg19Aligned.out.bam') + "_sorted.bam"
+    String output_bam = basename(bam,'.round2.sorted_STAR_hg19Aligned.out.bam') + "_sorted.bam"
 
     command {
     module load samtools
@@ -47,14 +47,14 @@ task AddReadGroup {
     input {
         File bam
     }
-    String output_bam = basename(bam,"_sorted.bam") + ".bam"
+    String output_bam = basename(bam,"_sorted") + ".bam"
 
     command <<<
     module load java
     module load Picard
     java -jar /software/Picard/2.25.2/picard.jar AddOrReplaceReadGroups \
-    -I=${bam} \
-    -O=${output_bam} \
+    I=${bam} \
+    O=${output_bam} \
     RGPL=ILLUMINA
     >>>
     runtime {
