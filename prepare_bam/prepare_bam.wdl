@@ -53,9 +53,13 @@ task AddReadGroup {
     module load java
     module load Picard
     java -jar /software/Picard/2.25.2/picard.jar AddOrReplaceReadGroups \
+    --VALIDATION_STRINGENCY=LENIENT \ 
     I=${bam} \
     O=${output_read} \
-    RGPL=ILLUMINA
+    RGLB=lib1 \
+    RGPL=ILLUMINA \
+    RGPU=unit1 \
+    RGSM=sample
     >>>
     runtime {
         cpu: 8
