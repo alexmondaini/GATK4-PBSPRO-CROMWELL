@@ -47,14 +47,14 @@ task AddReadGroup {
     input {
         File bam
     }
-    String output_bam = basename(bam,"_sorted") + ".bam"
+    String output_read = basename(bam,"_sorted") + ".bam"
 
     command <<<
     module load java
     module load Picard
     java -jar /software/Picard/2.25.2/picard.jar AddOrReplaceReadGroups \
     I=${bam} \
-    O=${output_bam} \
+    O=${output_read} \
     RGPL=ILLUMINA
     >>>
     runtime {
@@ -62,6 +62,6 @@ task AddReadGroup {
         memory: "16 GB"
     }
     output {
-        File out = "${output_bam}"
+        File out = "${output_read}"
     }
 }
