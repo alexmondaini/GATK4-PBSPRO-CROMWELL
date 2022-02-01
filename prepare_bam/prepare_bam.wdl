@@ -67,6 +67,6 @@ task AddReadGroup {
         memory: "16 GB"
     }
     output {
-        File out = "${output_read}"
+        File out_final = "${output_read}"
     }
 }
