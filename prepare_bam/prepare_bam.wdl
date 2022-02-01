@@ -12,14 +12,15 @@ workflow PrepareBam {
         }
     }
 
-    scatter (bam in sorted_bams) {
+    scatter (bam_sorted in Sort.out) {
         call AddReadGroup {
             input:
-            bam = bam
+            bam_sorted = bam_sorted
         }
     }
     output {
     Array[File] sorted_bams = Sort.out
+    File final_bam_read_group = AddReadGroup.output_read
     }
 }
 
@@ -46,22 +47,22 @@ task Sort {
 
 task AddReadGroup {
     input {
-        File bam
+        File bam_sorted
     }
-    String output_read = basename(bam,"_sorted")
+    
+    String output_read = sub(bam,"_sorted","")
 
-    command <<<
-    module load java
+    command {
+    module load java/11.0.9
     module load Picard
-    java -jar /software/Picard/2.25.2/picard.jar AddOrReplaceReadGroups \
-    VALIDATION_STRINGENCY=LENIENT \ 
-    I=~{bam} \
+    java -jar /software/Picard/2.25.2/picard.jar AddOrReplaceReadGroups VALIDATION_STRINGENCY=LENIENT I=~{bam} \
     O=~{output_read} \
     RGLB=lib1 \
     RGPL=ILLUMINA \
     RGPU=unit1 \
     RGSM=sample
-    >>>
+    }
+
     runtime {
         cpu: 8
         memory: "16 GB"
