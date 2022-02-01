@@ -31,8 +31,8 @@ task Sort {
 
     command {
     module load samtools
-    samtools sort ${bam} \
-    -o ${output_bam}
+    samtools sort ~{bam} \
+    -o ~{output_bam}
     }
     runtime {
         cpu: 8
@@ -54,9 +54,9 @@ task AddReadGroup {
     module load java
     module load Picard
     java -jar /software/Picard/2.25.2/picard.jar AddOrReplaceReadGroups \
-    --VALIDATION_STRINGENCY=LENIENT \ 
-    I=${bam} \
-    O=${output_read} \
+    VALIDATION_STRINGENCY=LENIENT \ 
+    I=~{bam} \
+    O=~{output_read} \
     RGLB=lib1 \
     RGPL=ILLUMINA \
     RGPU=unit1 \
