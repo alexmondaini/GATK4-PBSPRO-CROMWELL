@@ -18,17 +18,13 @@ workflow PrepareBam {
             bam_sorted = bam_sorted
         }
     }
-    output {
-    Array[File] sorted_bams = Sort.out
-    Array[File] final_bam_read_group = AddReadGroup.out_final
-    }
 }
 
 task Sort {
     input {
         File bam
     }
-    String output_bam = basename(bam,'.round2.sorted_STAR_hg19Aligned.out.bam') + "_sorted.bam"
+    String output_bam = sub(basename(bam),'.round2.sorted_STAR_hg19Aligned.out.bam','') + "_sorted.bam"
 
     command {
     module load samtools
@@ -50,7 +46,7 @@ task AddReadGroup {
         File bam_sorted
     }
     
-    String output_read = sub(bam_sorted,"_sorted","")
+    String output_read = sub(basename(bam_sorted),"_sorted","")
 
     command {
     module load java/11.0.9
