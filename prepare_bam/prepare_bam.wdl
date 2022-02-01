@@ -48,7 +48,7 @@ task AddReadGroup {
     input {
         File bam
     }
-    String output_read = basename(bam,"_sorted") + ".bam"
+    String output_read = basename(bam,"_sorted")
 
     command <<<
     module load java
