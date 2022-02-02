@@ -270,7 +270,7 @@ task BaseRecalibrator {
     command <<<
     ${gatk_path} --java-options "-XX:GCTimeLimit=50 -XX:GCHeapFreeLimit=10 -XX:+PrintFlagsFinal \
     -XX:+PrintGCTimeStamps -XX:+PrintGCDateStamps -XX:+PrintGCDetails \
-    -Xloggc:gc_log.log -Xms3g -Xms4g" \
+    -Xloggc:gc_log.log -Xms2g -Xmx7g" \
     BaseRecalibrator \
     -R ${ref_fasta} \
     -I ${input_bam} \
@@ -285,7 +285,7 @@ task BaseRecalibrator {
     }
 
     runtime {
-        memory: "6 GB"
+        memory: "10 GB"
         docker: docker
     }
 }
@@ -307,7 +307,7 @@ task ApplyBQSR {
     ${gatk_path} \
     --java-options "-XX:+PrintFlagsFinal -XX:+PrintGCTimeStamps -XX:+PrintGCDateStamps \
     -XX:+PrintGCDetails -Xloggc:gc_log.log \
-    -XX:GCTimeLimit=50 -XX:GCHeapFreeLimit=10 -Xms3g -Xmx4g" \
+    -XX:GCTimeLimit=50 -XX:GCHeapFreeLimit=10 -Xms3g -Xmx5g" \
     ApplyBQSR \
     --add-output-sam-program-record \
     -R ${ref_fasta} \
@@ -323,7 +323,7 @@ task ApplyBQSR {
     }
 
     runtime {
-        memory: "5 GB"
+        memory: "7 GB"
         docker: docker
     }
 }
@@ -394,7 +394,7 @@ task HaplotypeCaller {
 	Int? stand_call_conf
 
 	command <<<
-		${gatk_path} --java-options "-Xms5g -Xmx6g -XX:GCTimeLimit=50 -XX:GCHeapFreeLimit=10" \
+		${gatk_path} --java-options "-Xms5g -Xmx8g -XX:GCTimeLimit=50 -XX:GCHeapFreeLimit=10" \
 		HaplotypeCaller \
 		-R ${ref_fasta} \
 		-I ${input_bam} \
@@ -412,7 +412,7 @@ task HaplotypeCaller {
 
 	runtime {
 		docker: docker
-		memory: "6.5 GB"
+		memory: "9 GB"
 	}
 }
 
