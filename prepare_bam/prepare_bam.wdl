@@ -33,7 +33,7 @@ task Sort {
     }
     runtime {
         cpu: 8
-        memory: "16 GB"
+        memory: "20 GB"
     }
 
     output {
