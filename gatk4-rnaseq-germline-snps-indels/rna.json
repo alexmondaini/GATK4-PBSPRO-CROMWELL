@@ -1,5 +1,5 @@
 {
-  "RNAseq.inputBam": "/groups/cgsd/alexandre/cromwell-executions/Eclip/68317c70-df8e-4de9-a931-650981d2e68c/call-STAR_genome_map/shard-0/execution/10249_sample1.bam",
+  "RNAseq.inputBam": "/groups/cgsd/alexandre/cromwell-executions/PrepareBam/49c173c6-b87f-4d99-a696-1f07deba2c20/call-AddReadGroup/shard-0/execution/10249_sample1.bam",
   "RNAseq.fusgenes": "/groups/cgsd/alexandre/eclip_bed/files/fus.input.gene.counts.txt",
 
   "RNAseq.refFasta": "/groups/cgsd/alexandre/gatk-workflows/gatk4-rnaseq-germline-snps-indels/inputs/hg19.fa",
