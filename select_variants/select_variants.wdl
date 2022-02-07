@@ -2,12 +2,13 @@ version 1.0
 
 workflow SelectVariants {
     input {
-        Array[File] vcfs
+        Array[Pair[File,File]] vcf_list
     }
-    scatter (vcf in vcfs) {
+    scatter (pair in vcf_list) {
         call Select_INDELS {
             input:
-            vcf = vcf
+            vcf = pair.left,
+            vcf_index = pair.right
         }
     }
 }
@@ -15,8 +16,10 @@ workflow SelectVariants {
 task Select_INDELS {
     input {
         File vcf
+        File vcf_index
     }
     String output_vcf = basename(vcf)
+
 
     command {
         module load java/11.0.9
