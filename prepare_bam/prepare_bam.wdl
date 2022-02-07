@@ -1,4 +1,4 @@
-d version 1.0
+version 1.0
 
 workflow PrepareBam {
     input {
