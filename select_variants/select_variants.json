@@ -1,6 +1,6 @@
 {
   "SelectVariants.vcf_list": [    
-{"Left":"/groups/cgsd/alexandre/cromwell-executions/RNAseq/1668a08b-43f1-4fe9-a32e-176306fc6435/call-MergeVCFs/execution/10249_sample11.g.vcf.gz","Right": "/groups/cgsd/alexandre/cromwell-executions/RNAseq/1668a08b-43f1-4fe9-a32e-176306fc6435/call-MergeVCFs/execution/10249_sample11.g.vcf.gz.tbi"},
+{"Left":"/groups/cgsd/alexandre/cromwell-executions/RNAseq/1668a08b-43f1-4fe9-a32e-176306fc6435/call-MergeVCFs/execution/10249_sample11.g.vcf","Right": "/groups/cgsd/alexandre/cromwell-executions/RNAseq/1668a08b-43f1-4fe9-a32e-176306fc6435/call-MergeVCFs/execution/10249_sample11.g.vcf.gz.tbi"},
 {"Left":"/groups/cgsd/alexandre/cromwell-executions/RNAseq/38bd9c6b-42e1-4512-afe9-2d7fe44e3f6c/call-MergeVCFs/execution/10249_sample13.g.vcf.gz","Right": "/groups/cgsd/alexandre/cromwell-executions/RNAseq/38bd9c6b-42e1-4512-afe9-2d7fe44e3f6c/call-MergeVCFs/execution/10249_sample13.g.vcf.gz.tbi"},
 {"Left":"/groups/cgsd/alexandre/cromwell-executions/RNAseq/42017342-c8a2-4f8e-a169-113f7bb8b495/call-MergeVCFs/execution/10249_sample7.g.vcf.gz","Right": "/groups/cgsd/alexandre/cromwell-executions/RNAseq/42017342-c8a2-4f8e-a169-113f7bb8b495/call-MergeVCFs/execution/10249_sample7.g.vcf.gz.tbi"},
 {"Left":"/groups/cgsd/alexandre/cromwell-executions/RNAseq/56da60cb-6a89-4a67-802f-ee7cfa2e6afe/call-MergeVCFs/execution/10249_sample16.g.vcf.gz","Right": "/groups/cgsd/alexandre/cromwell-executions/RNAseq/56da60cb-6a89-4a67-802f-ee7cfa2e6afe/call-MergeVCFs/execution/10249_sample16.g.vcf.gz.tbi"},
