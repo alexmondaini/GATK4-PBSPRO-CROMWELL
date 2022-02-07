@@ -20,8 +20,7 @@ task Select_INDELS {
 
     command {
         module load gatk
-        gatk SelectVariants \
-        -V ~{vcf} \
+        gatk SelectVariants -V ~{vcf} \
         -O ~{output_vcf} \
         --select-type-to-include INDEL
     }
