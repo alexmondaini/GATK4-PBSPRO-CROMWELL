@@ -19,10 +19,9 @@ task Select_INDELS {
     String output_vcf = basename(vcf)
 
     command {
+        module load java/11.0.9
         module load gatk
-        gatk SelectVariants -V ~{vcf} \
-        -O ~{output_vcf} \
-        --select-type-to-include INDEL
+        gatk SelectVariants -V ~{vcf} -O ~{output_vcf} --select-type-to-include INDEL
     }
     runtime {
         cpu: 4
