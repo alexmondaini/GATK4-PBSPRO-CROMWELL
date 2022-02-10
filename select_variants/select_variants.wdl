@@ -19,8 +19,7 @@ task Select_INDELS {
         File vcf_index
     }
     String output_vcf = basename(vcf)
-
-
+    
     command {
         module load java/11.0.9
         module load gatk
