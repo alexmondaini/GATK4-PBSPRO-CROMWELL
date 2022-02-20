@@ -23,7 +23,7 @@ task Select_INDELS {
     command {
         module load java/11.0.9
         module load gatk
-        gatk SelectVariants -V ~{vcf} -O ~{output_vcf} --select-type-to-include INDEL
+        gatk SelectVariants -V ~{vcf} -O ~{output_vcf} -select-type INDEL -select-type SNP
     }
     runtime {
         cpu: 4
