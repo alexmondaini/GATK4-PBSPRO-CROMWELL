@@ -4,9 +4,12 @@
 #PBS -l select=1:ncpus=2:mem=6gb
 #PBS -q cgsd
 #PBS -v USER
-module load java
-java -Dconfig.file=/groups/cgsd/$USER/gatk-workflows/db.conf -Xmx5g \
--jar /groups/cgsd/$USER/cromwell-54.jar run \
-/groups/cgsd/alexandre/gatk-workflows/seq-format-conversion/parallel-paired-fastq-ubam/parallel-paired-fastq-ubam.wdl \
---inputs \
-/groups/cgsd/alexandre/gatk-workflows/seq-format-conversion/parallel-paired-fastq-ubam/parallel-paired-fastq-ubam.json
+#PBS -k oed 
+
+module load java/13.0.2
+CROMWELL_VERSION='83'
+cd $PBS_O_WORKDIR
+
+java -Dconfig.file=/groups/cgsd/$USER/GATK_workflows/application.conf -Xmx5g \
+-jar /groups/cgsd/$USER/cromwell-${CROMWELL_VERSION}.jar run \
+parallel-paired-fastq-ubam.wdl --inputs liver.json
