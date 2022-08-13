@@ -213,7 +213,6 @@ workflow PreProcessingForVariantDiscovery_GATK4 {
         ref_fasta_index = ref_fasta_index,
         docker_image = gatk_docker,
         gatk_path = gatk_path,
-        disk_size = agg_small_disk,
         preemptible_tries = preemptible_tries
     }
   } 
