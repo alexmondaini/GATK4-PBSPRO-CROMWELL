@@ -109,7 +109,6 @@ workflow PreProcessingForVariantDiscovery_GATK4 {
         docker_image = gotc_docker,
         bwa_path = gotc_path,
         gotc_path = gotc_path,
-        disk_size = flowcell_medium_disk,
         preemptible_tries = preemptible_tries,
         compression_level = compression_level
      }
@@ -127,7 +126,6 @@ workflow PreProcessingForVariantDiscovery_GATK4 {
         ref_dict = ref_dict,
         docker_image = gatk_docker,
         gatk_path = gatk_path,
-        disk_size = flowcell_medium_disk,
         preemptible_tries = preemptible_tries,
         compression_level = compression_level
     }
@@ -142,7 +140,6 @@ workflow PreProcessingForVariantDiscovery_GATK4 {
       metrics_filename = base_file_name + ".duplicate_metrics",
       docker_image = gatk_docker,
       gatk_path = gatk_path,
-      disk_size = agg_large_disk,
       compression_level = compression_level,
       preemptible_tries = preemptible_tries
   }
@@ -157,7 +154,6 @@ workflow PreProcessingForVariantDiscovery_GATK4 {
       ref_fasta_index = ref_fasta_index,
       docker_image = gatk_docker,
       gatk_path = gatk_path,
-      disk_size = agg_large_disk,
       preemptible_tries = 0,
       compression_level = compression_level
   }
@@ -188,7 +184,6 @@ workflow PreProcessingForVariantDiscovery_GATK4 {
         ref_fasta_index = ref_fasta_index,
         docker_image = gatk_docker,
         gatk_path = gatk_path,
-        disk_size = agg_small_disk,
         preemptible_tries = preemptible_tries
     }  
   }  
@@ -200,7 +195,6 @@ workflow PreProcessingForVariantDiscovery_GATK4 {
       output_report_filename = base_file_name + ".recal_data.csv",
       docker_image = gatk_docker,
       gatk_path = gatk_path,
-      disk_size = flowcell_small_disk,
       preemptible_tries = preemptible_tries
   }
 
@@ -231,7 +225,6 @@ workflow PreProcessingForVariantDiscovery_GATK4 {
       output_bam_basename = base_file_name,
       docker_image = gatk_docker,
       gatk_path = gatk_path,
-      disk_size = agg_large_disk,
       preemptible_tries = preemptible_tries,
       compression_level = compression_level
   }
