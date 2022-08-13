@@ -293,12 +293,11 @@ task SamToFastqAndBwaMem {
     File ref_pac
     File ref_sa
 
-    Float mem_size_gb = 14
-    String num_cpu = 16
+    Float mem_size_gb = 40
+    String num_cpu = 30
 
     Int compression_level
     Int preemptible_tries
-    Int disk_size
 
     String docker_image
     String bwa_path
@@ -329,7 +328,6 @@ task SamToFastqAndBwaMem {
     docker: docker_image
     memory: "~{mem_size_gb} GiB"
     cpu: num_cpu
-    disks: "local-disk " + disk_size + " HDD"
   }
   output {
     File output_bam = "~{output_bam_basename}.bam"
@@ -351,8 +349,7 @@ task MergeBamAlignment {
 
     Int compression_level
     Int preemptible_tries
-    Int disk_size
-    Float mem_size_gb = 6
+    Float mem_size_gb = 30
 
     String docker_image
     String gatk_path
@@ -392,7 +389,6 @@ task MergeBamAlignment {
     preemptible: preemptible_tries
     docker: docker_image
     memory: "~{mem_size_gb} GiB"
-    disks: "local-disk " + disk_size + " HDD"
   }
   output {
     File output_bam = "~{output_bam_basename}.bam"
@@ -410,8 +406,7 @@ task SortAndFixTags {
   
     Int compression_level
     Int preemptible_tries
-    Int disk_size
-    Float mem_size_gb = 17
+    Float mem_size_gb = 30
 
     String docker_image
     String gatk_path
@@ -442,7 +437,6 @@ task SortAndFixTags {
     preemptible: preemptible_tries
     docker: docker_image
     memory: "~{mem_size_gb} GiB"
-    disks: "local-disk " + disk_size + " HDD"
   }
   output {
     File output_bam = "~{output_bam_basename}.bam"
@@ -460,8 +454,7 @@ task MarkDuplicates {
   
     Int compression_level
     Int preemptible_tries
-    Int disk_size
-    Float mem_size_gb = 10
+    Float mem_size_gb = 40
 
     String docker_image
     String gatk_path
@@ -471,7 +464,7 @@ task MarkDuplicates {
  # This works because the output of BWA is query-grouped and therefore, so is the output of MergeBamAlignment.
  # While query-grouped isn't actually query-sorted, it's good enough for MarkDuplicates with ASSUME_SORT_ORDER="queryname"
   command {
-    ~{gatk_path} --java-options "-Dsamjdk.compression_level=~{compression_level} -Xms4G -Xmx7G" \
+    ~{gatk_path} --java-options "-Dsamjdk.compression_level=~{compression_level} -Xms4G -Xmx37G" \
       MarkDuplicates \
       --INPUT ~{sep=' --INPUT ' input_bams} \
       --OUTPUT ~{output_bam_basename}.bam \
@@ -485,7 +478,6 @@ task MarkDuplicates {
     preemptible: preemptible_tries
     docker: docker_image
     memory: "~{mem_size_gb}  GiB"
-    disks: "local-disk " + disk_size + " HDD"
   }
   output {
     File output_bam = "~{output_bam_basename}.bam"
@@ -569,8 +561,7 @@ task BaseRecalibrator {
     File ref_fasta_index
   
     Int preemptible_tries
-    Int disk_size
-    Float mem_size_gb = 12
+    Float mem_size_gb = 20
 
     String docker_image
     String gatk_path
@@ -592,7 +583,6 @@ task BaseRecalibrator {
     preemptible: preemptible_tries
     docker: docker_image
     memory: "~{mem_size_gb} GiB"
-    disks: "local-disk " + disk_size + " HDD"
   }
   output {
     File recalibration_report = "~{recalibration_report_filename}"
@@ -607,8 +597,7 @@ task GatherBqsrReports {
    String output_report_filename
 
    Int preemptible_tries
-   Int disk_size
-   Float mem_size_gb = 6
+   Float mem_size_gb = 16
 
    String docker_image
    String gatk_path
@@ -625,7 +614,6 @@ task GatherBqsrReports {
     preemptible: preemptible_tries
     docker: docker_image
     memory: "~{mem_size_gb} GiB"
-    disks: "local-disk " + disk_size + " HDD"
   }
   output {
     File output_bqsr_report = "~{output_report_filename}"
@@ -645,8 +633,7 @@ task ApplyBQSR {
     File ref_fasta_index
 
     Int preemptible_tries
-    Int disk_size 
-    Float mem_size_gb = 6
+    Float mem_size_gb = 30
 
     String docker_image
     String gatk_path
@@ -670,7 +657,6 @@ task ApplyBQSR {
     preemptible: preemptible_tries
     docker: docker_image
     memory: "~{mem_size_gb} GiB"
-    disks: "local-disk " + disk_size + " HDD"
   }
   output {
     File recalibrated_bam = "~{output_bam_basename}.bam"
@@ -685,8 +671,7 @@ task GatherBamFiles {
 
     Int compression_level
     Int preemptible_tries
-    Int disk_size
-    Float mem_size_gb = 6
+    Float mem_size_gb = 20
 
     String docker_image
     String gatk_path
@@ -705,7 +690,6 @@ task GatherBamFiles {
     preemptible: preemptible_tries
     docker: docker_image
     memory: "~{mem_size_gb} GiB"
-    disks: "local-disk " + disk_size + " HDD"
   }
   output {
     File output_bam = "~{output_bam_basename}.bam"
