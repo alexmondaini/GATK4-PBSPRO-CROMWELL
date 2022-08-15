@@ -5,8 +5,14 @@ from io import StringIO
 
 p = Path('/groups','cgsd','alexandre','cromwell-executions','ConvertPairedFastQsToUnmappedBamWf','d8e57ecb-a44d-4d7e-bc17-2a8acaacb7df','call-PairedFastQsToUnmappedBAM')
 
+done = sorted(Path('/groups/cgsd/alexandre/bams').glob('*.bam'))
+done_samples = [x.name.split('.')[0] for x in done]
+
 samples = sorted(p.glob('shard-*/execution/*.unmapped.bam'))
-samples_names = [x.name.split('.')[0] for x in samples]
+samples = [x for x in samples if x.name.split('.')[0] not in done_samples]
+
+samples_names = [x.name.split('.')[0] for x in samples if x.name.split('.')[0] not in done_samples]
+
 
 def create_data():
     data = []
