@@ -10,7 +10,6 @@ samples = sorted(p.glob('shard-*/execution/*.unmapped.bam'))
 samples = [x for x in samples if x.name.split('.')[0] not in done_samples]
 
 samples_names = [x.name.split('.')[0] for x in samples if x.name.split('.')[0] not in done_samples]
-print(len(samples_names))
 
 def create_data():
     data = []
