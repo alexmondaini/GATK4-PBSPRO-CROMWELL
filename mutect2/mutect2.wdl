@@ -12,8 +12,6 @@ version 1.0
 ##
 ## ** Runtime **
 ## gatk_docker: docker image to use for GATK 4 Mutect2
-## preemptible: how many preemptions to tolerate before switching to a non-preemptible machine (on Google)
-## max_retries: how many times to retry failed tasks -- very important on the cloud when there are transient errors
 ## gatk_override: (optional) local file or Google bucket path to a GATK 4 java jar file to be used instead of the GATK 4 jar
 ##                in the docker image.  This must be supplied when running in an environment that does not support docker
 ##                (e.g. SGE cluster on a Broad on-prem VM)
@@ -70,8 +68,6 @@ version 1.0
 struct Runtime {
     String gatk_docker
     File? gatk_override
-    Int? max_retries
-    Int? preemptible
     Int cpu
     Int machine_mem
     Int command_mem
@@ -134,8 +130,6 @@ workflow Mutect2 {
       String basic_bash_docker = "ubuntu:16.04"
       Boolean? filter_funcotations
 
-      Int? preemptible
-      Int? max_retries
       Int small_task_cpu = 2
       Int small_task_mem = 4
       Int? small_task_disk = 100
@@ -144,7 +138,6 @@ workflow Mutect2 {
       Int filter_alignment_artifacts_mem = 9000
 
       # Use as a last resort to increase the disk given to every task in case of ill behaving data
-      Int? emergency_extra_disk
 
       # These are multipliers to multipler inputs by to make sure we have enough disk to accommodate for possible output sizes
       # Large is for Bams/WGS vcfs
@@ -154,8 +147,6 @@ workflow Mutect2 {
       Float cram_to_bam_multiplier = 6.0
     }
 
-    #Int preemptible_or_default = select_first([preemptible, 2])
-    #Int max_retries_or_default = select_first([max_retries, 2])
 
     Boolean compress = select_first([compress_vcfs, false])
     Boolean run_ob_filter = select_first([run_orientation_bias_mixture_model_filter, false])
@@ -163,18 +154,10 @@ workflow Mutect2 {
     Boolean run_funcotator_or_default = select_first([run_funcotator, false])
     Boolean filter_funcotations_or_default = select_first([filter_funcotations, true])
 
-    # Disk sizes used for dynamic sizing
-    #Int ref_size = ceil(size(ref_fasta, "GB") + size(ref_dict, "GB") + size(ref_fai, "GB"))
-    #Int tumor_reads_size = ceil(size(tumor_reads, "GB") + size(tumor_reads_index, "GB"))
-    #Int gnomad_vcf_size = if defined(gnomad) then ceil(size(gnomad, "GB")) else 0
-    #Int normal_reads_size = if defined(normal_reads) then ceil(size(normal_reads, "GB") + size(normal_reads_index, "GB")) else 0
 
     # If no tar is provided, the task downloads one from broads ftp server
     Int funco_tar_size = if defined(funco_data_sources_tar_gz) then ceil(size(funco_data_sources_tar_gz, "GB") * 3) else 100
-    #Int gatk_override_size = if defined(gatk_override) then ceil(size(gatk_override, "GB")) else 0
 
-    # This is added to every task as padding, should increase if systematically you need more disk for every call
-    #Int disk_pad = 10 + gatk_override_size + select_first([emergency_extra_disk,0])
 
     # logic about output file names -- these are the names *without* .vcf extensions
     String output_basename = basename(basename(tumor_reads, ".bam"),".cram")  #hacky way to strip either .bam or .cram
@@ -184,8 +167,6 @@ workflow Mutect2 {
 
     String output_vcf_name = output_basename + ".vcf"
 
-    #Int tumor_cram_to_bam_disk = ceil(tumor_reads_size * cram_to_bam_multiplier)
-    #Int normal_cram_to_bam_disk = ceil(normal_reads_size * cram_to_bam_multiplier)
 
     Runtime standard_runtime = {"gatk_docker": gatk_docker, "gatk_override": gatk_override,
             "cpu": small_task_cpu, "machine_mem": small_task_mem * 1000, "command_mem": small_task_mem * 1000 - 500}
@@ -199,7 +180,6 @@ workflow Mutect2 {
                 cram = tumor_reads,
                 crai = tumor_reads_index,
                 name = output_basename,
-                #disk_size = tumor_cram_to_bam_disk
         }
     }
 
@@ -213,8 +193,7 @@ workflow Mutect2 {
                 ref_dict = ref_dict,
                 cram = normal_reads,
                 crai = normal_reads_index,
-                name = normal_basename,
-                #disk_size = normal_cram_to_bam_disk
+                name = normal_basename
         }
     }
 
@@ -223,12 +202,6 @@ workflow Mutect2 {
     File? normal_bam = if defined(normal_reads) then select_first([NormalCramToBam.output_bam, normal_reads]) else normal_reads
     File? normal_bai = if defined(normal_reads) then select_first([NormalCramToBam.output_bai, normal_reads_index]) else normal_reads_index
 
-    #Int tumor_bam_size = ceil(size(tumor_bam, "GB") + size(tumor_bai, "GB"))
-    #Int normal_bam_size = if defined(normal_bam) then ceil(size(normal_bam, "GB") + size(normal_bai, "GB")) else 0
-
-    #Int m2_output_size = tumor_bam_size / scatter_count
-    #TODO: do we need to change this disk size now that NIO is always going to happen (for the google backend only)
-    #Int m2_per_scatter_size = (tumor_bam_size + normal_bam_size) + ref_size + gnomad_vcf_size + m2_output_size + disk_pad
 
     call SplitIntervals {
         input:
@@ -256,8 +229,6 @@ workflow Mutect2 {
                 pon_idx = pon_idx,
                 gnomad = gnomad,
                 gnomad_idx = gnomad_idx,
-                preemptible = preemptible,
-                max_retries = max_retries,
                 m2_extra_args = m2_extra_args,
                 getpileupsummaries_extra_args = getpileupsummaries_extra_args,
                 variants_for_contamination = variants_for_contamination,
@@ -268,8 +239,7 @@ workflow Mutect2 {
                 gga_vcf = gga_vcf,
                 gga_vcf_idx = gga_vcf_idx,
                 gatk_override = gatk_override,
-                gatk_docker = gatk_docker,
-                #disk_space = m2_per_scatter_size
+                gatk_docker = gatk_docker
         }
     }
 
@@ -302,8 +272,7 @@ workflow Mutect2 {
                 ref_dict = ref_dict,
                 bam_outs = M2.output_bamOut,
                 output_vcf_name = basename(MergeVCFs.merged_vcf, ".vcf"),
-                runtime_params = standard_runtime,
-                #disk_space = ceil(merged_bamout_size * large_input_to_output_multiplier) + disk_pad,
+                runtime_params = standard_runtime
         }
     }
 
@@ -401,8 +370,7 @@ workflow Mutect2 {
                 funcotator_excluded_fields = funcotator_excluded_fields,
                 filter_funcotations = filter_funcotations_or_default,
                 extra_args = funcotator_extra_args,
-                runtime_params = standard_runtime,
-                #disk_space = ceil(size(funcotate_vcf_input, "GB") * large_input_to_output_multiplier)  + funco_tar_size + disk_pad
+                runtime_params = standard_runtime
         }
     }
 
@@ -491,11 +459,7 @@ task SplitIntervals {
 
     runtime {
         docker: runtime_params.gatk_docker
-        #bootDiskSizeGb: runtime_params.boot_disk_size
         memory: runtime_params.machine_mem + " MB"
-        #disks: "local-disk " + runtime_params.disk + " HDD"
-        #preemptible: runtime_params.preemptible
-        #maxRetries: runtime_params.max_retries
         cpu: runtime_params.cpu
     }
 
@@ -533,8 +497,6 @@ task M2 {
       # runtime
       String gatk_docker
       Int? mem
-      Int? preemptible
-      Int? max_retries
       Int? disk_space
       Int? cpu
       Boolean use_ssd = false
@@ -630,8 +592,6 @@ task M2 {
         #bootDiskSizeGb: 12
         memory: machine_mem + " MB"
         #disks: "local-disk " + select_first([disk_space, 100]) + if use_ssd then " SSD" else " HDD"
-        #preemptible: select_first([preemptible, 10])
-        #maxRetries: select_first([max_retries, 0])
         cpu: select_first([cpu, 1])
     }
 
@@ -673,8 +633,6 @@ task MergeVCFs {
         #bootDiskSizeGb: runtime_params.boot_disk_size
         memory: runtime_params.machine_mem + " MB"
         #disks: "local-disk " + runtime_params.disk + " HDD"
-        #preemptible: runtime_params.preemptible
-        #maxRetries: runtime_params.max_retries
         cpu: runtime_params.cpu
     }
 
@@ -717,8 +675,6 @@ task MergeBamOuts {
         #bootDiskSizeGb: runtime_params.boot_disk_size
         memory: runtime_params.machine_mem + " MB"
         #disks: "local-disk " + select_first([disk_space, runtime_params.disk]) + " HDD"
-        #preemptible: runtime_params.preemptible
-        #maxRetries: runtime_params.max_retries
         cpu: runtime_params.cpu
     }
 
@@ -749,8 +705,6 @@ task MergeStats {
         #bootDiskSizeGb: runtime_params.boot_disk_size
         memory: runtime_params.machine_mem + " MB"
         #disks: "local-disk " + runtime_params.disk + " HDD"
-        #preemptible: runtime_params.preemptible
-        #maxRetries: runtime_params.max_retries
         cpu: runtime_params.cpu
     }
 
@@ -782,8 +736,6 @@ task MergePileupSummaries {
         #bootDiskSizeGb: runtime_params.boot_disk_size
         memory: runtime_params.machine_mem + " MB"
         #disks: "local-disk " + runtime_params.disk + " HDD"
-        #preemptible: runtime_params.preemptible
-        #maxRetries: runtime_params.max_retries
         cpu: runtime_params.cpu
     }
 
@@ -817,8 +769,6 @@ task LearnReadOrientationModel {
         #bootDiskSizeGb: runtime_params.boot_disk_size
         memory: machine_mem + " MB"
         #disks: "local-disk " + runtime_params.disk + " HDD"
-        #preemptible: runtime_params.preemptible
-        #maxRetries: runtime_params.max_retries
         cpu: runtime_params.cpu
     }
 
@@ -850,8 +800,6 @@ task CalculateContamination {
         #bootDiskSizeGb: runtime_params.boot_disk_size
         memory: runtime_params.machine_mem + " MB"
         #disks: "local-disk " + runtime_params.disk + " HDD"
-        #preemptible: runtime_params.preemptible
-        #maxRetries: runtime_params.max_retries
         cpu: runtime_params.cpu
     }
 
@@ -911,8 +859,6 @@ task Filter {
         #bootDiskSizeGb: runtime_params.boot_disk_size
         memory: runtime_params.machine_mem + " MB"
         #disks: "local-disk " + select_first([disk_space, runtime_params.disk]) + " HDD"
-        #preemptible: runtime_params.preemptible
-        #maxRetries: runtime_params.max_retries
         cpu: runtime_params.cpu
     }
 
@@ -975,8 +921,6 @@ task FilterAlignmentArtifacts {
         #bootDiskSizeGb: runtime_params.boot_disk_size
         memory: "8 GB"
         #disks: "local-disk " + runtime_params.disk + " HDD"
-        #preemptible: runtime_params.preemptible
-        #maxRetries: runtime_params.max_retries
         cpu: runtime_params.cpu
     }
 
@@ -1107,8 +1051,6 @@ task Funcotate {
         #bootDiskSizeGb: runtime_params.boot_disk_size
         memory: runtime_params.machine_mem + " MB"
         #disks: "local-disk " + select_first([disk_space, runtime_params.disk]) + " HDD"
-        #preemptible: runtime_params.preemptible
-        #maxRetries: runtime_params.max_retries
         cpu: runtime_params.cpu
     }
 
