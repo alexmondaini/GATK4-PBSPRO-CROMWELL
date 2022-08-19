@@ -25,7 +25,7 @@
     "Mutect2.pon_idx": "/groups/cgsd/alexandre/GATK_workflows/mutect2/inputs/1000g_pon.hg38.vcf.gz.tbi",
     "Mutect2.gnomad": "/groups/cgsd/alexandre/GATK_workflows/mutect2/inputs/af-only-gnomad.hg38.vcf.gz",
     "Mutect2.gnomad_idx": "/groups/cgsd/alexandre/GATK_workflows/mutect2/inputs/af-only-gnomad.hg38.vcf.gz.tbi",
-    "Mutect2.variants_for_contamination": "/groups/cgsd/alexandre/GATK_workflows/mutect2/inputs/small_exac_common_3.hg38.vcf.gz.gz",
+    "Mutect2.variants_for_contamination": "/groups/cgsd/alexandre/GATK_workflows/mutect2/inputs/small_exac_common_3.hg38.vcf.gz",
     "Mutect2.variants_for_contamination_idx": "/groups/cgsd/alexandre/GATK_workflows/mutect2/inputs/small_exac_common_3.hg38.vcf.gz.tbi",
     "Mutect2.realignment_index_bundle": "/groups/cgsd/alexandre/GATK_workflows/mutect2/inputs/Homo_sapiens_assembly38.index_bundle"  
 }
