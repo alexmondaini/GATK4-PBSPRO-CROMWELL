@@ -589,9 +589,7 @@ task M2 {
 
     runtime {
         docker: gatk_docker
-        #bootDiskSizeGb: 12
         memory: machine_mem + " MB"
-        #disks: "local-disk " + select_first([disk_space, 100]) + if use_ssd then " SSD" else " HDD"
         cpu: select_first([cpu, 1])
     }
 
@@ -630,7 +628,6 @@ task MergeVCFs {
 
     runtime {
         docker: runtime_params.gatk_docker
-        #bootDiskSizeGb: runtime_params.boot_disk_size
         memory: runtime_params.machine_mem + " MB"
         #disks: "local-disk " + runtime_params.disk + " HDD"
         cpu: runtime_params.cpu
@@ -672,9 +669,7 @@ task MergeBamOuts {
 
     runtime {
         docker: runtime_params.gatk_docker
-        #bootDiskSizeGb: runtime_params.boot_disk_size
         memory: runtime_params.machine_mem + " MB"
-        #disks: "local-disk " + select_first([disk_space, runtime_params.disk]) + " HDD"
         cpu: runtime_params.cpu
     }
 
@@ -702,7 +697,6 @@ task MergeStats {
 
     runtime {
         docker: runtime_params.gatk_docker
-        #bootDiskSizeGb: runtime_params.boot_disk_size
         memory: runtime_params.machine_mem + " MB"
         #disks: "local-disk " + runtime_params.disk + " HDD"
         cpu: runtime_params.cpu
@@ -733,7 +727,6 @@ task MergePileupSummaries {
 
     runtime {
         docker: runtime_params.gatk_docker
-        #bootDiskSizeGb: runtime_params.boot_disk_size
         memory: runtime_params.machine_mem + " MB"
         #disks: "local-disk " + runtime_params.disk + " HDD"
         cpu: runtime_params.cpu
@@ -766,7 +759,6 @@ task LearnReadOrientationModel {
 
     runtime {
         docker: runtime_params.gatk_docker
-        #bootDiskSizeGb: runtime_params.boot_disk_size
         memory: machine_mem + " MB"
         #disks: "local-disk " + runtime_params.disk + " HDD"
         cpu: runtime_params.cpu
@@ -797,7 +789,6 @@ task CalculateContamination {
 
     runtime {
         docker: runtime_params.gatk_docker
-        #bootDiskSizeGb: runtime_params.boot_disk_size
         memory: runtime_params.machine_mem + " MB"
         #disks: "local-disk " + runtime_params.disk + " HDD"
         cpu: runtime_params.cpu
@@ -856,9 +847,7 @@ task Filter {
 
     runtime {
         docker: runtime_params.gatk_docker
-        #bootDiskSizeGb: runtime_params.boot_disk_size
         memory: runtime_params.machine_mem + " MB"
-        #disks: "local-disk " + select_first([disk_space, runtime_params.disk]) + " HDD"
         cpu: runtime_params.cpu
     }
 
@@ -918,7 +907,6 @@ task FilterAlignmentArtifacts {
 
     runtime {
         docker: runtime_params.gatk_docker
-        #bootDiskSizeGb: runtime_params.boot_disk_size
         memory: "8 GB"
         #disks: "local-disk " + runtime_params.disk + " HDD"
         cpu: runtime_params.cpu
@@ -1048,9 +1036,7 @@ task Funcotate {
 
     runtime {
         docker: runtime_params.gatk_docker
-        #bootDiskSizeGb: runtime_params.boot_disk_size
         memory: runtime_params.machine_mem + " MB"
-        #disks: "local-disk " + select_first([disk_space, runtime_params.disk]) + " HDD"
         cpu: runtime_params.cpu
     }
 
