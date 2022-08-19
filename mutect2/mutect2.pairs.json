@@ -1,5 +1,5 @@
 {
-    "Mutect2.gatk_override": "broadinstitute/gatk:4.1.4.1",
+    "Mutect2.gatk_docker": "broadinstitute/gatk:4.2.0.0",
     "Mutect2.scatter_count": 30,
     "Mutect2.filter_funcotations": true,
     "Mutect2.run_funcotator": true,
