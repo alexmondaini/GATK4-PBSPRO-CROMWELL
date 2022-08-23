@@ -16,6 +16,9 @@
   
   "CNVSomaticPairWorkflow.tumor_bam_idx": "BAI",
   "CNVSomaticPairWorkflow.tumor_bam": "BAM",
+  "CNVSomaticPairWorkflow.normal_bam_idx": "File? (optional)",
+  "CNVSomaticPairWorkflow.normal_bam": "File? (optional)",
+
   
   "CNVSomaticPairWorkflow.ref_fasta": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta",
   "CNVSomaticPairWorkflow.ref_fasta_fai": "/groups/cgsd/alexandre/gatk-workflows/src/ref_without_HPV/Homo_sapiens_assembly38.fasta.fai",
@@ -112,7 +115,6 @@
   "CNVSomaticPairWorkflow.smoothing_threshold_copy_ratio": "Float? (optional)",
   "CNVSomaticPairWorkflow.ModelSegmentsNormal.min_total_allele_count_normal": "Int? (optional)",
   "CNVSomaticPairWorkflow.PlotDenoisedCopyRatiosNormal.output_dir": "String? (optional)",
-  "CNVSomaticPairWorkflow.normal_bam_idx": "File? (optional)",
   "CNVSomaticPairWorkflow.neutral_segment_copy_ratio_lower_bound": "Float? (optional)",
   "CNVSomaticPairWorkflow.num_samples_allele_fraction": "Int? (optional)",
   "CNVSomaticPairWorkflow.max_num_segments_per_chromosome": "Int? (optional)",
@@ -122,7 +124,6 @@
   "CNVSomaticPairWorkflow.max_num_smoothing_iterations": "Int? (optional)",
   "CNVSomaticPairWorkflow.PlotDenoisedCopyRatiosTumor.output_dir": "String? (optional)",
   "CNVSomaticPairWorkflow.padding": "Int? (optional)",
-  "CNVSomaticPairWorkflow.normal_bam": "File? (optional)",
   "CNVSomaticPairWorkflow.gcs_project_for_requester_pays": "String? (optional)",
   "CNVSomaticPairWorkflow.num_burn_in_copy_ratio": "Int? (optional)",
   "CNVSomaticPairWorkflow.number_of_eigensamples": "Int? (optional)",
