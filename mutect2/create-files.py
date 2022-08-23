@@ -2,7 +2,7 @@ from pathlib import Path
 import json
 
 
-bams = sorted(Path('/groups/cgsd/alexandre/bams/').glob('*'))
+bams = sorted(Path('/groups/cgsd/alexandre/liver/bams/').glob('*'))
 
 def pairwise(iterator):
     a = iter(iterator)
@@ -11,12 +11,19 @@ def pairwise(iterator):
 normals = list(pairwise([x for x in bams if x.name.split('.')[0].split('-')[1] == '1']))
 tumors  = list(pairwise([x for x in bams if x.name.split('.')[0].split('-')[1] != '1']))
 
+tumor_samples = [t[1].stem.split('.')[0] for t in tumors]
+# check done samples
+p = sorted(Path('/groups/cgsd/alexandre/liver/mutect2_filter_artifacts_vcf').glob('*vcf'))
+done_samples = [x.stem.split('.')[0] for x in p]
+# print([x for x in tumor_samples if x not in done_samples])
+
 
 data = []
 for n in normals:
     for t in tumors:
         if n[1].stem.split('.')[0].split('-')[0] == t[1].stem.split('.')[0].split('-')[0]:
-            data.append((n[1],n[0],t[1],t[0]))
+            if t[1].stem.split('.')[0] not in done_samples:
+                data.append((n[1],n[0],t[1],t[0]))
 
 
 def create_data():
