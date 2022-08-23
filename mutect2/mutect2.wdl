@@ -508,8 +508,8 @@ task M2 {
     String output_stats = output_vcf + ".stats"
 
     # Mem is in units of GB but our command and memory runtime values are in MB
-    Int machine_mem = if defined(mem) then mem * 1000 else 3500
-    Int command_mem = machine_mem - 500
+    Int machine_mem = if defined(mem) then mem * 1000 else 5500
+    Int command_mem = machine_mem - 1500
 
     parameter_meta{
       intervals: {localization_optional: true}
@@ -760,7 +760,6 @@ task LearnReadOrientationModel {
     runtime {
         docker: runtime_params.gatk_docker
         memory: machine_mem + " MB"
-        #disks: "local-disk " + runtime_params.disk + " HDD"
         cpu: runtime_params.cpu
     }
 
