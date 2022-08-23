@@ -30,6 +30,10 @@ def create_data():
             "CNVSomaticPairWorkflow.tumor_bam": f"{file[2]}",
             "CNVSomaticPairWorkflow.tumor_bam_idx": f"{file[3]}",
 
+            "CNVSomaticPairWorkflow.blacklist_intervals": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/CNV_and_centromere_blacklist.hg38liftover.list",
+            "CNVSomaticPairWorkflow.padding": 100,
+            "CNVSomaticPairWorkflow.bin_length": 0,
+
             "CNVSomaticPairWorkflow.ref_fasta": "/groups/cgsd/alexandre/GATK_workflows/src/hg38/Homo_sapiens_assembly38.fasta",
             "CNVSomaticPairWorkflow.ref_fasta_fai": "/groups/cgsd/alexandre/GATK_workflows/src/hg38/Homo_sapiens_assembly38.fasta.fai",
             "CNVSomaticPairWorkflow.ref_fasta_dict": "/groups/cgsd/alexandre/GATK_workflows/src/hg38/Homo_sapiens_assembly38.dict",
