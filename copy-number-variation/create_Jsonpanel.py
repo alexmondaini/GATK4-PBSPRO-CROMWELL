@@ -1,8 +1,14 @@
-{
+from pathlib import Path
+import json
+
+bams = sorted(Path('/groups/cgsd/alexandre/bams').glob('*bam'))
+bais = sorted(Path('/groups/cgsd/alexandre/bams').glob('*bai'))
+
+data = {
   "CNVSomaticPanelWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
 
-  "CNVSomaticPanelWorkflow.normal_bams": "",
-  "CNVSomaticPanelWorkflow.normal_bais": "",
+  "CNVSomaticPanelWorkflow.normal_bams": [str(x) for x in bams],
+  "CNVSomaticPanelWorkflow.normal_bais": [str(x) for x in bais],
   
   "CNVSomaticPanelWorkflow.ref_fasta": "/groups/cgsd/alexandre/GATK_workflows/src/hg38/Homo_sapiens_assembly38.fasta",
   "CNVSomaticPanelWorkflow.ref_fasta_fai": "/groups/cgsd/alexandre/GATK_workflows/src/hg38/Homo_sapiens_assembly38.fasta.fai",
@@ -25,3 +31,7 @@
   "CNVSomaticPanelWorkflow.blacklist_intervals": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/CNV_and_centromere_blacklist.hg38liftover.list"
 }
 
+if __name__=='__main__':
+    output = Path('inputs','CnvLiverPanel.json')
+    with output.open('w') as f:
+        json.dump(data,f,indent=4)
