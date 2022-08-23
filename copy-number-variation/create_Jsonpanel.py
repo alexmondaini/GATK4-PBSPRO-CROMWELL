@@ -14,7 +14,8 @@ data = {
   "CNVSomaticPanelWorkflow.ref_fasta_fai": "/groups/cgsd/alexandre/GATK_workflows/src/hg38/Homo_sapiens_assembly38.fasta.fai",
   "CNVSomaticPanelWorkflow.ref_fasta_dict": "/groups/cgsd/alexandre/GATK_workflows/src/hg38/Homo_sapiens_assembly38.dict",
   
-  
+  "CNVSomaticPanelWorkflow.pon_entity_id":"Liver",
+
   "CNVSomaticPanelWorkflow.padding": "100",
   "CNVSomaticPanelWorkflow.bin_length": "0",
   "CNVSomaticPanelWorkflow.do_explicit_gc_correction": "true",
@@ -32,6 +33,6 @@ data = {
 }
 
 if __name__=='__main__':
-    output = Path('inputs','CnvLiverPanel.json')
+    output = Path('CnvLiverPanel.json')
     with output.open('w') as f:
         json.dump(data,f,indent=4)
