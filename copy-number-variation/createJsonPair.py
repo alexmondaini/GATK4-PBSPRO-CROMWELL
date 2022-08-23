@@ -27,8 +27,8 @@ def create_data():
 
             "CNVSomaticPairWorkflow.normal_bam": f"{file[0]}",
             "CNVSomaticPairWorkflow.normal_bam_idx": f"{file[1]}",
-            "CNVSomaticPairWorkflow.tumor_bam_idx": f"{file[2]}",
-            "CNVSomaticPairWorkflow.tumor_bam": f"{file[3]}",
+            "CNVSomaticPairWorkflow.tumor_bam": f"{file[2]}",
+            "CNVSomaticPairWorkflow.tumor_bam_idx": f"{file[3]}",
 
             "CNVSomaticPairWorkflow.ref_fasta": "/groups/cgsd/alexandre/GATK_workflows/src/hg38/Homo_sapiens_assembly38.fasta",
             "CNVSomaticPairWorkflow.ref_fasta_fai": "/groups/cgsd/alexandre/GATK_workflows/src/hg38/Homo_sapiens_assembly38.fasta.fai",
