@@ -22,8 +22,8 @@ data = {
   "CNVSomaticPanelWorkflow.mem_gb_for_annotate_intervals": "6",
   
   
-  "CNVSomaticPanelWorkflow.segmental_duplication_track_bed": "/groups/cgsd/alexandre/GATK-workflows/copy_number-variation/inputs/segmental_dup.sorted.merged.bed.gz",
-  "CNVSomaticPanelWorkflow.segmental_duplication_track_bed_idx": "/groups/cgsd/alexandre/GATK-workflows/copy-number_variation/inputs/segmental_dup.sorted.merged.bed.gz.tbi",
+  "CNVSomaticPanelWorkflow.segmental_duplication_track_bed": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/segmental_dup.sorted.merged.bed.gz",
+  "CNVSomaticPanelWorkflow.segmental_duplication_track_bed_idx": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/segmental_dup.sorted.merged.bed.gz.tbi",
   
   "CNVSomaticPanelWorkflow.mappability_track_bed": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/k36.umap.bed.gz",
   "CNVSomaticPanelWorkflow.mappability_track_bed_idx": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/k36.umap.bed.gz.tbi",
