@@ -1,7 +1,6 @@
 [
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/464-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/464-1.hg38.bai",
@@ -15,7 +14,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/464-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/464-1.hg38.bai",
@@ -29,7 +27,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/464-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/464-1.hg38.bai",
@@ -43,7 +40,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/608-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/608-1.hg38.bai",
@@ -57,7 +53,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/608-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/608-1.hg38.bai",
@@ -71,7 +66,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/608-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/608-1.hg38.bai",
@@ -85,7 +79,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/608-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/608-1.hg38.bai",
@@ -99,7 +92,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/609-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/609-1.hg38.bai",
@@ -113,7 +105,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/609-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/609-1.hg38.bai",
@@ -127,7 +118,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/609-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/609-1.hg38.bai",
@@ -141,7 +131,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/609-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/609-1.hg38.bai",
@@ -155,7 +144,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/609-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/609-1.hg38.bai",
@@ -169,7 +157,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/609-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/609-1.hg38.bai",
@@ -183,7 +170,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/609-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/609-1.hg38.bai",
@@ -197,7 +183,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/610-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/610-1.hg38.bai",
@@ -211,7 +196,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/610-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/610-1.hg38.bai",
@@ -225,7 +209,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/610-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/610-1.hg38.bai",
@@ -239,7 +222,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/613-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/613-1.hg38.bai",
@@ -253,7 +235,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/613-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/613-1.hg38.bai",
@@ -267,7 +248,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/613-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/613-1.hg38.bai",
@@ -281,7 +261,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/613-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/613-1.hg38.bai",
@@ -295,7 +274,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/613-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/613-1.hg38.bai",
@@ -309,7 +287,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/615-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/615-1.hg38.bai",
@@ -323,7 +300,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/615-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/615-1.hg38.bai",
@@ -337,7 +313,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/615-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/615-1.hg38.bai",
@@ -351,7 +326,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/615-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/615-1.hg38.bai",
@@ -365,7 +339,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/615-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/615-1.hg38.bai",
@@ -379,7 +352,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/615-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/615-1.hg38.bai",
@@ -393,7 +365,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/615-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/615-1.hg38.bai",
@@ -407,7 +378,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/615-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/615-1.hg38.bai",
@@ -421,7 +391,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/686-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/686-1.hg38.bai",
@@ -435,7 +404,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/686-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/686-1.hg38.bai",
@@ -449,7 +417,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/686-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/686-1.hg38.bai",
@@ -463,7 +430,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/686-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/686-1.hg38.bai",
@@ -477,7 +443,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/686-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/686-1.hg38.bai",
@@ -491,7 +456,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/687-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/687-1.hg38.bai",
@@ -505,7 +469,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/687-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/687-1.hg38.bai",
@@ -519,7 +482,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/687-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/687-1.hg38.bai",
@@ -533,7 +495,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/687-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/687-1.hg38.bai",
@@ -547,7 +508,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/688-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/688-1.hg38.bai",
@@ -561,7 +521,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/688-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/688-1.hg38.bai",
@@ -575,7 +534,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/688-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/688-1.hg38.bai",
@@ -589,7 +547,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/688-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/688-1.hg38.bai",
@@ -603,7 +560,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/688-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/688-1.hg38.bai",
@@ -617,7 +573,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/688-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/688-1.hg38.bai",
@@ -631,7 +586,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/688-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/688-1.hg38.bai",
@@ -645,7 +599,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/689-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/689-1.hg38.bai",
@@ -659,7 +612,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/689-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/689-1.hg38.bai",
@@ -673,7 +625,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/689-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/689-1.hg38.bai",
@@ -687,7 +638,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/689-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/689-1.hg38.bai",
@@ -701,7 +651,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/693-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/693-1.hg38.bai",
@@ -715,7 +664,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/693-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/693-1.hg38.bai",
@@ -729,7 +677,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/694-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/694-1.hg38.bai",
@@ -743,7 +690,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/694-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/694-1.hg38.bai",
@@ -757,7 +703,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/694-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/694-1.hg38.bai",
@@ -771,7 +716,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/694-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/694-1.hg38.bai",
@@ -785,7 +729,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/696-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/696-1.hg38.bai",
@@ -799,7 +742,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/696-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/696-1.hg38.bai",
@@ -813,7 +755,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/696-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/696-1.hg38.bai",
@@ -827,7 +768,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/700-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/700-1.hg38.bai",
@@ -841,7 +781,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/700-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/700-1.hg38.bai",
@@ -855,7 +794,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/700-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/700-1.hg38.bai",
@@ -869,7 +807,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/700-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/700-1.hg38.bai",
@@ -883,7 +820,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/700-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/700-1.hg38.bai",
@@ -897,7 +833,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/701-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/701-1.hg38.bai",
@@ -911,7 +846,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/701-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/701-1.hg38.bai",
@@ -925,7 +859,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/701-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/701-1.hg38.bai",
@@ -939,7 +872,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/701-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/701-1.hg38.bai",
@@ -953,7 +885,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/888-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/888-1.hg38.bai",
@@ -967,7 +898,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/888-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/888-1.hg38.bai",
@@ -981,7 +911,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/888-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/888-1.hg38.bai",
@@ -995,7 +924,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/896-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/896-1.hg38.bai",
@@ -1009,7 +937,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/896-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/896-1.hg38.bai",
@@ -1023,7 +950,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/896-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/896-1.hg38.bai",
@@ -1037,7 +963,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/897-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/897-1.hg38.bai",
@@ -1051,7 +976,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/897-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/897-1.hg38.bai",
@@ -1065,7 +989,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/898-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/898-1.hg38.bai",
@@ -1079,7 +1002,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/898-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/898-1.hg38.bai",
@@ -1093,7 +1015,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/898-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/898-1.hg38.bai",
@@ -1107,7 +1028,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/901-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/901-1.hg38.bai",
@@ -1121,7 +1041,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/901-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/901-1.hg38.bai",
@@ -1135,7 +1054,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/901-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/901-1.hg38.bai",
@@ -1149,7 +1067,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/901-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/901-1.hg38.bai",
@@ -1163,7 +1080,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/910-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/910-1.hg38.bai",
@@ -1177,7 +1093,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/910-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/910-1.hg38.bai",
@@ -1191,7 +1106,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/910-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/910-1.hg38.bai",
@@ -1205,7 +1119,6 @@
     },
     {
         "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-        "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
         "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
         "CNVSomaticPairWorkflow.normal_bam": "/groups/cgsd/alexandre/bams/910-1.hg38.bam",
         "CNVSomaticPairWorkflow.normal_bam_idx": "/groups/cgsd/alexandre/bams/910-1.hg38.bai",

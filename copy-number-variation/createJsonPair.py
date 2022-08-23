@@ -23,7 +23,6 @@ def create_data():
     for file in data:
         result.append( {
             "CNVSomaticPairWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
-            "CNVSomaticPairWorkflow.gatk4_jar_override": "/gatk/gatk.jar",
             "CNVSomaticPairWorkflow.common_sites": "/groups/cgsd/alexandre/GATK_workflows/copy-number-variation/inputs/S07604715_Regions.interval_list",
 
             "CNVSomaticPairWorkflow.normal_bam": f"{file[0]}",
