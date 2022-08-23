@@ -15,7 +15,6 @@ tumor_samples = [t[1].stem.split('.')[0] for t in tumors]
 # check done samples
 p = sorted(Path('/groups/cgsd/alexandre/liver/mutect2_filter_artifacts_vcf').glob('*vcf'))
 done_samples = [x.stem.split('.')[0] for x in p]
-# print([x for x in tumor_samples if x not in done_samples])
 
 
 data = []
