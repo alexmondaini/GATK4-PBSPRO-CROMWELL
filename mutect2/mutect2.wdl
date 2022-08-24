@@ -419,7 +419,6 @@ task CramToBam {
     runtime {
         docker: "us.gcr.io/broad-gotc-prod/genomes-in-the-cloud:2.3.3-1513176735"
         memory: machine_mem + " MB"
-        #disks: "local-disk " + disk_size + " HDD"
     }
 
     output {
@@ -628,7 +627,6 @@ task MergeVCFs {
     runtime {
         docker: runtime_params.gatk_docker
         memory: runtime_params.machine_mem + " MB"
-        #disks: "local-disk " + runtime_params.disk + " HDD"
         cpu: runtime_params.cpu
     }
 
@@ -788,7 +786,6 @@ task CalculateContamination {
     runtime {
         docker: runtime_params.gatk_docker
         memory: runtime_params.machine_mem + " MB"
-        #disks: "local-disk " + runtime_params.disk + " HDD"
         cpu: runtime_params.cpu
     }
 
@@ -905,8 +902,7 @@ task FilterAlignmentArtifacts {
 
     runtime {
         docker: runtime_params.gatk_docker
-        memory: "8 GB"
-        #disks: "local-disk " + runtime_params.disk + " HDD"
+        memory: "10 GB"
         cpu: runtime_params.cpu
     }
 
