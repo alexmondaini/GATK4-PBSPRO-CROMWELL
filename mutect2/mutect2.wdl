@@ -169,7 +169,7 @@ workflow Mutect2 {
 
 
     Runtime standard_runtime = {"gatk_docker": gatk_docker, "gatk_override": gatk_override,
-            "cpu": small_task_cpu, "machine_mem": small_task_mem * 1000, "command_mem": small_task_mem * 1000 - 500}
+            "cpu": small_task_cpu, "machine_mem": small_task_mem * 2000, "command_mem": small_task_mem * 1000 - 500}
 
     if (basename(tumor_reads) != basename(tumor_reads, ".cram")) {
         call CramToBam as TumorCramToBam {
@@ -655,7 +655,7 @@ task MergeBamOuts {
         #  Do not call this task if len(bam_outs) == 0
         set -e
         export GATK_LOCAL_JAR=~{default="/gatk/gatk-package-4.2.0.0-local.jar" runtime_params.gatk_override}
-        gatk --java-options "-Xmx~{runtime_params.command_mem}m" GatherBamFiles \
+        gatk --java-options "-Xms 2000m -Xmx~{runtime_params.command_mem}m" GatherBamFiles \
             -I ~{sep=" -I " bam_outs} -O unsorted.out.bam -R ~{ref_fasta}
 
         # We must sort because adjacent scatters may have overlapping (padded) assembly regions, hence
