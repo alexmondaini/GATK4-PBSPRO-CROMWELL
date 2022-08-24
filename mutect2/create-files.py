@@ -13,7 +13,7 @@ tumors  = list(pairwise([x for x in bams if x.name.split('.')[0].split('-')[1] !
 
 tumor_samples = [t[1].stem.split('.')[0] for t in tumors]
 # check done samples
-p = sorted(Path('/groups/cgsd/alexandre/liver/mutect2_filter_vcf/').glob('*vcf'))
+p = sorted(Path('/groups/cgsd/alexandre/liver/mutect2_filter_artifacts_vcf/').glob('*vcf'))
 done_samples = [x.stem.split('.')[0] for x in p]
 
 
