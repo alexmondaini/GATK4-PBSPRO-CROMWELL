@@ -131,7 +131,7 @@ workflow Mutect2 {
       Boolean? filter_funcotations
 
       Int small_task_cpu = 2
-      Int small_task_mem = 4
+      Int small_task_mem = 6
       Int? small_task_disk = 100
       Int? boot_disk_size = 12
       Int learn_read_orientation_mem = 8000
@@ -146,7 +146,6 @@ workflow Mutect2 {
       Float small_input_to_output_multiplier = 2.0
       Float cram_to_bam_multiplier = 6.0
     }
-
 
     Boolean compress = select_first([compress_vcfs, false])
     Boolean run_ob_filter = select_first([run_orientation_bias_mixture_model_filter, false])
@@ -655,7 +654,7 @@ task MergeBamOuts {
         #  Do not call this task if len(bam_outs) == 0
         set -e
         export GATK_LOCAL_JAR=~{default="/gatk/gatk-package-4.2.0.0-local.jar" runtime_params.gatk_override}
-        gatk --java-options "-Xms 2000m -Xmx~{runtime_params.command_mem}m" GatherBamFiles \
+        gatk --java-options "-Xms2000m -Xmx3000m" GatherBamFiles \
             -I ~{sep=" -I " bam_outs} -O unsorted.out.bam -R ~{ref_fasta}
 
         # We must sort because adjacent scatters may have overlapping (padded) assembly regions, hence
