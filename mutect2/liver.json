@@ -1,4 +1,4 @@
-[
+ [
     {
         "Mutect2.gatk_docker": "broadinstitute/gatk:4.2.0.0",
         "Mutect2.scatter_count": 30,
