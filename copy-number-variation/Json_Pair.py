@@ -1,7 +1,7 @@
 from pathlib import Path
 import json
 
-bams = sorted(Path('/groups/cgsd/alexandre/bams/').glob('*'))
+bams = sorted(Path('/groups/cgsd/alexandre/liver/bams').glob('*'))
 
 def pairwise(iterator):
     a = iter(iterator)
