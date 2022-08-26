@@ -682,7 +682,7 @@ task ModelSegments {
         set -e
         export GATK_LOCAL_JAR=~{default="/gatk/gatk.jar" gatk4_jar_override}
 
-        gatk --java-options "-Xmx~{command_mem_mb}m" ModelSegments \
+        gatk --java-options "-Xms10000m -Xmx27000m" ModelSegments \
             --denoised-copy-ratios ~{denoised_copy_ratios} \
             --allelic-counts ~{allelic_counts} \
             ~{"--normal-allelic-counts " + normal_allelic_counts} \
@@ -716,9 +716,9 @@ task ModelSegments {
 
     runtime {
         docker: "~{gatk_docker}"
-        memory: machine_mem_mb + " MB"
+        memory: "30 GB"
         disks: "local-disk " + disk_space_gb + if use_ssd then " SSD" else " HDD"
-        cpu: select_first([cpu, 1])
+        cpu: 16
         preemptible: select_first([preemptible_attempts, 5])
     }
 
