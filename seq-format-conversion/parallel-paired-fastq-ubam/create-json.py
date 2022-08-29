@@ -2,7 +2,7 @@ from pprint import pprint
 from pathlib import Path
 import json
 
-p = Path('/groups','cgsd','javed','liver')
+p = Path('/groups','cgsd','javed','liver','600')
 
 
 def pairwise(iterable):
@@ -13,9 +13,10 @@ def altelement(a):
     return a[::2]
 
 
-samples = sorted(p.glob('*/*fastq.gz'))
+samples = sorted(p.glob('*fastq.gz'))
 sample_names = altelement([x.name.split('_')[0] for x in samples])
 
+print(samples)
 print(len(sample_names))
 
 data = []
@@ -32,10 +33,9 @@ config = {
 
 
 if __name__=='__main__':
-    pass
 
-    # output = Path('liver.json')
-    # with output.open('w') as file:
-    #     json.dump(config,file,indent=4)
+    output = Path('liver.json')
+    with output.open('w') as file:
+        json.dump(config,file,indent=4)
 
 

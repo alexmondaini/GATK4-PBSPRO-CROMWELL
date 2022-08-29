@@ -2,760 +2,88 @@
     "ConvertPairedFastQsToUnmappedBamWf.platform_name": "illumina",
     "ConvertPairedFastQsToUnmappedBamWf.samples": [
         {
-            "name": "464-1",
-            "readgroup": "464-1",
-            "fastq_1": "/groups/cgsd/javed/liver/464/464-1_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/464/464-1_2.fastq.gz",
-            "library": "464-1"
+            "name": "600-10",
+            "readgroup": "600-10",
+            "fastq_1": "/groups/cgsd/javed/liver/600/600-10_1.fastq.gz",
+            "fastq_2": "/groups/cgsd/javed/liver/600/600-10_2.fastq.gz",
+            "library": "600-10"
         },
         {
-            "name": "464-2",
-            "readgroup": "464-2",
-            "fastq_1": "/groups/cgsd/javed/liver/464/464-2_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/464/464-2_2.fastq.gz",
-            "library": "464-2"
+            "name": "600-11",
+            "readgroup": "600-11",
+            "fastq_1": "/groups/cgsd/javed/liver/600/600-11_1.fastq.gz",
+            "fastq_2": "/groups/cgsd/javed/liver/600/600-11_2.fastq.gz",
+            "library": "600-11"
         },
         {
-            "name": "464-3",
-            "readgroup": "464-3",
-            "fastq_1": "/groups/cgsd/javed/liver/464/464-3_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/464/464-3_2.fastq.gz",
-            "library": "464-3"
+            "name": "600-12",
+            "readgroup": "600-12",
+            "fastq_1": "/groups/cgsd/javed/liver/600/600-12_1.fastq.gz",
+            "fastq_2": "/groups/cgsd/javed/liver/600/600-12_2.fastq.gz",
+            "library": "600-12"
         },
         {
-            "name": "464-4",
-            "readgroup": "464-4",
-            "fastq_1": "/groups/cgsd/javed/liver/464/464-4_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/464/464-4_2.fastq.gz",
-            "library": "464-4"
+            "name": "600-1",
+            "readgroup": "600-1",
+            "fastq_1": "/groups/cgsd/javed/liver/600/600-1_1.fastq.gz",
+            "fastq_2": "/groups/cgsd/javed/liver/600/600-1_2.fastq.gz",
+            "library": "600-1"
         },
         {
-            "name": "608-1",
-            "readgroup": "608-1",
-            "fastq_1": "/groups/cgsd/javed/liver/608/608-1_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/608/608-1_2.fastq.gz",
-            "library": "608-1"
+            "name": "600-2",
+            "readgroup": "600-2",
+            "fastq_1": "/groups/cgsd/javed/liver/600/600-2_1.fastq.gz",
+            "fastq_2": "/groups/cgsd/javed/liver/600/600-2_2.fastq.gz",
+            "library": "600-2"
         },
         {
-            "name": "608-2",
-            "readgroup": "608-2",
-            "fastq_1": "/groups/cgsd/javed/liver/608/608-2_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/608/608-2_2.fastq.gz",
-            "library": "608-2"
+            "name": "600-3",
+            "readgroup": "600-3",
+            "fastq_1": "/groups/cgsd/javed/liver/600/600-3_1.fastq.gz",
+            "fastq_2": "/groups/cgsd/javed/liver/600/600-3_2.fastq.gz",
+            "library": "600-3"
         },
         {
-            "name": "608-3",
-            "readgroup": "608-3",
-            "fastq_1": "/groups/cgsd/javed/liver/608/608-3_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/608/608-3_2.fastq.gz",
-            "library": "608-3"
+            "name": "600-4",
+            "readgroup": "600-4",
+            "fastq_1": "/groups/cgsd/javed/liver/600/600-4_1.fastq.gz",
+            "fastq_2": "/groups/cgsd/javed/liver/600/600-4_2.fastq.gz",
+            "library": "600-4"
         },
         {
-            "name": "608-4",
-            "readgroup": "608-4",
-            "fastq_1": "/groups/cgsd/javed/liver/608/608-4_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/608/608-4_2.fastq.gz",
-            "library": "608-4"
+            "name": "600-5",
+            "readgroup": "600-5",
+            "fastq_1": "/groups/cgsd/javed/liver/600/600-5_1.fastq.gz",
+            "fastq_2": "/groups/cgsd/javed/liver/600/600-5_2.fastq.gz",
+            "library": "600-5"
         },
         {
-            "name": "608-5",
-            "readgroup": "608-5",
-            "fastq_1": "/groups/cgsd/javed/liver/608/608-5_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/608/608-5_2.fastq.gz",
-            "library": "608-5"
+            "name": "600-6",
+            "readgroup": "600-6",
+            "fastq_1": "/groups/cgsd/javed/liver/600/600-6_1.fastq.gz",
+            "fastq_2": "/groups/cgsd/javed/liver/600/600-6_2.fastq.gz",
+            "library": "600-6"
         },
         {
-            "name": "609-1",
-            "readgroup": "609-1",
-            "fastq_1": "/groups/cgsd/javed/liver/609/609-1_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/609/609-1_2.fastq.gz",
-            "library": "609-1"
+            "name": "600-7",
+            "readgroup": "600-7",
+            "fastq_1": "/groups/cgsd/javed/liver/600/600-7_1.fastq.gz",
+            "fastq_2": "/groups/cgsd/javed/liver/600/600-7_2.fastq.gz",
+            "library": "600-7"
         },
         {
-            "name": "609-2",
-            "readgroup": "609-2",
-            "fastq_1": "/groups/cgsd/javed/liver/609/609-2_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/609/609-2_2.fastq.gz",
-            "library": "609-2"
+            "name": "600-8",
+            "readgroup": "600-8",
+            "fastq_1": "/groups/cgsd/javed/liver/600/600-8_1.fastq.gz",
+            "fastq_2": "/groups/cgsd/javed/liver/600/600-8_2.fastq.gz",
+            "library": "600-8"
         },
         {
-            "name": "609-3",
-            "readgroup": "609-3",
-            "fastq_1": "/groups/cgsd/javed/liver/609/609-3_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/609/609-3_2.fastq.gz",
-            "library": "609-3"
-        },
-        {
-            "name": "609-4",
-            "readgroup": "609-4",
-            "fastq_1": "/groups/cgsd/javed/liver/609/609-4_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/609/609-4_2.fastq.gz",
-            "library": "609-4"
-        },
-        {
-            "name": "609-5",
-            "readgroup": "609-5",
-            "fastq_1": "/groups/cgsd/javed/liver/609/609-5_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/609/609-5_2.fastq.gz",
-            "library": "609-5"
-        },
-        {
-            "name": "609-6",
-            "readgroup": "609-6",
-            "fastq_1": "/groups/cgsd/javed/liver/609/609-6_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/609/609-6_2.fastq.gz",
-            "library": "609-6"
-        },
-        {
-            "name": "609-7",
-            "readgroup": "609-7",
-            "fastq_1": "/groups/cgsd/javed/liver/609/609-7_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/609/609-7_2.fastq.gz",
-            "library": "609-7"
-        },
-        {
-            "name": "609-8",
-            "readgroup": "609-8",
-            "fastq_1": "/groups/cgsd/javed/liver/609/609-8_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/609/609-8_2.fastq.gz",
-            "library": "609-8"
-        },
-        {
-            "name": "610-1",
-            "readgroup": "610-1",
-            "fastq_1": "/groups/cgsd/javed/liver/610/610-1_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/610/610-1_2.fastq.gz",
-            "library": "610-1"
-        },
-        {
-            "name": "610-2",
-            "readgroup": "610-2",
-            "fastq_1": "/groups/cgsd/javed/liver/610/610-2_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/610/610-2_2.fastq.gz",
-            "library": "610-2"
-        },
-        {
-            "name": "610-3",
-            "readgroup": "610-3",
-            "fastq_1": "/groups/cgsd/javed/liver/610/610-3_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/610/610-3_2.fastq.gz",
-            "library": "610-3"
-        },
-        {
-            "name": "610-4",
-            "readgroup": "610-4",
-            "fastq_1": "/groups/cgsd/javed/liver/610/610-4_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/610/610-4_2.fastq.gz",
-            "library": "610-4"
-        },
-        {
-            "name": "613-1",
-            "readgroup": "613-1",
-            "fastq_1": "/groups/cgsd/javed/liver/613/613-1_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/613/613-1_2.fastq.gz",
-            "library": "613-1"
-        },
-        {
-            "name": "613-2",
-            "readgroup": "613-2",
-            "fastq_1": "/groups/cgsd/javed/liver/613/613-2_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/613/613-2_2.fastq.gz",
-            "library": "613-2"
-        },
-        {
-            "name": "613-3",
-            "readgroup": "613-3",
-            "fastq_1": "/groups/cgsd/javed/liver/613/613-3_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/613/613-3_2.fastq.gz",
-            "library": "613-3"
-        },
-        {
-            "name": "613-4",
-            "readgroup": "613-4",
-            "fastq_1": "/groups/cgsd/javed/liver/613/613-4_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/613/613-4_2.fastq.gz",
-            "library": "613-4"
-        },
-        {
-            "name": "613-5",
-            "readgroup": "613-5",
-            "fastq_1": "/groups/cgsd/javed/liver/613/613-5_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/613/613-5_2.fastq.gz",
-            "library": "613-5"
-        },
-        {
-            "name": "613-6",
-            "readgroup": "613-6",
-            "fastq_1": "/groups/cgsd/javed/liver/613/613-6_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/613/613-6_2.fastq.gz",
-            "library": "613-6"
-        },
-        {
-            "name": "615-1",
-            "readgroup": "615-1",
-            "fastq_1": "/groups/cgsd/javed/liver/615/615-1_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/615/615-1_2.fastq.gz",
-            "library": "615-1"
-        },
-        {
-            "name": "615-2",
-            "readgroup": "615-2",
-            "fastq_1": "/groups/cgsd/javed/liver/615/615-2_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/615/615-2_2.fastq.gz",
-            "library": "615-2"
-        },
-        {
-            "name": "615-3",
-            "readgroup": "615-3",
-            "fastq_1": "/groups/cgsd/javed/liver/615/615-3_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/615/615-3_2.fastq.gz",
-            "library": "615-3"
-        },
-        {
-            "name": "615-4",
-            "readgroup": "615-4",
-            "fastq_1": "/groups/cgsd/javed/liver/615/615-4_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/615/615-4_2.fastq.gz",
-            "library": "615-4"
-        },
-        {
-            "name": "615-5",
-            "readgroup": "615-5",
-            "fastq_1": "/groups/cgsd/javed/liver/615/615-5_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/615/615-5_2.fastq.gz",
-            "library": "615-5"
-        },
-        {
-            "name": "615-6",
-            "readgroup": "615-6",
-            "fastq_1": "/groups/cgsd/javed/liver/615/615-6_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/615/615-6_2.fastq.gz",
-            "library": "615-6"
-        },
-        {
-            "name": "615-7",
-            "readgroup": "615-7",
-            "fastq_1": "/groups/cgsd/javed/liver/615/615-7_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/615/615-7_2.fastq.gz",
-            "library": "615-7"
-        },
-        {
-            "name": "615-8",
-            "readgroup": "615-8",
-            "fastq_1": "/groups/cgsd/javed/liver/615/615-8_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/615/615-8_2.fastq.gz",
-            "library": "615-8"
-        },
-        {
-            "name": "615-9",
-            "readgroup": "615-9",
-            "fastq_1": "/groups/cgsd/javed/liver/615/615-9_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/615/615-9_2.fastq.gz",
-            "library": "615-9"
-        },
-        {
-            "name": "686-1",
-            "readgroup": "686-1",
-            "fastq_1": "/groups/cgsd/javed/liver/686/686-1_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/686/686-1_2.fastq.gz",
-            "library": "686-1"
-        },
-        {
-            "name": "686-2",
-            "readgroup": "686-2",
-            "fastq_1": "/groups/cgsd/javed/liver/686/686-2_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/686/686-2_2.fastq.gz",
-            "library": "686-2"
-        },
-        {
-            "name": "686-3",
-            "readgroup": "686-3",
-            "fastq_1": "/groups/cgsd/javed/liver/686/686-3_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/686/686-3_2.fastq.gz",
-            "library": "686-3"
-        },
-        {
-            "name": "686-4",
-            "readgroup": "686-4",
-            "fastq_1": "/groups/cgsd/javed/liver/686/686-4_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/686/686-4_2.fastq.gz",
-            "library": "686-4"
-        },
-        {
-            "name": "686-5",
-            "readgroup": "686-5",
-            "fastq_1": "/groups/cgsd/javed/liver/686/686-5_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/686/686-5_2.fastq.gz",
-            "library": "686-5"
-        },
-        {
-            "name": "686-6",
-            "readgroup": "686-6",
-            "fastq_1": "/groups/cgsd/javed/liver/686/686-6_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/686/686-6_2.fastq.gz",
-            "library": "686-6"
-        },
-        {
-            "name": "687-1",
-            "readgroup": "687-1",
-            "fastq_1": "/groups/cgsd/javed/liver/687/687-1_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/687/687-1_2.fastq.gz",
-            "library": "687-1"
-        },
-        {
-            "name": "687-2",
-            "readgroup": "687-2",
-            "fastq_1": "/groups/cgsd/javed/liver/687/687-2_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/687/687-2_2.fastq.gz",
-            "library": "687-2"
-        },
-        {
-            "name": "687-3",
-            "readgroup": "687-3",
-            "fastq_1": "/groups/cgsd/javed/liver/687/687-3_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/687/687-3_2.fastq.gz",
-            "library": "687-3"
-        },
-        {
-            "name": "687-4",
-            "readgroup": "687-4",
-            "fastq_1": "/groups/cgsd/javed/liver/687/687-4_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/687/687-4_2.fastq.gz",
-            "library": "687-4"
-        },
-        {
-            "name": "687-5",
-            "readgroup": "687-5",
-            "fastq_1": "/groups/cgsd/javed/liver/687/687-5_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/687/687-5_2.fastq.gz",
-            "library": "687-5"
-        },
-        {
-            "name": "688-1",
-            "readgroup": "688-1",
-            "fastq_1": "/groups/cgsd/javed/liver/688/688-1_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/688/688-1_2.fastq.gz",
-            "library": "688-1"
-        },
-        {
-            "name": "688-2",
-            "readgroup": "688-2",
-            "fastq_1": "/groups/cgsd/javed/liver/688/688-2_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/688/688-2_2.fastq.gz",
-            "library": "688-2"
-        },
-        {
-            "name": "688-3",
-            "readgroup": "688-3",
-            "fastq_1": "/groups/cgsd/javed/liver/688/688-3_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/688/688-3_2.fastq.gz",
-            "library": "688-3"
-        },
-        {
-            "name": "688-4",
-            "readgroup": "688-4",
-            "fastq_1": "/groups/cgsd/javed/liver/688/688-4_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/688/688-4_2.fastq.gz",
-            "library": "688-4"
-        },
-        {
-            "name": "688-5",
-            "readgroup": "688-5",
-            "fastq_1": "/groups/cgsd/javed/liver/688/688-5_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/688/688-5_2.fastq.gz",
-            "library": "688-5"
-        },
-        {
-            "name": "688-6",
-            "readgroup": "688-6",
-            "fastq_1": "/groups/cgsd/javed/liver/688/688-6_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/688/688-6_2.fastq.gz",
-            "library": "688-6"
-        },
-        {
-            "name": "688-7",
-            "readgroup": "688-7",
-            "fastq_1": "/groups/cgsd/javed/liver/688/688-7_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/688/688-7_2.fastq.gz",
-            "library": "688-7"
-        },
-        {
-            "name": "688-CHD",
-            "readgroup": "688-CHD",
-            "fastq_1": "/groups/cgsd/javed/liver/688/688-CHD_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/688/688-CHD_2.fastq.gz",
-            "library": "688-CHD"
-        },
-        {
-            "name": "689-1",
-            "readgroup": "689-1",
-            "fastq_1": "/groups/cgsd/javed/liver/689/689-1_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/689/689-1_2.fastq.gz",
-            "library": "689-1"
-        },
-        {
-            "name": "689-2",
-            "readgroup": "689-2",
-            "fastq_1": "/groups/cgsd/javed/liver/689/689-2_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/689/689-2_2.fastq.gz",
-            "library": "689-2"
-        },
-        {
-            "name": "689-3",
-            "readgroup": "689-3",
-            "fastq_1": "/groups/cgsd/javed/liver/689/689-3_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/689/689-3_2.fastq.gz",
-            "library": "689-3"
-        },
-        {
-            "name": "689-4",
-            "readgroup": "689-4",
-            "fastq_1": "/groups/cgsd/javed/liver/689/689-4_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/689/689-4_2.fastq.gz",
-            "library": "689-4"
-        },
-        {
-            "name": "689-5",
-            "readgroup": "689-5",
-            "fastq_1": "/groups/cgsd/javed/liver/689/689-5_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/689/689-5_2.fastq.gz",
-            "library": "689-5"
-        },
-        {
-            "name": "693-1",
-            "readgroup": "693-1",
-            "fastq_1": "/groups/cgsd/javed/liver/693/693-1_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/693/693-1_2.fastq.gz",
-            "library": "693-1"
-        },
-        {
-            "name": "693-2",
-            "readgroup": "693-2",
-            "fastq_1": "/groups/cgsd/javed/liver/693/693-2_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/693/693-2_2.fastq.gz",
-            "library": "693-2"
-        },
-        {
-            "name": "693-3",
-            "readgroup": "693-3",
-            "fastq_1": "/groups/cgsd/javed/liver/693/693-3_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/693/693-3_2.fastq.gz",
-            "library": "693-3"
-        },
-        {
-            "name": "694-1",
-            "readgroup": "694-1",
-            "fastq_1": "/groups/cgsd/javed/liver/694/694-1_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/694/694-1_2.fastq.gz",
-            "library": "694-1"
-        },
-        {
-            "name": "694-2",
-            "readgroup": "694-2",
-            "fastq_1": "/groups/cgsd/javed/liver/694/694-2_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/694/694-2_2.fastq.gz",
-            "library": "694-2"
-        },
-        {
-            "name": "694-3",
-            "readgroup": "694-3",
-            "fastq_1": "/groups/cgsd/javed/liver/694/694-3_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/694/694-3_2.fastq.gz",
-            "library": "694-3"
-        },
-        {
-            "name": "694-4",
-            "readgroup": "694-4",
-            "fastq_1": "/groups/cgsd/javed/liver/694/694-4_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/694/694-4_2.fastq.gz",
-            "library": "694-4"
-        },
-        {
-            "name": "694-5",
-            "readgroup": "694-5",
-            "fastq_1": "/groups/cgsd/javed/liver/694/694-5_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/694/694-5_2.fastq.gz",
-            "library": "694-5"
-        },
-        {
-            "name": "696-1",
-            "readgroup": "696-1",
-            "fastq_1": "/groups/cgsd/javed/liver/696/696-1_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/696/696-1_2.fastq.gz",
-            "library": "696-1"
-        },
-        {
-            "name": "696-2",
-            "readgroup": "696-2",
-            "fastq_1": "/groups/cgsd/javed/liver/696/696-2_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/696/696-2_2.fastq.gz",
-            "library": "696-2"
-        },
-        {
-            "name": "696-3",
-            "readgroup": "696-3",
-            "fastq_1": "/groups/cgsd/javed/liver/696/696-3_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/696/696-3_2.fastq.gz",
-            "library": "696-3"
-        },
-        {
-            "name": "696-4",
-            "readgroup": "696-4",
-            "fastq_1": "/groups/cgsd/javed/liver/696/696-4_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/696/696-4_2.fastq.gz",
-            "library": "696-4"
-        },
-        {
-            "name": "700-1",
-            "readgroup": "700-1",
-            "fastq_1": "/groups/cgsd/javed/liver/700/700-1_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/700/700-1_2.fastq.gz",
-            "library": "700-1"
-        },
-        {
-            "name": "700-2",
-            "readgroup": "700-2",
-            "fastq_1": "/groups/cgsd/javed/liver/700/700-2_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/700/700-2_2.fastq.gz",
-            "library": "700-2"
-        },
-        {
-            "name": "700-3",
-            "readgroup": "700-3",
-            "fastq_1": "/groups/cgsd/javed/liver/700/700-3_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/700/700-3_2.fastq.gz",
-            "library": "700-3"
-        },
-        {
-            "name": "700-4",
-            "readgroup": "700-4",
-            "fastq_1": "/groups/cgsd/javed/liver/700/700-4_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/700/700-4_2.fastq.gz",
-            "library": "700-4"
-        },
-        {
-            "name": "700-5",
-            "readgroup": "700-5",
-            "fastq_1": "/groups/cgsd/javed/liver/700/700-5_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/700/700-5_2.fastq.gz",
-            "library": "700-5"
-        },
-        {
-            "name": "700-6",
-            "readgroup": "700-6",
-            "fastq_1": "/groups/cgsd/javed/liver/700/700-6_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/700/700-6_2.fastq.gz",
-            "library": "700-6"
-        },
-        {
-            "name": "701-1",
-            "readgroup": "701-1",
-            "fastq_1": "/groups/cgsd/javed/liver/701/701-1_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/701/701-1_2.fastq.gz",
-            "library": "701-1"
-        },
-        {
-            "name": "701-2",
-            "readgroup": "701-2",
-            "fastq_1": "/groups/cgsd/javed/liver/701/701-2_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/701/701-2_2.fastq.gz",
-            "library": "701-2"
-        },
-        {
-            "name": "701-3",
-            "readgroup": "701-3",
-            "fastq_1": "/groups/cgsd/javed/liver/701/701-3_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/701/701-3_2.fastq.gz",
-            "library": "701-3"
-        },
-        {
-            "name": "701-4",
-            "readgroup": "701-4",
-            "fastq_1": "/groups/cgsd/javed/liver/701/701-4_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/701/701-4_2.fastq.gz",
-            "library": "701-4"
-        },
-        {
-            "name": "701-5",
-            "readgroup": "701-5",
-            "fastq_1": "/groups/cgsd/javed/liver/701/701-5_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/701/701-5_2.fastq.gz",
-            "library": "701-5"
-        },
-        {
-            "name": "888-1",
-            "readgroup": "888-1",
-            "fastq_1": "/groups/cgsd/javed/liver/888/888-1_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/888/888-1_2.fastq.gz",
-            "library": "888-1"
-        },
-        {
-            "name": "888-2",
-            "readgroup": "888-2",
-            "fastq_1": "/groups/cgsd/javed/liver/888/888-2_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/888/888-2_2.fastq.gz",
-            "library": "888-2"
-        },
-        {
-            "name": "888-3",
-            "readgroup": "888-3",
-            "fastq_1": "/groups/cgsd/javed/liver/888/888-3_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/888/888-3_2.fastq.gz",
-            "library": "888-3"
-        },
-        {
-            "name": "888-4",
-            "readgroup": "888-4",
-            "fastq_1": "/groups/cgsd/javed/liver/888/888-4_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/888/888-4_2.fastq.gz",
-            "library": "888-4"
-        },
-        {
-            "name": "896-1",
-            "readgroup": "896-1",
-            "fastq_1": "/groups/cgsd/javed/liver/896/896-1_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/896/896-1_2.fastq.gz",
-            "library": "896-1"
-        },
-        {
-            "name": "896-2",
-            "readgroup": "896-2",
-            "fastq_1": "/groups/cgsd/javed/liver/896/896-2_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/896/896-2_2.fastq.gz",
-            "library": "896-2"
-        },
-        {
-            "name": "896-3",
-            "readgroup": "896-3",
-            "fastq_1": "/groups/cgsd/javed/liver/896/896-3_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/896/896-3_2.fastq.gz",
-            "library": "896-3"
-        },
-        {
-            "name": "896-4",
-            "readgroup": "896-4",
-            "fastq_1": "/groups/cgsd/javed/liver/896/896-4_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/896/896-4_2.fastq.gz",
-            "library": "896-4"
-        },
-        {
-            "name": "897-1",
-            "readgroup": "897-1",
-            "fastq_1": "/groups/cgsd/javed/liver/897/897-1_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/897/897-1_2.fastq.gz",
-            "library": "897-1"
-        },
-        {
-            "name": "897-2",
-            "readgroup": "897-2",
-            "fastq_1": "/groups/cgsd/javed/liver/897/897-2_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/897/897-2_2.fastq.gz",
-            "library": "897-2"
-        },
-        {
-            "name": "897-3",
-            "readgroup": "897-3",
-            "fastq_1": "/groups/cgsd/javed/liver/897/897-3_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/897/897-3_2.fastq.gz",
-            "library": "897-3"
-        },
-        {
-            "name": "898-1",
-            "readgroup": "898-1",
-            "fastq_1": "/groups/cgsd/javed/liver/898/898-1_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/898/898-1_2.fastq.gz",
-            "library": "898-1"
-        },
-        {
-            "name": "898-2",
-            "readgroup": "898-2",
-            "fastq_1": "/groups/cgsd/javed/liver/898/898-2_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/898/898-2_2.fastq.gz",
-            "library": "898-2"
-        },
-        {
-            "name": "898-3",
-            "readgroup": "898-3",
-            "fastq_1": "/groups/cgsd/javed/liver/898/898-3_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/898/898-3_2.fastq.gz",
-            "library": "898-3"
-        },
-        {
-            "name": "898-4",
-            "readgroup": "898-4",
-            "fastq_1": "/groups/cgsd/javed/liver/898/898-4_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/898/898-4_2.fastq.gz",
-            "library": "898-4"
-        },
-        {
-            "name": "901-1",
-            "readgroup": "901-1",
-            "fastq_1": "/groups/cgsd/javed/liver/901/901-1_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/901/901-1_2.fastq.gz",
-            "library": "901-1"
-        },
-        {
-            "name": "901-2",
-            "readgroup": "901-2",
-            "fastq_1": "/groups/cgsd/javed/liver/901/901-2_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/901/901-2_2.fastq.gz",
-            "library": "901-2"
-        },
-        {
-            "name": "901-3",
-            "readgroup": "901-3",
-            "fastq_1": "/groups/cgsd/javed/liver/901/901-3_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/901/901-3_2.fastq.gz",
-            "library": "901-3"
-        },
-        {
-            "name": "901-4",
-            "readgroup": "901-4",
-            "fastq_1": "/groups/cgsd/javed/liver/901/901-4_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/901/901-4_2.fastq.gz",
-            "library": "901-4"
-        },
-        {
-            "name": "901-5",
-            "readgroup": "901-5",
-            "fastq_1": "/groups/cgsd/javed/liver/901/901-5_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/901/901-5_2.fastq.gz",
-            "library": "901-5"
-        },
-        {
-            "name": "910-1",
-            "readgroup": "910-1",
-            "fastq_1": "/groups/cgsd/javed/liver/910/910-1_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/910/910-1_2.fastq.gz",
-            "library": "910-1"
-        },
-        {
-            "name": "910-2",
-            "readgroup": "910-2",
-            "fastq_1": "/groups/cgsd/javed/liver/910/910-2_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/910/910-2_2.fastq.gz",
-            "library": "910-2"
-        },
-        {
-            "name": "910-3",
-            "readgroup": "910-3",
-            "fastq_1": "/groups/cgsd/javed/liver/910/910-3_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/910/910-3_2.fastq.gz",
-            "library": "910-3"
-        },
-        {
-            "name": "910-4",
-            "readgroup": "910-4",
-            "fastq_1": "/groups/cgsd/javed/liver/910/910-4_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/910/910-4_2.fastq.gz",
-            "library": "910-4"
-        },
-        {
-            "name": "910-5",
-            "readgroup": "910-5",
-            "fastq_1": "/groups/cgsd/javed/liver/910/910-5_1.fastq.gz",
-            "fastq_2": "/groups/cgsd/javed/liver/910/910-5_2.fastq.gz",
-            "library": "910-5"
+            "name": "600-9",
+            "readgroup": "600-9",
+            "fastq_1": "/groups/cgsd/javed/liver/600/600-9_1.fastq.gz",
+            "fastq_2": "/groups/cgsd/javed/liver/600/600-9_2.fastq.gz",
+            "library": "600-9"
         }
     ],
     "ConvertPairedFastQsToUnmappedBamWf.sequencing_center": "CGS"
