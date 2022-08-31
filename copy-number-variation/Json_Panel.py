@@ -1,8 +1,9 @@
 from pathlib import Path
 import json
 
-bams = sorted(Path('/groups/cgsd/alexandre/bams').glob('*bam'))
-bais = sorted(Path('/groups/cgsd/alexandre/bams').glob('*bai'))
+bams = sorted(Path('/groups/cgsd/alexandre/liver/bams/').glob('*-1.hg38.bam'))
+bais = sorted(Path('/groups/cgsd/alexandre/liver/bams/').glob('*-1.hg38.bai'))
+print(bams)
 
 data = {
   "CNVSomaticPanelWorkflow.gatk_docker": "broadinstitute/gatk:4.2.0.0",
@@ -33,6 +34,6 @@ data = {
 }
 
 if __name__=='__main__':
-    output = Path('CnvLiverPanel.json')
+    output = Path('LiverPanel.json')
     with output.open('w') as f:
         json.dump(data,f,indent=4)
