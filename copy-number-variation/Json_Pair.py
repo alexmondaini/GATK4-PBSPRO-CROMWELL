@@ -2,7 +2,6 @@ from pathlib import Path
 import json
 
 bams = sorted(Path('/groups/cgsd/alexandre/liver/bams').glob('600-*.hg38.ba?'))
-print(bams)
 
 def pairwise(iterator):
     a = iter(iterator)
