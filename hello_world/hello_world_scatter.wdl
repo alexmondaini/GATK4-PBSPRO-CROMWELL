@@ -3,21 +3,23 @@ version 1.0
 workflow HelloWorld {
 
     input {
-        File hello
+        Array[File] collection
     }
 
+    scatter (item in collection) {
     call WriteGreeting {
         input:
-        hello = hello
+        item = item
+    }
     }
 }
 
 task WriteGreeting {
     input {
-        File hello
+        File item
     }
     command {
-        cat ~{hello}
+        cat ~{item}
     }
     output {
         File output_greeting = stdout()
