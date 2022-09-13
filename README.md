@@ -50,7 +50,7 @@ END
 
 
 module load java/11.0.9
-java -Xms10G -Xmx30G -Dconfig.file=/path/to/application.conf \
+java -Xms10G -Xmx60G -Dconfig.file=/path/to/application.conf \
 -jar /path/to/cromwell-${VERSION}.jar server
 ```
 
