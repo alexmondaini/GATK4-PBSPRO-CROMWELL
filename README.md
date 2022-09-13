@@ -54,12 +54,11 @@ java -Xms10G -Xmx30G -Dconfig.file=/path/to/application.conf \
 -jar /path/to/cromwell-${VERSION}.jar server
 ```
 
-- Check the `stderr` returned from the script above when you send it as a job in the cluster, the `stderr` will have this name format `job_cromwell_server.eXXXX` where XXXX is you job number, copy the ssh line which has been expanded with the hostname and port and paste into your local machine terminal to create the tunnel.
+- Check the `stderr` returned from the script above when you send it as a job in the cluster, the `stderr` will have this name format `job_cromwell_server.eXXXX` where XXXX is your job number, copy the ssh line which has been expanded with the `hostname` and `port` and paste into your local machine terminal to create the tunnel.
 
+- This command will forward a port (8000-default cromwell port) from your node to your local machine on port (8000) in this example. Once the port is opened, all you need to do is to go to your browser and type http://localhost:8000/ ,and you will be presented with the [Swagger](https://swagger.io/) interface used by cromwell to launch workflows in server mode.
 
-- This command will forward a port (8000-default cromwell port) from your node to your local machine on port (8000) in this example. Once the port is opened all you need to do is to go to your browser and type http://localhost:8000/ and you will be presented with [Swagger](https://swagger.io/) interface used by cromwell to launch workflows in server mode.
-
-- Whenever you get to this point, you will notice that the Swagger interface exposes your local filesystem to launch workflows. For that I generally keep a copy of this github repository in my local machine since (`wdl` and `json`) files are very light and use them to launch the workflows in xomics. It's worth noting that all file paths present in the `json` files are relative to the filesystem of xomics and Cromwell will use all filepaths relative to xomics, not to your local machine (which is great) and allows you to store the heavy stuff in the cluster and not in your local machine.
+- Whenever you get to this point, you will notice that the Swagger interface exposes your local filesystem to launch workflows. For that I keep a copy of this github repository in my local machine since (`wdl` and `json`) files are very light and use them to launch the workflows in xomics. It's worth noting that all file paths present in the `json` files are relative to the filesystem of xomics and Cromwell will use all filepaths relative to xomics, not to your local machine (which is great) and allows you to store the heavy stuff in the cluster and not in your local machine.
 
 Finally if you wish to use Github and git as the distributed version control system for organizing and sharing code, I would advise to create your own repository on github or create a `branch` of the current one, so you can have different versions to compare against.
 
