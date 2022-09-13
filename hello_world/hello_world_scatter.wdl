@@ -1,6 +1,6 @@
 version 1.0
 
-workflow HelloWorld {
+workflow HelloWorld_Scatter {
 
     input {
         Array[File] collection

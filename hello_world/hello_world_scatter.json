@@ -1,4 +1,4 @@
 {
-  "HelloWorld.collection": ["/groups/cgsd/alexandre/GATK_workflows/hello_world/hello_world1.txt","/groups/cgsd/alexandre/GATK_workflows/hello_world/hello_world2.txt"]
+  "HelloWorld_Scatter.collection": ["/groups/cgsd/alexandre/GATK_workflows/hello_world/hello_world1.txt","/groups/cgsd/alexandre/GATK_workflows/hello_world/hello_world2.txt"]
 }
 
