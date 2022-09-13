@@ -1,4 +1,4 @@
 {
-  "HelloWorld.collection": [{"HelloWorld.hello": "hello_world1.txt"},{"HelloWorld.hello": "hello_world2.txt"}]
+  "HelloWorld.collection": [{"HelloWorld.hello": "/groups/cgsd/alexandre/GATK_workflows/hello_world/hello_world1.txt"},{"HelloWorld.hello": "/groups/cgsd/alexandre/GATK_workflows/hello_world/hello_world2.txt"}]
 }
 

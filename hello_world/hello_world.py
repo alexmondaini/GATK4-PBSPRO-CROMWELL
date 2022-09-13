@@ -1,7 +1,7 @@
 from pathlib import Path
 import json
 
-file_paths = sorted(Path('.').glob('hello_world[1-2].txt'))
+file_paths = sorted(Path('.').resolve().glob('hello_world[1-2].txt'))
 
 def add_data(paths):
     data = []
